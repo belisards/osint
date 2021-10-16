@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Dados invisíveis</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Adriano Belisario - @belisards" />
+    <meta name="date" content="2021-10-16" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Dados invisíveis
+## 🔎 Open source intelligence - OSINT
+### Adriano Belisario - <span class="citation">@belisards</span>
+### MBA em Jornalismo de Dados/IDP
+### 2021-10-16
+
+---
+
+class: center, middle
+
+# Slides e materiais do curso:
+
+### github.com/belisards/osint
+
+Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
+
+---
+class: inverse, center, middle
+
+# Open Source Intelligence - OSINT
+
+---
+
+# O que é?
+
+Open Source Intelligence (**inteligência com fontes abertas**) refere-se à coleta sistemática de informações e dados a partir de fontes abertas para fins investigativos ou de tomadas de decisões estratégicas. Diversas áreas fazem uso das técnicas de OSINT atualmente, por exemplo:
+
+
+- Militar/estatal
+- Inteligência corporativa
+- Segurança da informação e cibersegurança
+- Pesquisadores independentes e jornalistas
+
+
+--
+
+## OSINT é um modo de pensar
+OSINT não é uma ferramenta, uma metodologia ou técnica. Existem várias destas. OSINT é sobretudo um modo de pensar ou uma forma de encarar uma investigação&lt;sup&gt;1&lt;/sup&gt;.
+
+.footnote[
+[1] [OSINT Is A State Of Mind, por Dutch Osint Guy](https://medium.com/secjuice/osint-as-a-mindset-7d42ad72113d).
+]
+---
+
+
+# Fontes abertas
+
+De acordo, com o protocolo de Berkeley&lt;sup&gt;1&lt;/sup&gt;: "Informações de fontes abertas não envolvem interação ou solicitação de informações de usuários individuais da Internet"
+
+Mas então o que envolvem?
+
+- **Observação**: informações acessíveis por qualquer pessoa, mesmo que tenha mecanismos de registro ou login. Dados que são passíveis de serem acessados apenas mediante brechas de segurança ou privacidade, em geral, não são considerados, tampouco aqueles que não são permitem atribuição e verificação e, portanto, não podem ser utilizadas como evidências.
+
+- **Compra**: é possível que as informações estejam à venda por serviços de terceiros. Desde que não incorra em nenhuma ilegalidade e que a compra seja disponibilizada a qualquer pessoa, em geral, estas informações são consideradas como "fontes abertas".
+
+- **Solicitações**: requerimentos legais, via Lei de Acesso à Informação, por exemplo, também são considerados. Solicitações feitas a pessoas físicas, por meio de fóruns, chat ou email, podem ou não serem consideradas como fontes abertas, a depender do contexto.
+
+.footnote[
+[1] [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
+]
+
+
+---
+
+# Casos de uso
+
+Alguns exemplos de aplicação de técnicas de OSINT no jornalismo:
+
+1. [A anatomia de uma execução](https://medium.com/dfrlab/facebook-removes-inauthentic-network-linked-to-bolsonaro-allies-5927b0ae750d);
+
+1. [Presidente da Comissão de Transporte da Assembleia do Rio é sócio de diretor da Fetranspor foragido](https://apublica.org/2017/07/presidente-da-comissao-de-transporte-da-assembleia-do-rio-e-socio-de-diretor-da-fetranspor-foragido/);
+
+1.  [O que se sabe sobre a atuação da Cambridge Analytica no Brasil](https://projetocolabora.com.br/ods8/o-que-se-sabe-sobre-a-atuacao-da-cambridge-analytica-no-brasil/);
+
+1. [Facebook removes inauthentic network linked to Bolsonaro allies](https://medium.com/dfrlab/facebook-removes-inauthentic-network-linked-to-bolsonaro-allies-5927b0ae750d);
+
+1. [Territórios de exceção](https://documental.xyz/intervencao)
+
+---
+# Etapas
+
+Em geral, o uso de técnicas de inteligência com fontes abertas envolve um ciclo contínuo de **etapas que se retroalimentam**. De forma resumida, são elas:
+
+- Planejamento e requisitos: consultas online e avaliação preliminar;
+
+- Coleta de informações: obtenção de dados e arquivamento;
+
+- Análise e processamento das informações: verificação da confiabilidade da fonte e interpretação dos dados;
+
+- Produção e disseminação de resultados: elaboração de relatórios ou reportagens com os resultados;
+
+---
+class: center
+
+![](pics/osint_cycle.png)
+.footnote[
+[1] [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
+]
+---
+
+# Técnicas utilizadas
+
+Existe uma enorme variedade de técnicas que podem ser utilizadas em pesquisas baseadas em técnicas de OSINT. 
+
+Abaixo, uma lista não exaustiva:
+
+
+.pull-left[
+- Busca avançada: *Google dorkings* e recursos avançados de buscados ou redes sociais;
+
+- Pesquisa em acervos públicos (bibliotecas, jornais antigos, cartórios, etc);
+
+- Buscas reversas de imagens;
+
+- Geolocalização e técnicas de análise forense de imagens (metadados, assinaturas visuais, etc);
+]
+
+.pull-right[
+- Uso de imagens de satélites;
+
+- Modelagem de cenas panorâmicas ou em 3d;
+
+- Raspagem, produção ou análise de dados;
+
+- Análise de redes;
+
+- Produção de cartografias;
+
+- Reconhecimento facial e visão computacional;
+]
+
+---
+
+# Princípios
+
+- **Segurança e proteção de dados**: tente sempre minimizar seus rastro digitais e buscar a garantia da integridade (por exemplo, uma foto não foi alterada), disponibilidade (um post não foi removido) e confidencialidade dos dados (as informações não serão acessadas por pessoas não autorizadas) em questão. Implemente mecanismos de segurança digital para garantir a proteção de suas informações por padrão.
+
+- **Transparência e *accountability* **: documente todas etapas do seu trabalho, mantendo um registro de suas atividades. Sua metodologia pode ser questionada ou você pode ter que prestar contas em um julgamento oficial. Além disso, ainda que o uso de identidades anônimas ou falsas (*sockpuppets* ou bonecos de meia) seja importante, é preciso evitar a deturpação ou apresentações falsas (*misrepresentation*), uma vez que isso pode prejudicar a investigação ou "contaminar" suas evidências;
+
+.footnote[
+[1] [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
+]
+---
+
+# Princípios
+
+- **Objetividade e acurácia**: esteja atento aos vieses que podem afetar sua investigação. Não só aqueles subjetivos, conscientes ou não, como também aqueles próprios da arquitetura da Internet. Por exemplo, a mesma consulta em um mecanismo de busca ou em redes sociais pode retornar resultados diferentes, a depender de fatores diversos, como a localidade, dispositivo, histórico do usuário, etc.
+
+- **Ética e legalidade**: esteja ciente das diretrizes legais de proteção de dados e privacidade. Mesmo que a informação esteja disponíveis ao públicos, isso não quer dizer que não existem considerações legais quanto ao seu armazenamento. Especialmente ao usar processos automatizados, evite coletar mais dados do que o necessário e, se assim o fizer, remova as informações que não são necessárias para sua investigação.
+
+.footnote[
+[1] [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
+]
+---
+
+# Preparando uma investigação
+
+Durante uma investigação, você provavelmente irá querer permanecer anônimo ou não deixar rastros que o vinculem 
+
+1. 
+
+---
+
+class: center, middle
+
+# Obrigado!
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+(function(time) {
+  var d2 = function(number) {
+    return ('0' + number).slice(-2); // left-pad 0 to minutes/seconds
+  },
+
+  time_format = function(total) {
+    var secs = Math.abs(total) / 1000;
+    var h = Math.floor(secs / 3600);
+    var m = Math.floor(secs % 3600 / 60);
+    var s = Math.round(secs % 60);
+    var res = d2(m) + ':' + d2(s);
+    if (h > 0) res = h + ':' + res;
+    return res;  // [hh:]mm:ss
+  },
+
+  slide_number_div = function(i) {
+    return document.getElementsByClassName('remark-slide-number').item(i);
+  },
+
+  current_page_number = function(i) {
+    return slide_number_div(i).firstChild.textContent;  // text "i / N"
+  };
+
+  var timer = document.createElement('span'); timer.id = 'slide-time-left';
+  var time_left = time, k = slideshow.getCurrentSlideIndex(),
+      last_page_number = current_page_number(k);
+
+  setInterval(function() {
+    time_left = time_left - 1000;
+    timer.innerHTML = ' ' + time_format(time_left);
+    if (time_left < 0) timer.style.color = 'red';
+  }, 1000);
+
+  slide_number_div(k).appendChild(timer);
+
+  slideshow.on('showSlide', function(slide) {
+    var i = slide.getSlideIndex(), n = current_page_number(i);
+    // reset timer when a new slide is shown and the page number is changed
+    if (last_page_number !== n) {
+      time_left = time; last_page_number = n;
+      timer.innerHTML = ' ' + time_format(time); timer.style.color = null;
+    }
+    slide_number_div(i).appendChild(timer);
+  });
+})(60000);
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
