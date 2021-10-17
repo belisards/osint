@@ -46,9 +46,17 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 ## Ferramentas selecionadas
 
+### Gerais
+
 [Maltego](https://www.maltego.com/)
 
+### Redes sociais
+
 [Twint](https://github.com/twintproject/twint)
+
+### Imagens
+
+[Photo-forensics](https://29a.ch/photo-forensics)
 
 
 ### Projetos e investigações
@@ -60,6 +68,7 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 * [Human Rights Data Analysis Group](https://hrdag.org/)
 
 * [Documental.xyz](https://documental.xyz/)
+
 
 ## Busca avançada na web
 
@@ -76,8 +85,6 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 ### Trigonometria, estimativas de distância e sombras do sol
 
 ## Imagens de satélite
-
-## Desafio prático de geolocalização
 
 # Proteção de dados e segurança digital
 
