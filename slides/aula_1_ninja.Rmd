@@ -1,0 +1,343 @@
+---
+title: "🔎 Dados invisíveis -  Open source intelligence"
+subtitle: "Introdução e recursos úteis"
+author: "Adriano Belisario - @belisards"
+institute: "MBA em Jornalismo de Dados/IDP"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      # countIncrementalSlides: false
+      #countdown: 60000
+---
+class: center, middle
+
+# Apresentações e materiais do curso:
+
+### github.com/belisards/osint
+
+Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
+
+---
+class: inverse, center, middle
+
+# Open Source Intelligence - OSINT
+
+![](pics/aula1/osint_meme.png)
+
+---
+# O que é?
+Open Source Intelligence (**inteligência com fontes abertas**) refere-se à coleta sistemática de informações e dados a partir de fontes abertas para fins investigativos ou de tomadas de decisões estratégicas. 
+
+Diversas áreas fazem uso das técnicas de OSINT atualmente, por exemplo:
+
+
+- Militar/estatal
+- Inteligência corporativa
+- Segurança da informação e cibersegurança
+- Pesquisadores independentes e jornalistas
+
+--
+
+## OSINT é um modo de pensar
+OSINT não é uma ferramenta, uma metodologia ou técnica. Existem várias destas. OSINT é sobretudo um modo de pensar ou uma forma de encarar uma investigação<sup>1</sup>.
+
+.footnote[
+[1] [OSINT Is A State Of Mind, por Dutch Osint Guy](https://medium.com/secjuice/osint-as-a-mindset-7d42ad72113d).
+]
+---
+
+# Fontes abertas
+
+De acordo, com o protocolo de Berkeley<sup>1</sup>: 
+
+"Informações de fontes abertas não envolvem interação ou solicitação de informações de usuários individuais da Internet"
+
+.footnote[
+[1] [Berkeley Protocol - United Nations Human Rights Office of the Comissioner and Human Rights Center of UC Berkeley School of Law](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
+]
+
+Mas então o que envolvem?
+
+---
+
+# Modos de obtenção
+
+- **Observação**: informações acessíveis por qualquer pessoa, mesmo que tenha mecanismos de registro ou login. Dados que são passíveis de serem acessados apenas mediante brechas de segurança ou privacidade, em geral, não são considerados, tampouco aqueles que não são permitem atribuição e verificação e, portanto, não podem ser utilizadas como evidências.
+
+- **Compra**: é possível que as informações estejam à venda por serviços de terceiros. Desde que não incorra em nenhuma ilegalidade e que a compra seja disponibilizada a qualquer pessoa, em geral, estas informações são consideradas como "fontes abertas".
+
+- **Solicitações**: requerimentos legais, via Lei de Acesso à Informação, por exemplo, também são considerados. Solicitações feitas a pessoas físicas, por meio de fóruns, chat ou email, podem ou não serem consideradas como fontes abertas, a depender do contexto.
+
+---
+
+# Técnicas utilizadas
+
+Existe uma enorme variedade de técnicas que podem ser utilizadas em pesquisas baseadas em técnicas de OSINT. 
+
+Abaixo, uma lista não exaustiva:
+
+
+.pull-left[
+- Busca avançada: *Google dorkings* e recursos avançados de buscados ou redes sociais;
+
+- Pesquisa em acervos públicos (bibliotecas, jornais antigos, cartórios, etc);
+
+- Buscas reversas de imagens;
+
+- Geolocalização e técnicas de análise forense de imagens (metadados, assinaturas visuais, etc);
+]
+
+.pull-right[
+- Uso de imagens de satélites;
+
+- Modelagem de cenas panorâmicas ou em 3d;
+
+- Raspagem, produção ou análise de dados;
+
+- Análise de redes;
+
+- Produção de cartografias;
+
+- Reconhecimento facial e visão computacional;
+]
+
+---
+
+# Princípios
+
+- **Segurança e proteção de dados**: tente sempre minimizar seus rastro digitais e buscar a garantia da integridade (por exemplo, uma foto não foi alterada), disponibilidade (um post não foi removido) e confidencialidade dos dados (as informações não serão acessadas por pessoas não autorizadas) em questão. Implemente mecanismos de segurança digital para garantir a proteção de suas informações por padrão.
+
+- **Transparência e *accountability* **: documente todas etapas do seu trabalho, mantendo um registro de suas atividades. Sua metodologia pode ser questionada ou você pode ter que prestar contas em um julgamento oficial. Além disso, ainda que o uso de identidades anônimas ou falsas seja importante, é preciso evitar a deturpação ou apresentações falsas (*misrepresentation*), uma vez que isso pode prejudicar a investigação ou "contaminar" suas evidências;
+
+.footnote[
+[1] [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
+]
+---
+
+# Princípios
+
+- **Objetividade e acurácia**: esteja atento aos vieses que podem afetar sua investigação. Não só aqueles subjetivos, conscientes ou não, como também aqueles próprios da arquitetura da Internet. Por exemplo, a mesma consulta em um mecanismo de busca ou em redes sociais pode retornar resultados diferentes, a depender de fatores diversos, como a localidade, dispositivo, histórico do usuário, etc.
+
+- **Ética e legalidade**: esteja ciente das diretrizes legais de proteção de dados e privacidade. Mesmo que a informação esteja disponíveis ao públicos, isso não quer dizer que não existem considerações legais quanto ao seu armazenamento. Especialmente ao usar processos automatizados, evite coletar mais dados do que o necessário e, se assim o fizer, remova as informações que não são necessárias para sua investigação.
+
+.footnote[
+[1] [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
+]
+---
+
+# Precauções para uma investigação
+
+A segurança é parte fundamental da preparação de uma investigação. Ainda que as preocupações possam variar de acordo o tipo e o alvo da investigação em questão (por ex, investigar crimes de órgãos de segurança do governo VS corporações estrangeiras), existem alguns padrões mínimos de segurança recomendados:
+
+1. **Tente se manter anônimo**: contas pessoais e profissionais não devem se misturar (use contas *sockpuppets*); não deixe rastros facilmente vinculados a sua pessoa (use VPN ou TOR); se possível, use sistemas operacionais menos sucetíveis a softwares maliciosos (GNU/Linux) e use hardwares diferentes para fins profissionais e pessoais (por exemplo, monitoramento de grupos de WhatsApp e Telegram);
+
+1. **Considere que você não é anônimo**: mesmo com estes cuidados, considere sempre a possibilidade de estar sendo monitorado ou de seus arquivos pararem na mão de terceiros (roubos, apreensões policiais, etc).
+
+---
+
+# Etapas
+
+Em geral, o uso de técnicas de inteligência com fontes abertas envolve um ciclo contínuo de **etapas que se retroalimentam**. De forma resumida, são elas:
+
+- Planejamento e requisitos: consultas online e avaliação preliminar;
+
+- Coleta de informações: obtenção de dados e arquivamento;
+
+- Análise e processamento das informações: verificação da confiabilidade da fonte e interpretação dos dados;
+
+- Produção e disseminação de resultados: elaboração de relatórios ou reportagens com os resultados;
+
+---
+class: center
+
+![](pics/aula1/osint_cycle.png)
+.footnote[
+[1] [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
+]
+
+---
+# Consultas online
+
+.pull-left[
+## Buscas
+
+- Identifique todos elementos conhecidos previamente;
+- Use diversos buscadores, redes sociais e bases de dados;
+- Não leia apenas a primeira página;
+- Use operações de busca avançada;
+- Faça uma lista de palavras-chave relevantes para o caso: nomes, localizações, organizações, datas, hashtags,etc;
+]
+
+.pull-right[
+## Monitoramento
+- Buscadores: configuração de alertas para termos específicos (ex: Google Alerta);
+- Redes sociais ou sites: alertas de postagens, TweetDeck, feeds RSS, etc
+- Sites: scripts para raspagem de dados, monitores de mudanças em websites, etc;
+]
+
+---
+# Coleta
+
+A forma de coletar e arquivar uma informação relevante varia de acordo com seu uso: por exemplo, é apenas para documentação interna ou será usada como elemento probatório? 
+
+De todo modo, quaisquer edição, mudança ou alteração do arquivo original deve ser feita separadamente (guarde sempre uma cópia do original) e documentada. 
+
+---
+
+# Registrando evidências na web
+
+Para recursos na web, a preservação dos seguintes elementos é considerado um padrão satisfatório mínimo:
+
+- **URL**: registre o endereço na web onde o recurso está localizado;
+- **Código-fonte da página**: guarde o código-fonte da página (Arquivo > Salvar). 
+- **Captura de tela completa**: faça uma captura de tela que indique o dia e hora da captura em questão de algum modo. Algumas extensões de navegador podem ser úteis (exemplo: [GoFullPage](https://gofullpage.com/) ou [Screencastfy](https://www.screencastify.com/))
+- **Arquivos de mídia**: se houver imagens, áudios ou vídeos relevantes, certifique-se que eles também foram armazenados separadamente;
+- **Metadados ou dados contextuais**: registre também outras informações relevantes, como metadados (identificador do usário, data e hora de upload, hasthags, comentários, etc) ou informações contextuais (exemplo, perfil de quem fez determinada postagem)
+
+Dados da coleta em si (IP, hora, etc) e hash (MD5, SHA1, etc) também podem ser utilizados em certos casos.
+
+---
+# Arquivamento
+
+Também é possível utilizar recursos online para fazer o arquivamento de evidências, como o site [Archive.is](https://archive.is).
+
+Além disso, para manusear evidências (digitais ou não), é fundamental manter uma cadeia de custódia.
+
+"Art. 158-A. Considera-se cadeia de custódia o conjunto de todos os procedimentos utilizados para manter e documentar a história cronológica do vestígio coletado em locais ou em vítimas de crimes, para rastrear sua posse e manuseio a partir de seu reconhecimento até o descarte."
+
+Outros requerimentos legais da cadeia de custódia no Brasil estão detalhados no [Código Penal](https://www.jusbrasil.com.br/topicos/250911206/artigo-158a-do-decreto-lei-n-3689-de-03-de-outubro-de-1941).
+
+---
+
+# Casos de uso
+
+Alguns exemplos de aplicação de técnicas de OSINT no jornalismo:
+
+1. [Territórios de exceção](https://documental.xyz/intervencao);
+
+1. [Presidente da Comissão de Transporte da Assembleia do Rio é sócio de diretor da Fetranspor foragido](https://apublica.org/2017/07/presidente-da-comissao-de-transporte-da-assembleia-do-rio-e-socio-de-diretor-da-fetranspor-foragido/);
+
+1. [Facebook removes inauthentic network linked to Bolsonaro allies](https://medium.com/dfrlab/facebook-removes-inauthentic-network-linked-to-bolsonaro-allies-5927b0ae750d);
+
+1. [A anatomia de uma execução](https://medium.com/dfrlab/facebook-removes-inauthentic-network-linked-to-bolsonaro-allies-5927b0ae750d);
+
+1.  [O que se sabe sobre a atuação da Cambridge Analytica no Brasil](https://projetocolabora.com.br/ods8/o-que-se-sabe-sobre-a-atuacao-da-cambridge-analytica-no-brasil/);
+
+---
+
+#  Iniciativas para acompanhar
+
+* [Bellingcat](https://www.bellingcat.com/)
+
+* [Forensic Architecure](https://forensic-architecture.org/)
+
+* [Human Rights Data Analysis Group](https://hrdag.org/)
+
+* [Documental.xyz](https://documental.xyz/)
+
+
+---
+
+# Anatomia de uma execução
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-eDG7S2EfAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+---
+
+# Geolocalização
+
+.pull-left[
+Tudo começou [com esta postagem no Twitter](https://twitter.com/bolsonarosp/status/1025718449425788929).
+
+- Onde ela foi tirada?
+
+- Quais elementos do post podem nos ajudar a identificar sua localização?
+
+- Como podemos obter a foto com melhor resolução?
+]
+
+.pull-right[
+```{r, echo=FALSE, out.width = "320px"}
+knitr::include_graphics("pics/aula1/post_bolsobannon.png")
+```
+]
+
+---
+class: center
+
+```{r, echo=FALSE, out.width = "90%"}
+knitr::include_graphics("pics/aula1/img_bolsobannon.jpg")
+```
+---
+class: center
+
+```{r, echo=FALSE, out.width = "90%"}
+knitr::include_graphics("pics/aula1/post_bolsobannon_detalhe.png")
+```
+
+---
+class: center
+
+```{r, echo=FALSE, out.width = "90%"}
+knitr::include_graphics("pics/aula1/post_bolsobannon_busca.png")
+```
+
+[Barbizon Hotel](https://earth.google.com/web/search/Barbizon+Hotel,+East+63rd+Street,+Nova+Iorque,+NY,+EUA/@40.7644486,-73.9662417,62.72036138a,776.95205282d,35y,0h,45t,0r/data=CqEBGncScQolMHg4OWMyNThlZjJmZjc5MDQ1OjB4ZGQ0NjM1OGJjYjJjNmMzYRn0cF2M3GFEQCF1N_S71X1SwCo2QmFyYml6b24gSG90ZWwsIEVhc3QgNjNyZCBTdHJlZXQsIE5vdmEgSW9ycXVlLCBOWSwgRVVBGAIgASImCiQJxBqE8CBiREARE5P09s1hREAZlP9A3tp9UsAhyuorYhR-UsAoAg)
+---
+class: center
+
+```{r, echo=FALSE, out.width = "65%"}
+knitr::include_graphics("pics/aula1/post_bolsobannon_compara.png")
+```
+---
+class: center
+
+```{r, echo=FALSE, out.width = "90%"}
+knitr::include_graphics("pics/aula1/post_bolsobannon_perspectiva.png")
+```
+---
+
+# Hotel Loews Regency
+
+.pull-left[
+```{r, echo=FALSE, out.width = "90%"}
+knitr::include_graphics("pics/aula1/post_bolsobannon_quarto.png")
+```
+
+[Vice: FBI raid of Trump lawyer Michael Cohen's room is just one of many scandals at the Regency Hotel](https://www.vice.com/en/article/vbxpb9/fbi-raid-of-trump-lawyer-michael-cohens-room-is-just-one-of-many-scandals-at-the-regency-hotel)
+]
+
+.pull-right[
+```{r, echo=FALSE, out.width = "320px"}
+knitr::include_graphics("pics/aula1/post_bolsobannon.png")
+```
+]
+
+
+---
+class: inverse, center, middle
+
+# Caixa de ferramentas
+
+---
+
+# Recursos relevantes
+
+- [Bellingcat toolkit](https://bit.ly/bcattools)
+- [OSINT Framework](https://osintframework.com/)
+- [OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca)
+- [Awesome OSINT](https://github.com/jivoi/awesome-osint)
+- [OSINT.sh](https://osint.sh)
+- [Mapas mentais de elementos de pesquisa](https://github.com/sinwindie/OSINT)
+
+---
+class: center, middle
+# Obrigado!

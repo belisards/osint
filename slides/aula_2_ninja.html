@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>🔎 Dados invisíveis - Open source intelligence</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Adriano Belisario - @belisards" />
+    <meta name="date" content="2021-10-17" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# 🔎 Dados invisíveis - Open source intelligence
+## Busca avançada na web
+### Adriano Belisario - <span class="citation">@belisards</span>
+### MBA em Jornalismo de Dados/IDP
+### 2021-10-17
+
+---
+
+class: center, middle
+
+# Apresentações e materiais do curso:
+
+### github.com/belisards/osint
+
+Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
+
+---
+# O que temos para hoje?
+
+- Buscadores na web
+- Busca reversa de imagem
+- Busca em redes sociais
+- Investigando sites
+
+---
+# Busca avançada no Google
+
+Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados]().
+
+- Aspas para expressões exatas;
+
+- Sinal de menos para excluir;
+
+- Asterisco é o coringa;
+
+- `Ferramentas &gt; Em qualquer data`: para delimitar um intervalo de tempo;
+
+--
+
+## Operadores booleanos
+- `AND`: para afunilar os termos de pesquisa. No Google, um espaço em branco equivale a um `AND`;
+
+- `OR` para colocar alternativas de termo;
+
+- Parênteses para isolar o termo;
+
+---
+
+## Exemplos
+`(ussr OR russia) AND (eua OR usa)`
+
+`prevenção -alcoolismo`
+
+---
+
+# Outros operadores 
+- `site:` restringir a busca a um determinado site ou domínio;
+- `filetype:` restringir a busca a um formato de arquivo;
+- `cache:` para pesquisar a versão arquivada de um site;
+- `intitle:` e `allintitle:` buscam apenas no título da página;
+- `..` (dois pontos) :cobrem um intervalo numérico
+- `before`: pesquisa antes de uma determinada data (YYYY-MM-DD)
+
+--
+
+## Exemplos
+
+`site:*.pmerj.rj.gov.br -www`
+
+`intitle:osint site:twitter.com/i/lists`
+
+`inflação 1990..2000`
+
+`inflação before:2010-01-01 site:folha.uol.com.br`
+
+`"secretaria * de saúde" site:gov.br filetype:xls`
+
+---
+class: inverse, center, middle
+
+# Busca na web ≠ Google 
+
+---
+
+# Outros buscadores
+
+- Duckduckgo: buscador com foco em privacidade;
+
+- Bing: buscador da Microsoft. Ao contrário do Google, leva em consideração relevância em redes sociais e não prioriza sites adaptados para dispositivos móveis;
+
+- Yandex: o principal buscador da Rússia;
+
+- Baidu: o principal buscador da China;
+ 
+- Carrot2: buscador que organiza os resultados em tópicos e
+
+- Internet Archive: o túnel do tempo da web;
+
+
+---
+# Busca reversa de imagens
+
+![](pics/aula2/img_busca_reversa.png)
+[A brief comparison of reverse image searching platforms]()
+
+---
+# Busca em redes sociais
+## Twitter
+
+- [Tweetdeck](https://tweetdeck.twitter.com/)
+
+---
+
+# Facebook
+
+- Seção de ["'"Transparência das páginas"](https://www.facebook.com/help/323314944866264)
+- [Who Posted What](https://www.whopostedwhat.com/)
+- [Graph.tips](https://graph.tips/beta/)
+- [Facebook Matrix](https://plessas.net/facebookmatrix)
+
+---
+
+# Investigação de sites
+
+- Who.is
+
+---
+
+class: center, middle
+# Obrigado!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

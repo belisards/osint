@@ -1,6 +1,6 @@
-# osint
+# OSINT
 
-# Introdução a Open Source Intelligence
+Repositórios de links, referências e materiais didáticos sobre OSINT - especialmente para jornalistas.
 
 ## Ferramentas e recursos
 
@@ -74,10 +74,6 @@
 ## Geolocalização
 
 ### Trigonometria, estimativas de distância e sombras do sol
-
-## Exercício
-
-
 
 ## Imagens de satélite
 
