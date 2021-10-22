@@ -44,21 +44,6 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [Digital investigations for journalists: How to follow the digital trail of people and entities](https://journalismcourses.org/pt-br/course/digitalinvestigations/)
 
-## Ferramentas selecionadas
-
-### Gerais
-
-[Maltego](https://www.maltego.com/)
-
-### Redes sociais
-
-[Twint](https://github.com/twintproject/twint)
-
-### Imagens
-
-[Photo-forensics](https://29a.ch/photo-forensics)
-
-
 ### Projetos e investigações
 
 * [Bellingcat](https://www.bellingcat.com/)
@@ -68,24 +53,4 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 * [Human Rights Data Analysis Group](https://hrdag.org/)
 
 * [Documental.xyz](https://documental.xyz/)
-
-
-## Busca avançada na web
-
-### Facebook
-
-[Facebook Matrix](https://plessas.net/facebookmatrix)
-
-# Terra à vista
-
-#  Geodados
-
-## Geolocalização
-
-### Trigonometria, estimativas de distância e sombras do sol
-
-## Imagens de satélite
-
-# Proteção de dados e segurança digital
-
 

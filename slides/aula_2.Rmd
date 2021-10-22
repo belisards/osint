@@ -32,7 +32,7 @@ Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
 ---
 # Busca avançada no Google
 
-Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados]().
+Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados](https://escoladedados.org/tutoriais/busca-avancada-na-internet/) ou esta [listagem de comandos](http://www.googleguide.com/advanced_operators_reference.html).
 
 - Aspas para expressões exatas;
 
@@ -114,11 +114,15 @@ class: inverse, center, middle
 # Outras ferramentas úteis
 
 - SunCalc: [.org](www.suncalc.org) e [.net](suncalc.net/) (desatualizado)
-- 
+- Para praticar: [foto de Brasília](https://www.flickr.com/photos/fcmont/14783157308)
 
 ---
 # Busca em redes sociais
-## Twitter
+
+- [Whats my name](https://whatsmyname.app/)
+
+---
+# Twitter
 - [Tweetdeck](https://tweetdeck.twitter.com/): monitoramento 
 
 ---

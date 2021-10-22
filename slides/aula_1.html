@@ -4,7 +4,7 @@
     <title>🔎 Dados invisíveis - Open source intelligence</title>
     <meta charset="utf-8" />
     <meta name="author" content="Adriano Belisario - @belisards" />
-    <meta name="date" content="2021-10-16" />
+    <meta name="date" content="2021-10-22" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
@@ -17,7 +17,7 @@ class: center, middle, inverse, title-slide
 ## Introdução e recursos úteis
 ### Adriano Belisario - <span class="citation">@belisards</span>
 ### MBA em Jornalismo de Dados/IDP
-### 2021-10-16
+### 2021-10-22
 
 ---
 
@@ -117,7 +117,7 @@ Abaixo, uma lista não exaustiva:
 
 # Princípios
 
-- **Segurança e proteção de dados**: tente sempre minimizar seus rastro digitais e buscar a garantia da integridade (por exemplo, uma foto não foi alterada), disponibilidade (um post não foi removido) e confidencialidade dos dados (as informações não serão acessadas por pessoas não autorizadas) em questão. Implemente mecanismos de segurança digital para garantir a proteção de suas informações por padrão.
+- **Segurança e proteção de dados**: tente sempre minimizar seus rastros digitais e buscar a garantia da integridade (por exemplo, não alterar os metadados de uma foto), disponibilidade (um post não foi removido) e confidencialidade dos dados (as informações não serão acessadas por pessoas não autorizadas) em questão. Implemente mecanismos de segurança digital para garantir a proteção de suas informações por padrão.
 
 - **Transparência e *accountability* **: documente todas etapas do seu trabalho, mantendo um registro de suas atividades. Sua metodologia pode ser questionada ou você pode ter que prestar contas em um julgamento oficial. Além disso, ainda que o uso de identidades anônimas ou falsas seja importante, é preciso evitar a deturpação ou apresentações falsas (*misrepresentation*), uma vez que isso pode prejudicar a investigação ou "contaminar" suas evidências;
 
@@ -151,13 +151,13 @@ A segurança é parte fundamental da preparação de uma investigação. Ainda q
 
 Em geral, o uso de técnicas de inteligência com fontes abertas envolve um ciclo contínuo de **etapas que se retroalimentam**. De forma resumida, são elas:
 
-- Planejamento e requisitos: consultas online e avaliação preliminar;
+- **Planejamento e requisitos**: consultas online e avaliação preliminar;
 
-- Coleta de informações: obtenção de dados e arquivamento;
+- **Coleta de informações**: obtenção de dados e arquivamento;
 
-- Análise e processamento das informações: verificação da confiabilidade da fonte e interpretação dos dados;
+- **Análise e processamento das informações**: verificação da confiabilidade da fonte e interpretação dos dados;
 
-- Produção e disseminação de resultados: elaboração de relatórios ou reportagens com os resultados;
+- **Produção e disseminação de resultados**: elaboração de relatórios ou reportagens com os resultados;
 
 ---
 class: center
@@ -202,16 +202,16 @@ Para recursos na web, a preservação dos seguintes elementos é considerado um 
 
 - **URL**: registre o endereço na web onde o recurso está localizado;
 - **Código-fonte da página**: guarde o código-fonte da página (Arquivo &gt; Salvar). 
-- **Captura de tela completa**: faça uma captura de tela que indique o dia e hora da captura em questão de algum modo. Algumas extensões de navegador podem ser úteis (exemplo: [GoFullPage](https://gofullpage.com/) ou [Screencastfy](https://www.screencastify.com/))
+- **Captura de tela completa**: faça uma captura de tela que indique o dia e hora de algum modo. Algumas extensões de navegador podem ser úteis (exemplo: [GoFullPage](https://gofullpage.com/) ou [Screencastfy](https://www.screencastify.com/))
 - **Arquivos de mídia**: se houver imagens, áudios ou vídeos relevantes, certifique-se que eles também foram armazenados separadamente;
-- **Metadados ou dados contextuais**: registre também outras informações relevantes, como metadados (identificador do usário, data e hora de upload, hasthags, comentários, etc) ou informações contextuais (exemplo, perfil de quem fez determinada postagem)
+- **Metadados ou dados contextuais**: registre também outras informações relevantes, como metadados (identificador do usário, data e hora de upload, hasthags, comentários, etc) ou informações contextuais (exemplo, perfil de quem fez determinada postagem);
 
 Dados da coleta em si (IP, hora, etc) e hash (MD5, SHA1, etc) também podem ser utilizados em certos casos.
 
 ---
 # Arquivamento
 
-Também é possível utilizar recursos online para fazer o arquivamento de evidências, como o site [Archive.is](https://archive.is).
+Também é possível utilizar recursos online para fazer o arquivamento de evidências.
 
 Além disso, para manusear evidências (digitais ou não), é fundamental manter uma cadeia de custódia.
 
@@ -234,6 +234,19 @@ Alguns exemplos de aplicação de técnicas de OSINT no jornalismo:
 1. [A anatomia de uma execução](https://medium.com/dfrlab/facebook-removes-inauthentic-network-linked-to-bolsonaro-allies-5927b0ae750d);
 
 1.  [O que se sabe sobre a atuação da Cambridge Analytica no Brasil](https://projetocolabora.com.br/ods8/o-que-se-sabe-sobre-a-atuacao-da-cambridge-analytica-no-brasil/);
+
+---
+
+#  Iniciativas para acompanhar
+
+* [Bellingcat](https://www.bellingcat.com/)
+
+* [Forensic Architecure](https://forensic-architecture.org/)
+
+* [Human Rights Data Analysis Group](https://hrdag.org/)
+
+* [Documental.xyz](https://documental.xyz/)
+
 
 ---
 
@@ -312,7 +325,31 @@ class: inverse, center, middle
 - [OSINT Framework](https://osintframework.com/)
 - [OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca)
 - [Awesome OSINT](https://github.com/jivoi/awesome-osint)
+- [OSINT.sh](https://osint.sh)
 - [Mapas mentais de elementos de pesquisa](https://github.com/sinwindie/OSINT)
+
+---
+
+# Algumas ferramentas de destaque
+
+## Arquivamento
+- [Web Archive](https://archive.org)
+
+- [Archive Today](https://archive.ph/)
+
+## Checagem
+- [InVid](https://www.invid-project.eu/)
+
+- Ferramentas EXIF e metados: exemplo, [Metapicz](http://metapicz.com/).
+
+---
+
+# Algumas ferramentas de destaque
+
+## Meios de transporte
+- [Flight Radar](https://www.flightradar24.com/): BuzzFeed utilizou este site para [descobrir aviões espiões do governo norte-americano](https://www.buzzfeednews.com/article/peteraldhous/hidden-spy-planes) e [detalhou a metodologia](https://buzzfeednews.github.io/2017-08-spy-plane-finder/). Por aqui, combina bem com a base de [Registros Aeronáuticos Brasileiros](https://www.gov.br/anac/pt-br/sistemas/rab) - [exemplo (um pouco antigo) de como ela se parece](https://docs.google.com/spreadsheets/d/1ITnZx9lp_AKTawwhEiiLsyYxqjKEOCWY6NJUZCUXFO0/edit#gid=1667009961).
+
+- [Marine Traffic](https://www.marinetraffic.com/)
 
 ---
 class: center, middle
