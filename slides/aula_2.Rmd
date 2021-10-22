@@ -65,7 +65,6 @@ Para uma lista completa dos operadores de busca avançado, confira este [tutoria
 - `filetype:` restringir a busca a um formato de arquivo;
 - `cache:` para pesquisar a versão arquivada de um site;
 - `intitle:` e `allintitle:` buscam apenas no título da página;
-- `..` (dois pontos) :cobrem um intervalo numérico
 - `before`: pesquisa antes de uma determinada data (YYYY-MM-DD)
 
 --
