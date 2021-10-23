@@ -1,4 +1,4 @@
-# OSINT
+# Inteligência com fontes abertas (OSINT) para jornalistas
 
 Repositórios de links, referências e materiais didáticos sobre OSINT - especialmente para jornalistas.
 
@@ -23,17 +23,17 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [sinwindie/OSINT](https://github.com/sinwindie/OSINT)
 
-### Podcasts
+## Podcasts
 
 [The Privacy, Security, and OSINT Show](https://inteltechniques.com/podcast.html)
 
-### Blogs e newsletters
+## Blogs e newsletters
 
 [Investigadora](https://investigadora.substack.com/)
 
 [Tech Journalism](https://techjournalism.medium.com/)
 
-### Leituras
+## Leituras
 
 [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
 
@@ -41,13 +41,13 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [Opensourceintelligence.biz - Bibliografias](http://bib.opensourceintelligence.biz/)
 
-### Filmes e curtas
+## Filmes e curtas
 
 [Don't F**k With Cats](https://www.netflix.com/br/title/81031373)
 
 [Anatomy of a killing](https://www.youtube.com/watch?v=4G9S-eoLgX4)
 
-### Workshops e aulas
+## Workshops e aulas
 
 [Técnicas de investigações digitais com fontes abertas (OSINT) com Bellingcat](https://www.youtube.com/watch?v=JoXvnc-gDD0)
 
@@ -55,7 +55,7 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [MOOC - Digital investigations for journalists: How to follow the digital trail of people and entities](https://journalismcourses.org/pt-br/course/digitalinvestigations/)
 
-### Projetos e investigações
+## Projetos e investigações
 
 * [Bellingcat](https://www.bellingcat.com/)
 
