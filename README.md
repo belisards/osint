@@ -2,7 +2,14 @@
 
 Repositórios de links, referências e materiais didáticos sobre OSINT - especialmente para jornalistas.
 
-## Ferramentas e recursos
+## Slide das aulas no MBA de Jornalismo de Dados (IDP)
+
+- [Introdução e caixa de ferramentas](https://belisards.github.io/osint/slides/aula_1.html)
+
+- [Busca avançada e geolocalização](https://belisards.github.io/osint/slides/aula_2.html)
+
+
+## Caixas de ferramentas
 
 [Bellingcat toolkit](https://bit.ly/bcattools)
 
@@ -34,15 +41,19 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [Opensourceintelligence.biz - Bibliografias](http://bib.opensourceintelligence.biz/)
 
-### Vídeos
+### Filmes e curtas
+
+[Don't F**k With Cats](https://www.netflix.com/br/title/81031373)
+
+[Anatomy of a killing](https://www.youtube.com/watch?v=4G9S-eoLgX4)
+
+### Workshops e aulas
 
 [Técnicas de investigações digitais com fontes abertas (OSINT) com Bellingcat](https://www.youtube.com/watch?v=JoXvnc-gDD0)
 
 [Coda.Br 2020 - Investigação online com fontes abertas, com Eliot Higgns (Bellingcat)](https://www.youtube.com/watch?v=dtXRUXzfLcU&t=0s)
 
-[Don't F**k With Cats](https://www.netflix.com/br/title/81031373)
-
-[Digital investigations for journalists: How to follow the digital trail of people and entities](https://journalismcourses.org/pt-br/course/digitalinvestigations/)
+[MOOC - Digital investigations for journalists: How to follow the digital trail of people and entities](https://journalismcourses.org/pt-br/course/digitalinvestigations/)
 
 ### Projetos e investigações
 

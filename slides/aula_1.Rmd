@@ -17,7 +17,7 @@ class: center, middle
 
 # Apresentações e materiais do curso:
 
-### github.com/belisards/osint
+### [belisards.github.io/osint](https://belisards.github.io/osint/)
 
 Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
 

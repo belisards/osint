@@ -17,7 +17,7 @@ class: center, middle
 
 # Apresentações e materiais do curso:
 
-### github.com/belisards/osint
+### [belisards.github.io/osint](https://belisards.github.io/osint/)
 
 Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
 
@@ -34,40 +34,81 @@ Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
 
 Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados](https://escoladedados.org/tutoriais/busca-avancada-na-internet/) ou esta [listagem de comandos](http://www.googleguide.com/advanced_operators_reference.html).
 
-- Aspas para expressões exatas;
+Considere a busca abaixo:
 
-- Sinal de menos para excluir;
+`botafogo campeão`
 
-- Asterisco é o coringa;
-
-- `Ferramentas > Em qualquer data`: para delimitar um intervalo de tempo;
+### O que ela retorna?
 
 --
 
+Páginas com o termo `botafogo` e o termo `campeão`.
+
+É o mesmo que `botafogo AND campeão`.
+
+---
+# Operadores de busca
+
+Atenção para os espaços extras. Eles podem arruinar sua busca.
+
+- Aspas para expressões exatas ou para forçar a busca por uma palavra tal que ela aparece;
+
+- Sinal de menos para excluir;
+
+- Asterisco representa uma ou mais palavras;
+
+- `Ferramentas > Em qualquer data`: para delimitar um intervalo de tempo;
+
+---
 ## Operadores booleanos
+
 - `AND`: para afunilar os termos de pesquisa. No Google, um espaço em branco equivale a um `AND`;
 
-- `OR` para colocar alternativas de termo;
+- `OR` ou barra em pé (`|`) para colocar alternativas de termo;
 
 - Parênteses para isolar o termo;
 
----
+--
 
-## Exemplos
-`(ussr OR russia) AND (eua OR usa)`
+### Pergunta
 
-`prevenção -alcoolismo`
+Qual a diferença entre as duas buscas abaixo:
+
+- `botafogo flamengo` 
+
+- `botafogo | flamengo` 
 
 ---
 
 # Outros operadores 
-- `site:` restringir a busca a um determinado site ou domínio;
-- `filetype:` restringir a busca a um formato de arquivo;
-- `cache:` para pesquisar a versão arquivada de um site;
-- `intitle:` e `allintitle:` buscam apenas no título da página;
-- `before`: pesquisa antes de uma determinada data (YYYY-MM-DD)
 
---
+- `site:` restringir a busca a um determinado site ou domínio;
+
+- `filetype:` restringir a busca a um formato de arquivo;
+
+- `cache:` para pesquisar a versão arquivada de um site;
+
+- `before:` pesquisa antes de uma determinada data (YYYY-MM-DD);
+
+- `link:` páginas que possuem link para um endereço;
+
+- `related:` sites relacionados a um endereço;
+
+---
+
+# Os operadores "in"
+
+- `inanchor`: textos como âncora de links
+
+- `intext`: no texto (corpo) do dodcumento;
+
+- `inurl:` na URL do documento;
+
+- `intitle:` e `allintitle:` buscam apenas no título da página. Colocar `intitle:` na frente de cada termo é o mesmo de usar `allintitle:` seguido de todos os termos ;
+
+Dica: tal como no exemplo anterior, todos esta classe de operadores aceita o `all` antes.
+
+---
 
 ## Exemplos
 
@@ -75,11 +116,19 @@ Para uma lista completa dos operadores de busca avançado, confira este [tutoria
 
 `intitle:osint site:twitter.com/i/lists`
 
-`inflação 1990..2000`
+`dilma 1980..2000`
 
 `inflação before:2010-01-01 site:folha.uol.com.br`
 
 `"secretaria * de saúde" site:gov.br filetype:xls`
+
+`link:escoladedados.org -site:escoladedados.org`
+
+`related:escoladedados.org`
+
+`(ussr OR russia) AND (eua OR usa)`
+
+`prevenção -alcoolismo`
 
 ---
 class: inverse, center, middle
@@ -104,41 +153,97 @@ class: inverse, center, middle
 
 - [Wolfram Alpha](wolframalpha.com): um buscador inteligente;
 
----
-# Busca reversa de imagens
+- [Whats my name](https://whatsmyname.app/): pesquisa nomes de usuário em diversas plataformas;
 
-![](pics/aula2/img_busca_reversa.png)
-[A comparison of reverse image searching platforms](https://www.domaintools.com/resources/blog/a-brief-comparison-of-reverse-image-searching-platforms)
 
 ---
-# Outras ferramentas úteis
 
-- SunCalc: [.org](www.suncalc.org) e [.net](suncalc.net/) (desatualizado)
-- Para praticar: [foto de Brasília](https://www.flickr.com/photos/fcmont/14783157308)
-
----
-# Busca em redes sociais
-
-- [Whats my name](https://whatsmyname.app/)
-
----
 # Twitter
-- [Tweetdeck](https://tweetdeck.twitter.com/): monitoramento 
+
+- [Busca avançada](https://twitter.com/search-advanced?lang=pt): o mecanismo nativo da plataforma é decente;
+
+- [Tweetdeck](https://tweetdeck.twitter.com/): útil para monitoramento e para buscas geolocalizadas. O [Onemilliontweetmap](https://onemilliontweetmap.com/) permite a visualização em forma de mapa:
+
+## Operadores
+
+Muitos dos operadores de busca vistos no Google funcionam aqui também, além de outros mais: 
+
+- `OR` para buscar um termo ou outro;
+
+- `-` para exclusão;
+
+- `from:` e `to:`
+
+- Filtros por engajamento: `min_retweets:`; `min_replies:` e `min_faves:`
+
+- Recortes temporais: `until:` e  `since:` 
+
+---
+# Exemplos
+
+- `(lula OR dilma) (from:jairbolsonaro)`
+
+- `brasília -deputado (#BolsonaroPresidente)`
+
+- `(corrupção OR rachadinha) (@jairbolsonaro)`
+
+- `bolsonaro facada until:2018-09-05`
 
 ---
 
 # Facebook
 
-- Seção de ["'"Transparência das páginas"](https://www.facebook.com/help/323314944866264)
+- Seção de ["Transparência das páginas"](https://www.facebook.com/help/323314944866264)
+
+- [LookUp ID](https://lookup-id.com/#)
+
 - [Who Posted What](https://www.whopostedwhat.com/)
+
 - [Graph.tips](https://graph.tips/beta/)
+
 - [Facebook Matrix](https://plessas.net/facebookmatrix)
 
 ---
 
 # Investigação de sites
 
-- [Who.is](https://who.is)
+## Domínios
+
+- Serviços de "Who Is": [Who.is](https://who.is) ou [Whoxy](https://www.whoxy.com/) para buscas históricas;
+
+- [Whois - Registro.Br](https://registro.br/tecnologia/ferramentas/whois/)
+
+- [Buscador de subdomínios](https://spyse.com/tools/subdomain-finder)
+
+## Monitoramento de mudanças
+
+- [VisualPing](https://visualping.io/)
+
+- [FollowThaPage!](https://www.followthatpage.com/)
+
+---
+
+# Busca reversa de imagens
+
+![](pics/aula2/img_busca_reversa.png)
+[A comparison of reverse image searching platforms](https://www.domaintools.com/resources/blog/a-brief-comparison-of-reverse-image-searching-platforms)
+
+---
+# Geolocalização
+
+- [Google Earth](https://earth.google.com/)
+
+- [Google Maps/StreetView](https://maps.google.com)
+
+- SunCalc: [.org](www.suncalc.org) e [.net](suncalc.net/) (parece desatualizado)
+
+--
+
+### Para praticar
+
+1. Em qual horário esta [foto de Brasília](https://www.flickr.com/photos/fcmont/14783157308) foi tirada?
+
+1. Competição no [Geoguessr](https://www.geoguessr.com/): [envie sua pontuação](https://docs.google.com/forms/d/e/1FAIpQLScvr8rEajtFkLjV3EGfMbB_arJ9o3lWLjts4o2FEm6WaDWb0g/viewform)!
 
 ---
 
