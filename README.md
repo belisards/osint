@@ -8,7 +8,6 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 - [Busca avançada e geolocalização](https://belisards.github.io/osint/slides/aula_2.html)
 
-
 ## Caixas de ferramentas
 
 [Bellingcat toolkit](https://bit.ly/bcattools)
@@ -29,23 +28,27 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 ## Blogs e newsletters
 
+[De olho nos dados](https://deolhonosdados.substack.com/about)
+
 [Investigadora](https://investigadora.substack.com/)
 
 [Tech Journalism](https://techjournalism.medium.com/)
 
-## Leituras
+## Bibliografia
 
 [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
 
-[A Brief History of Open Source Intelligence, por Cameron Colquhoun.](https://www.bellingcat.com/resources/articles/2016/07/14/a-brief-history-of-open-source-intelligence)
+[A Brief History of Open Source Intelligence, por Cameron Colquhoun](https://www.bellingcat.com/resources/articles/2016/07/14/a-brief-history-of-open-source-intelligence)
 
 [Opensourceintelligence.biz - Bibliografias](http://bib.opensourceintelligence.biz/)
 
-## Filmes e curtas
+## Vídeos
 
 [Don't F**k With Cats](https://www.netflix.com/br/title/81031373)
 
 [Anatomy of a killing](https://www.youtube.com/watch?v=4G9S-eoLgX4)
+
+[Mapping the Las Vegas Massacre](https://www.youtube.com/watch?v=krr4u6uGdzc)
 
 ## Workshops e aulas
 
@@ -65,3 +68,4 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 * [Documental.xyz](https://documental.xyz/)
 
+* [Investigações visuais do NY Times](https://www.nytimes.com/spotlight/visual-investigations)
