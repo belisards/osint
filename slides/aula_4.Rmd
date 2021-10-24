@@ -1,0 +1,49 @@
+---
+title: "🔎 Dados invisíveis -  Open source intelligence"
+subtitle: "Busca avançada na web"
+author: "Adriano Belisario - @belisards"
+institute: "MBA em Jornalismo de Dados/IDP"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      # countIncrementalSlides: false
+      #countdown: 60000
+---
+class: center, middle
+
+# Apresentações e materiais do curso:
+
+### [belisards.github.io/osint](https://belisards.github.io/osint/)
+
+Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
+
+---
+# O que temos para hoje?
+
+
+---
+
+# Investigação de sites
+
+## Domínios
+
+- Serviços de "Who Is": [Who.is](https://who.is) ou [Whoxy](https://www.whoxy.com/) para buscas históricas;
+
+- [Whois - Registro.Br](https://registro.br/tecnologia/ferramentas/whois/)
+
+- [Buscador de subdomínios](https://spyse.com/tools/subdomain-finder)
+
+## Monitoramento de mudanças
+
+- [VisualPing](https://visualping.io/)
+
+- [FollowThaPage!](https://www.followthatpage.com/)
+
+---
+
+class: center, middle
+# Obrigado!

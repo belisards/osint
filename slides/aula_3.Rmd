@@ -1,0 +1,47 @@
+---
+title: "🔎 Dados invisíveis -  Open source intelligence"
+subtitle: "Busca avançada na web"
+author: "Adriano Belisario - @belisards"
+institute: "MBA em Jornalismo de Dados/IDP"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      # countIncrementalSlides: false
+      #countdown: 60000
+---
+class: center, middle
+
+# Apresentações e materiais do curso:
+
+### [belisards.github.io/osint](https://belisards.github.io/osint/)
+
+Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
+
+---
+# O que temos para hoje?
+
+---
+# Geolocalização
+
+- [Google Earth](https://earth.google.com/)
+
+- [Google Maps/StreetView](https://maps.google.com)
+
+- SunCalc: [.org](www.suncalc.org) e [.net](suncalc.net/) (parece desatualizado)
+
+--
+
+### Para praticar
+
+1. Em qual horário esta [foto de Brasília](https://www.flickr.com/photos/fcmont/14783157308) foi tirada?
+
+1. Competição no [Geoguessr](https://www.geoguessr.com/): [envie sua pontuação](https://docs.google.com/forms/d/e/1FAIpQLScvr8rEajtFkLjV3EGfMbB_arJ9o3lWLjts4o2FEm6WaDWb0g/viewform)!
+
+---
+
+class: center, middle
+# Obrigado!

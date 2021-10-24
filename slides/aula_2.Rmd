@@ -32,7 +32,7 @@ Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
 ---
 # Busca avançada no Google
 
-Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados](https://escoladedados.org/tutoriais/busca-avancada-na-internet/) ou esta [listagem de comandos](http://www.googleguide.com/advanced_operators_reference.html).
+Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados](https://escoladedados.org/tutoriais/operadores-de-busca-avancada/) ou esta [listagem de comandos](http://www.googleguide.com/advanced_operators_reference.html).
 
 Considere a busca abaixo:
 
@@ -60,6 +60,7 @@ Atenção para os espaços extras. Eles podem arruinar sua busca.
 - `Ferramentas > Em qualquer data`: para delimitar um intervalo de tempo;
 
 ---
+
 ## Operadores booleanos
 
 - `AND`: para afunilar os termos de pesquisa. No Google, um espaço em branco equivale a um `AND`;
@@ -69,7 +70,6 @@ Atenção para os espaços extras. Eles podem arruinar sua busca.
 - Parênteses para isolar o termo;
 
 --
-
 ### Pergunta
 
 Qual a diferença entre as duas buscas abaixo:
@@ -203,23 +203,6 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 
 - [Facebook Matrix](https://plessas.net/facebookmatrix)
 
----
-
-# Investigação de sites
-
-## Domínios
-
-- Serviços de "Who Is": [Who.is](https://who.is) ou [Whoxy](https://www.whoxy.com/) para buscas históricas;
-
-- [Whois - Registro.Br](https://registro.br/tecnologia/ferramentas/whois/)
-
-- [Buscador de subdomínios](https://spyse.com/tools/subdomain-finder)
-
-## Monitoramento de mudanças
-
-- [VisualPing](https://visualping.io/)
-
-- [FollowThaPage!](https://www.followthatpage.com/)
 
 ---
 
@@ -227,23 +210,6 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 
 ![](pics/aula2/img_busca_reversa.png)
 [A comparison of reverse image searching platforms](https://www.domaintools.com/resources/blog/a-brief-comparison-of-reverse-image-searching-platforms)
-
----
-# Geolocalização
-
-- [Google Earth](https://earth.google.com/)
-
-- [Google Maps/StreetView](https://maps.google.com)
-
-- SunCalc: [.org](www.suncalc.org) e [.net](suncalc.net/) (parece desatualizado)
-
---
-
-### Para praticar
-
-1. Em qual horário esta [foto de Brasília](https://www.flickr.com/photos/fcmont/14783157308) foi tirada?
-
-1. Competição no [Geoguessr](https://www.geoguessr.com/): [envie sua pontuação](https://docs.google.com/forms/d/e/1FAIpQLScvr8rEajtFkLjV3EGfMbB_arJ9o3lWLjts4o2FEm6WaDWb0g/viewform)!
 
 ---
 
