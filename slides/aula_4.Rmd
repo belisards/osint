@@ -27,6 +27,11 @@ Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
 
 ---
 
+# Ferramentas avançadas
+
+- [SpiderFoot](https://spiderfoot.net)
+
+---
 # Investigação de sites
 
 ## Domínios

@@ -2,7 +2,7 @@
 
 Repositórios de links, referências e materiais didáticos sobre OSINT - especialmente para jornalistas.
 
-## Slide das aulas no MBA de Jornalismo de Dados (IDP)
+## Slide das aulas no MBA de Jornalismo de Dados (IDP) em 2021.2
 
 - [Introdução e caixa de ferramentas](https://belisards.github.io/osint/slides/aula_1.html)
 
@@ -14,11 +14,13 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [Awesome OSINT](https://github.com/jivoi/awesome-osint)
 
-[OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca)
-
 [OSINT Framework](https://osintframework.com/)
 
+[OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca)
+
 [OSINT Essentials](https://www.osintessentials.com/)
+
+[Aware online](https://www.aware-online.com/en/osint-tools/instagram-tools/)
 
 [sinwindie/OSINT](https://github.com/sinwindie/OSINT)
 
@@ -26,13 +28,21 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [The Privacy, Security, and OSINT Show](https://inteltechniques.com/podcast.html)
 
-## Blogs e newsletters
+[Hacking humans](https://thecyberwire.com/podcasts/hacking-humans)
+
+## Para se manter informado
 
 [De olho nos dados](https://deolhonosdados.substack.com/about)
 
 [Investigadora](https://investigadora.substack.com/)
 
 [Tech Journalism](https://techjournalism.medium.com/)
+
+[OS2INT](https://os2int.com)
+
+[OSINT Curious](https://osintcurio.us/)
+
+[OSINT.team](https://osint.team)
 
 ## Bibliografia
 
