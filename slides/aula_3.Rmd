@@ -31,7 +31,7 @@ Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
 ---
 class: inverse, center, middle
 
-# Imagens de satélite
+# Imagens de satélite e mapas
 
 ---
 
@@ -63,7 +63,7 @@ As principais fornecedoras comerciais são:
 ---
 class: inverse, center, middle
 
-# "We do **not yet** live in an era of ubiquitous, affordable, high resolution optical satellite  imagery"
+# "Ainda não vivemos em uma era de imagens de satélite de alta resolução ubíquas e acessíveis"
 
 .footnote[[How to find the latest satellite imagery in 2021](https://www.azavea.com/reports/how-to-find-the-latest-satellite-imagery-in-2021/).
 ]
@@ -82,7 +82,7 @@ As principais soluções são:
 
 Todas estão disponíveis para download em serviços da Amazon ([Earth on AWS](https://aws.amazon.com/pt/earth/)) ou do Google ([Earth Engine Catalog](https://developers.google.com/earth-engine/datasets/catalog/)).
 
-Porém, você deve encontrar imagens em uma resolução pior do que está acostumado e são arquivos enormes.
+Porém, você deve encontrar imagens em uma resolução pior do que está acostumado - e são arquivos enormes.
 
 .footnote[Fonte: [How to find the latest satellite imagery in 2021](https://www.azavea.com/reports/how-to-find-the-latest-satellite-imagery-in-2021/).
 ]
@@ -128,6 +128,12 @@ Veja [todas as soluções para dados geográficos](https://www.google.com/intl/p
 - [DescaterLab](https://search.descarteslabs.com): "busca reversa" em imagens de satélites;
 
 ---
+class: inverse, center, middle
+
+# Vamos praticar!
+
+---
+
 
 # Foto de 17/08/2014. Descubra o horário.
 
