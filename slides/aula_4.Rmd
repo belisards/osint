@@ -116,7 +116,7 @@ Algumas ferramentas mais avançadas para quem quiser ir além.
 ---
 class: center, inverse, middle
 
-# Segurança digital
+# Noções de segurança digital
 
 ---
 class:center
@@ -133,8 +133,7 @@ Verifique se você já foi vítima de vazamentos: [https://monitor.firefox.com/]
 
 Faça uma auto-busca (ego search) para identificar informações pessoais suas que estão expostas, buscar removê-las se possível ou ainda se prevenir de possíveis utilizações maliciosas. 
 
-
-Você pode buscar coisas como: nome completo, CPF, telefone, endereço, email, usuário
+Você pode buscar coisas como: nome completo, CPF, telefone, endereço, email, usuário, etc.
 
 ## Exponha-se menos
 
@@ -169,10 +168,9 @@ class: center, inverse, middle
 ---
 # Use um gerenciador de senhas
 
-É sério! Use um gerenciador de senhas. 
+É sério! Use um gerenciador de senhas. Por quê?
 
-Existem chances razoáveis de que você use uma senha fraca (vide [HaveIBeenPwned](https://haveibeenpwned.com/Passwords) ou [Bitwarden](https://bitwarden.com/password-strength/))
-Por quê?
+Existem chances razoáveis de que você use uma senha fraca (vide [HaveIBeenPwned](https://haveibeenpwned.com/Passwords) ou [Bitwarden](https://bitwarden.com/password-strength/)). Além disso..
 
 - Você não precisa decorar várias senhas, apenas uma;
 

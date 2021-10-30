@@ -151,8 +151,7 @@ class: inverse, center, middle
 
 Vamos fazer um round no [Geoguessr](https://www.geoguessr.com/).
 
-Depois, tire um print e [envie sua pontuação](https://docs.google.com/forms/d/e/1FAIpQLScvr8rEajtFkLjV3EGfMbB_arJ9o3lWLjts4o2FEm6WaDWb0g/viewform)!
-
+Depois, compartilhe sua pontuação!
 
 ---
 
