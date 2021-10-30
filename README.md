@@ -44,6 +44,8 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [OSINT.team](https://osint.team)
 
+[Exposing the invisible](https://kit.exposingtheinvisible.org/en/)
+
 ## Bibliografia
 
 [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
