@@ -6,7 +6,11 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 - [Introdução e caixa de ferramentas](https://belisards.github.io/osint/slides/aula_1.html)
 
-- [Busca avançada e geolocalização](https://belisards.github.io/osint/slides/aula_2.html)
+- [Busca avançada na web](https://belisards.github.io/osint/slides/aula_2.html)
+
+- [Imagens de satélite e geolocalização](https://belisards.github.io/osint/slides/aula_3.html)
+
+- [Investigando sites e noções de segurança digital](https://belisards.github.io/osint/slides/aula_3.html)
 
 ## Caixas de ferramentas
 

@@ -1,6 +1,6 @@
 ---
 title: "🔎 Dados invisíveis -  Open source intelligence"
-subtitle: "Investigando sites e segurança digital"
+subtitle: "Investigando sites e noções de segurança digital"
 author: "Adriano Belisario - @belisards"
 institute: "MBA em Jornalismo de Dados/IDP"
 date: "`r Sys.Date()`"
@@ -221,7 +221,10 @@ knitr::include_graphics("pics/aula4/2fa-geral.png")
 
 - [Autodefesa contra vigilância](https://ssd.eff.org/pt-br): guia da EEF;
 
+- [Guia de autodefesa](https://guia.autodefesa.org/);
+
 - [Veracrypt](https://www.veracrypt.fr/en/Home.html): para criptografia de disco;
+
 
 
 ---
