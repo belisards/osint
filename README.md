@@ -10,7 +10,7 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 - [Imagens de satélite e geolocalização](https://belisards.github.io/osint/slides/aula_3.html)
 
-- [Investigando sites e noções de segurança digital](https://belisards.github.io/osint/slides/aula_3.html)
+- [Investigando sites e noções de segurança digital](https://belisards.github.io/osint/slides/aula_4.html)
 
 ## Caixas de ferramentas
 

@@ -1,6 +1,6 @@
 ---
 title: "🔎 Dados invisíveis -  Open source intelligence"
-subtitle: "Terra à vista: imagens de satélite e geolocalização"
+subtitle: "Imagens de satélite e geolocalização"
 author: "Adriano Belisario - @belisards"
 institute: "MBA em Jornalismo de Dados/IDP"
 date: "`r Sys.Date()`"
