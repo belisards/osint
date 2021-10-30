@@ -24,10 +24,12 @@ Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
 ---
 # O que temos para hoje?
 
-- Acessando mapas e imagens de satélites;
+- Imagens de satélites: alternativas pagas e gratuitas;
 
-- Recursos e práticas para geolocalizar fotos;
+- Acessando mapas online e outras ferramentas geo;
 
+- Recursos e práticas para geolocalizar fotos e vídeos;
+ 
 ---
 class: inverse, center, middle
 

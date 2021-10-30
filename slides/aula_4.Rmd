@@ -86,7 +86,7 @@ Você pode usar operadores de busca para pesquisar coisas interessantes em sites
 
 ## Outras ferramentas úteis
 
-- [Spyse - Subdomain finder](https://spyse.com/tools/subdomain-finder): busca subdomínios;
+- [Spyse/Subdomain finder](https://spyse.com/tools/subdomain-finder): busca subdomínios;
 
 - [Visual site mapper](http://visualsitemapper.com/): visualização das páginas de um site em grafo;
 
@@ -96,7 +96,7 @@ Você pode usar operadores de busca para pesquisar coisas interessantes em sites
 
 - [VisualPing](https://visualping.io/)
 
-- [FollowThaPage!](https://www.followthatpage.com/)
+- [FollowThatPage!](https://www.followthatpage.com/)
 
 
 ---
