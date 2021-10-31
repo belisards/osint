@@ -70,7 +70,7 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [Tracelabs](https://www.tracelabs.org/get-involved): canal do Discord do Tracelabs. 
 
-[Project Owl](https://discord.com/invite/projectowl): 
+[Project Owl](https://discord.com/invite/projectowl): hub da comunidade de OSINT ([@projectowlosint](https://twitter.com/projectowlosint)).
 
 ## Podcasts
 
