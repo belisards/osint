@@ -14,74 +14,98 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 ## Caixas de ferramentas
 
-[Bellingcat toolkit](https://bit.ly/bcattools)
+[Bellingcat toolkit](https://bit.ly/bcattools): planilha com a caixa de ferramentas do [Bellingcat](https://www.bellingcat.com/), organizadas por temas, comentadas e regularmente atualizadas. Inclui serviços de satélite e mapeamento, ferramentas para verificar fotos e vídeos, sites para arquivar páginas da web e mais. 
 
-[Awesome OSINT](https://github.com/jivoi/awesome-osint)
+[OSINT Framework](https://osintframework.com/): site e repositório colaborativo de ferramentas para trabalhar com OSINT. Organizado por tipo de informação.
 
-[OSINT Framework](https://osintframework.com/)
+[Awesome OSINT](https://github.com/jivoi/awesome-osint): repositório no Github com uma escolha curatorial de ferramentas.
 
-[OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca)
+[OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca): repositório no Github com recursos voltados à prática de OSINT no Brasil.
 
-[OSINT Essentials](https://www.osintessentials.com/)
+[OSINT Essentials](https://www.osintessentials.com/): lista mais focada em ferramentas e serviços para verificação.
 
-[Aware online](https://www.aware-online.com/en/osint-tools/instagram-tools/)
+[Aware online](https://www.aware-online.com/en/osint-tools/): seleção de ferramentas, organizada por tipo de serviço e informação.
 
-[sinwindie/OSINT](https://github.com/sinwindie/OSINT)
+[sinwindie/OSINT](https://github.com/sinwindie/OSINT): mapeamento das "superfícies de ataque" ou busca em diferentes plataforma.
 
-## Podcasts
+[OSINT Tools](https://start.me/p/7kxyy2/osint-tools-curated-by-lorand-bodo): página inicial com diversas ferramentas, bases de dados e tutoriais sobre OSINT, organizada por categorias.
 
-[The Privacy, Security, and OSINT Show](https://inteltechniques.com/podcast.html)
-
-[Hacking humans](https://thecyberwire.com/podcasts/hacking-humans)
+[Resource Links from Open-Source Intelligence Summit 2021](https://www.sans.org/blog/list-of-resource-links-from-open-source-intelligence-summit-2021/): diversos links de ferramentas, grupos, fontes de informação, bases e outros materiais sobre OSINT, compilada por participantes da 2021 Open-Source Intelligence Summit.
 
 ## Para se manter informado
 
-[De olho nos dados](https://deolhonosdados.substack.com/about)
+[Tech Journalism](https://techjournalism.medium.com/): blog no Medium sobre OSINT, dados, imagens de satélite e mais.
 
-[Investigadora](https://investigadora.substack.com/)
+[OS2INT Toolbox](https://os2int.com/toolbox/): posts e tutoriais sobre técnicas de OSINT.
 
-[Tech Journalism](https://techjournalism.medium.com/)
+[OSINT Curious](https://osintcurio.us/): site com diversas postagens, vídeos e podcasts sobre OSINT.
 
-[OS2INT](https://os2int.com)
+[OSINT.team](https://osint.team): salas de bate papo sobre OSINT, com canais sobre diversos temas.
 
-[OSINT Curious](https://osintcurio.us/)
+[Exposing the invisible](https://kit.exposingtheinvisible.org/en/): série de materiais do [Tactical Tech](https://tacticaltech.org/) com tutoriais e dicas sobre investigação com fontes abertas.
 
-[OSINT.team](https://osint.team)
+[Week in OSINT](https://sector035.nl/articles/category:week-in-osint): artigos e um compilado semanal das novidades na área.
 
-[Exposing the invisible](https://kit.exposingtheinvisible.org/en/)
+[OSINT - Lista no Twitter](https://twitter.com/i/lists/1116866807019732992): lista nesta rede social reunindo diversos pesquisadores e profissionais da área.
+
+### Podcasts
+
+[The Privacy, Security, and OSINT Show](https://inteltechniques.com/podcast.html): podcast sobre segurança, privacidade e técnicas de OSINT, em inglês.
+
+[Hacking humans](https://thecyberwire.com/podcasts/hacking-humans): podcast sobre engenharia social, em inglês.
+
+[Layer 8](https://layer8conference.com/the-layer-8-podcast/): podcast sobre engenharia social e OSINT.
+
+### Em português
+
+[Boletim de Dados](escoladedados.org/membresia): newsletter da Escola de Dados, sobre jornalismo de dados e OSINT, em português.
+
+[De olho nos dados](https://deolhonosdados.substack.com/about): newsletter brasileira sobre jornalismo investigativo e OSINT.
+
+[Investigadora](https://investigadora.substack.com/): newsletter da Associação Brasileira de Jornalismo Investigativo sobre o CruzaGrafos.
 
 ## Bibliografia
 
-[Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
+[Opensourceintelligence.biz - Bibliografias](http://bib.opensourceintelligence.biz/): compilado de bibliografias sobre o tema.
 
-[A Brief History of Open Source Intelligence, por Cameron Colquhoun](https://www.bellingcat.com/resources/articles/2016/07/14/a-brief-history-of-open-source-intelligence)
+[Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf): protocolo desenvolvido pela Universidade Berkeley e as Nações Unidas sobre investigações digitais com fontes abertas.
 
-[Opensourceintelligence.biz - Bibliografias](http://bib.opensourceintelligence.biz/)
+[A Brief History of Open Source Intelligence, por Cameron Colquhoun](https://www.bellingcat.com/resources/articles/2016/07/14/a-brief-history-of-open-source-intelligence): post no site do Bellingcat com um breve histórico sobre o conceito de OSINT.
+
+[Open Source Intelligence Techniques](https://inteltechniques.com/book1.html): livro de Michael Bazzel, com um compilado de referências sobre o tema. Atualmente (out/21), está em sua oitava edição.
 
 ## Vídeos
 
-[Don't F**k With Cats](https://www.netflix.com/br/title/81031373)
+[Don't F**k With Cats](https://www.netflix.com/br/title/81031373): série na Netflix mostrando como pessoas comuns usaram técnicas de OSINT para encontrar o responsável por uma série de maus tratos a animais.
 
-[Anatomy of a killing](https://www.youtube.com/watch?v=4G9S-eoLgX4)
+[Anatomy of a killing](https://www.youtube.com/watch?v=4G9S-eoLgX4): vídeo da BBC mostrando os bastidores de uma investigação usando técnicas de OSINT para investigar assassinatos no Camarões.
 
-[Mapping the Las Vegas Massacre](https://www.youtube.com/watch?v=krr4u6uGdzc)
+[Mapping the Las Vegas Massacre](https://www.youtube.com/watch?v=krr4u6uGdzc): vídeo do The New York Times sobre uma investigação baseada em OSINT sobre o massacre de ocorrido em Las Vegas, nos Estados Unidos.
 
 ## Workshops e aulas
 
-[Técnicas de investigações digitais com fontes abertas (OSINT) com Bellingcat](https://www.youtube.com/watch?v=JoXvnc-gDD0)
+[Técnicas de investigações digitais com fontes abertas (OSINT) com Bellingcat](https://www.youtube.com/watch?v=JoXvnc-gDD0): workshop sobre OSINT com Giancarlos Fiorella, membro do Bellingcat, no Coda.Br 2020, em português e espanhol.
 
-[Coda.Br 2020 - Investigação online com fontes abertas, com Eliot Higgns (Bellingcat)](https://www.youtube.com/watch?v=dtXRUXzfLcU&t=0s)
+[Investigação online com fontes abertas, com Eliot Higgns (Bellingcat)](https://www.youtube.com/watch?v=dtXRUXzfLcU&t=0s): keynote com o fundador do Bellingcat no Coda.Br 2020 sobre a história do grupo e casos importantes.
 
-[MOOC - Digital investigations for journalists: How to follow the digital trail of people and entities](https://journalismcourses.org/pt-br/course/digitalinvestigations/)
+[MOOC - Digital investigations for journalists: How to follow the digital trail of people and entities](https://journalismcourses.org/pt-br/course/digitalinvestigations/): curso online do Knight Center sobre verificação e técnicas de investigação digital.
 
 ## Projetos e investigações
 
-* [Bellingcat](https://www.bellingcat.com/)
+* [Bellingcat](https://www.bellingcat.com/): grupo investigado com base na Holanda, especializado em checagem de fatos e inteligência de código aberto.
 
-* [Forensic Architecure](https://forensic-architecture.org/)
+* [Forensic Architecure](https://forensic-architecture.org/): coletivo inglês especializado no uso de técnicas de modelagem 3d, análises forenses, OSINT, etc.
 
-* [Human Rights Data Analysis Group](https://hrdag.org/)
+* [Human Rights Data Analysis Group](https://hrdag.org/): grupo especializado no uso de estatística e análise de dados para investigações sobre direitos humanos.
 
-* [Documental.xyz](https://documental.xyz/)
+* [Documental.xyz](https://documental.xyz/): iniciativa brasileiras que aplica técnicas de OSINT, ciência de dados e arquitetura forense para investigar violações de direitos humanos na América Latina.
 
-* [Investigações visuais do NY Times](https://www.nytimes.com/spotlight/visual-investigations)
+* [Investigações visuais do NY Times](https://www.nytimes.com/spotlight/visual-investigations): time de investigações visuais do NY Times. Usa diversas técnicas de investigação digital, análise visual e OSINT em seus trabalhos.
+
+---
+
+# Créditos
+
+Slides das aulas no IDP e compilado inicial de referências: Adriano Belisario
+
+Contribuições: Eduardo Goulart
