@@ -2,7 +2,7 @@
 
 Repositórios de links, referências e materiais didáticos sobre OSINT - especialmente para jornalistas.
 
-## Slide das aulas no MBA de Jornalismo de Dados (IDP) em 2021.2
+# Slide das aulas no MBA de Jornalismo de Dados (IDP) em 2021.2
 
 - [Introdução e caixa de ferramentas](https://belisards.github.io/osint/slides/aula_1.html)
 
@@ -12,7 +12,9 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 - [Investigando sites e noções de segurança digital](https://belisards.github.io/osint/slides/aula_4.html)
 
-## Caixas de ferramentas
+--
+
+# Caixas de ferramentas
 
 [Bellingcat toolkit](https://bit.ly/bcattools): planilha com a caixa de ferramentas do [Bellingcat](https://www.bellingcat.com/), organizadas por temas, comentadas e regularmente atualizadas. Inclui serviços de satélite e mapeamento, ferramentas para verificar fotos e vídeos, sites para arquivar páginas da web e mais. 
 
@@ -28,19 +30,21 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [sinwindie/OSINT](https://github.com/sinwindie/OSINT): mapeamento das "superfícies de ataque" ou busca em diferentes plataforma.
 
-[OSINT Tools](https://start.me/p/7kxyy2/osint-tools-curated-by-lorand-bodo): página inicial com diversas ferramentas, bases de dados e tutoriais sobre OSINT, organizada por categorias.
+[OSINT Tools](https://start.me/p/7kxyy2/osint-tools-curated-by-lorand-bodo): página inicial com diversas ferramentas, bases de dados e tutoriais, organizada por categorias.
 
-[Resource Links from Open-Source Intelligence Summit 2021](https://www.sans.org/blog/list-of-resource-links-from-open-source-intelligence-summit-2021/): diversos links de ferramentas, grupos, fontes de informação, bases e outros materiais sobre OSINT, compilada por participantes da 2021 Open-Source Intelligence Summit.
+[Resource Links from Open-Source Intelligence Summit 2021](https://www.sans.org/blog/list-of-resource-links-from-open-source-intelligence-summit-2021/): diversos links de ferramentas, grupos, fontes de informação, bases e outros materiais, compilada por participantes da 2021 Open-Source Intelligence Summit.
 
-## Para se manter informado
+[OH SHINT](https://ohshint.gitbook.io/oh-shint-its-a-blog/): diversos recursos compilados como uma publicação digital, organizada por tipo de inteligência (*INT).
+
+[Hasless1der Start.me](https://start.me/p/DPYPMz/the-ultimate-osint-collection): outra lista de ferramentas, blogs, tutoriais, canais e etc.
+
+# Para se manter informado
 
 [Tech Journalism](https://techjournalism.medium.com/): blog no Medium sobre OSINT, dados, imagens de satélite e mais.
 
 [OS2INT Toolbox](https://os2int.com/toolbox/): posts e tutoriais sobre técnicas de OSINT.
 
-[OSINT Curious](https://osintcurio.us/): site com diversas postagens, vídeos e podcasts sobre OSINT.
-
-[OSINT.team](https://osint.team): salas de bate papo sobre OSINT, com canais sobre diversos temas.
+[OSINT Curious](https://osintcurio.us/): site com diversas postagens, vídeos e podcasts.
 
 [Exposing the invisible](https://kit.exposingtheinvisible.org/en/): série de materiais do [Tactical Tech](https://tacticaltech.org/) com tutoriais e dicas sobre investigação com fontes abertas.
 
@@ -48,15 +52,37 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [OSINT - Lista no Twitter](https://twitter.com/i/lists/1116866807019732992): lista nesta rede social reunindo diversos pesquisadores e profissionais da área.
 
-### Podcasts
+## Chats e grupos
 
-[The Privacy, Security, and OSINT Show](https://inteltechniques.com/podcast.html): podcast sobre segurança, privacidade e técnicas de OSINT, em inglês.
+[OSINT.team](https://osint.team): salas de bate papo (RocketChat auto-hospedado) com canais sobre diversos temas. Em inglês.
 
-[Hacking humans](https://thecyberwire.com/podcasts/hacking-humans): podcast sobre engenharia social, em inglês.
+[Boolean Strings](https://www.facebook.com/groups/Boolean.Strings): grupo no Facebook com acesso mediante solitação. Em inglês.
 
-[Layer 8](https://layer8conference.com/the-layer-8-podcast/): podcast sobre engenharia social e OSINT.
+[r/OSINT](https://www.reddit.com/r/OSINT/): canal no Reddit sobre OSINT.
 
-### Em português
+### Canais no Discord
+
+[Bellingcat](https://discord.gg/nTaNPmz): canal do grupo investigativo Bellingcat. 
+
+[SANS Cyber Defense/OSINT](https://discord.com/invite/mKvZzgp2FE): canal do SANS (System Administration, Networking and Security) sobre ciberdefesa e OSINT. SANS é uma empresa norte-americana de segurança da informação que oferece treinamento de cibersegurança. 
+
+[OSINT-FR](https://osintfr.com/en/home/): canal para reunir a comunidade global de de OSINT. Em francês e em inglês.
+
+[Tracelabs](https://www.tracelabs.org/get-involved): canal do Discord do Tracelabs. 
+
+[Project Owl](https://discord.com/invite/projectowl): 
+
+## Podcasts
+
+[The Privacy, Security, and OSINT Show](https://inteltechniques.com/podcast.html): segurança, privacidade e técnicas de OSINT.
+
+[Hacking humans](https://thecyberwire.com/podcasts/hacking-humans): engenharia social.
+
+[Layer 8](https://layer8conference.com/the-layer-8-podcast/): engenharia social e OSINT.
+
+[The World of Intelligence](https://podcasts.apple.com/us/podcast/the-world-of-intelligence/id1477524651): defesa, inteligência e OSINT.
+
+## Em português
 
 [Boletim de Dados](escoladedados.org/membresia): newsletter da Escola de Dados, sobre jornalismo de dados e OSINT, em português.
 
@@ -64,7 +90,7 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [Investigadora](https://investigadora.substack.com/): newsletter da Associação Brasileira de Jornalismo Investigativo sobre o CruzaGrafos.
 
-## Bibliografia
+# Bibliografia
 
 [Opensourceintelligence.biz - Bibliografias](http://bib.opensourceintelligence.biz/): compilado de bibliografias sobre o tema.
 
