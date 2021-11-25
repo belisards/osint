@@ -12,8 +12,6 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 - [Investigando sites e noções de segurança digital](https://belisards.github.io/osint/slides/aula_4.html)
 
---
-
 # Caixas de ferramentas
 
 [Bellingcat toolkit](https://bit.ly/bcattools): planilha com a caixa de ferramentas do [Bellingcat](https://www.bellingcat.com/), organizadas por temas, comentadas e regularmente atualizadas. Inclui serviços de satélite e mapeamento, ferramentas para verificar fotos e vídeos, sites para arquivar páginas da web e mais. 
@@ -107,6 +105,8 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 [Anatomy of a killing](https://www.youtube.com/watch?v=4G9S-eoLgX4): vídeo da BBC mostrando os bastidores de uma investigação usando técnicas de OSINT para investigar assassinatos no Camarões.
 
 [Mapping the Las Vegas Massacre](https://www.youtube.com/watch?v=krr4u6uGdzc): vídeo do The New York Times sobre uma investigação baseada em OSINT sobre o massacre de ocorrido em Las Vegas, nos Estados Unidos.
+
+[Bellingcat - Truth in a Post-Truth World](): longa-metragem sobre a histórias e as investigações do grupo homônimo.
 
 ## Workshops e aulas
 
