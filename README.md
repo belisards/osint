@@ -110,6 +110,8 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [Bellingcat - Truth in a Post-Truth World](): longa-metragem sobre a histórias e as investigações do grupo homônimo.
 
+[Undercover underage](): mostra o trabalho da equipe do SOSA (Safe from Online Sex Abuse), que busca e denuncia predadores sexuais na Internet usando técnicas de OSINT.
+
 ## Workshops e aulas
 
 [Técnicas de investigações digitais com fontes abertas (OSINT) com Bellingcat](https://www.youtube.com/watch?v=JoXvnc-gDD0): workshop sobre OSINT com Giancarlos Fiorella, membro do Bellingcat, no Coda.Br 2020, em português e espanhol.
