@@ -16,6 +16,8 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [Bellingcat toolkit](https://bit.ly/bcattools): planilha com a caixa de ferramentas do [Bellingcat](https://www.bellingcat.com/), organizadas por temas, comentadas e regularmente atualizadas. Inclui serviços de satélite e mapeamento, ferramentas para verificar fotos e vídeos, sites para arquivar páginas da web e mais. 
 
+[How to verify](https://www.howtoverify.info/): grafos de conhecimento sobre checagem de infos.
+
 [OSINT Framework](https://osintframework.com/): site e repositório colaborativo de ferramentas para trabalhar com OSINT. Organizado por tipo de informação.
 
 [Awesome OSINT](https://github.com/jivoi/awesome-osint): repositório no Github com uma escolha curatorial de ferramentas.
