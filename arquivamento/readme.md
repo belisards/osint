@@ -75,6 +75,8 @@ creds, _ = default()
 gc = gspread.authorize(creds)
 
 worksheet = gc.open('NOME_DA_SUA_PLANILHA').sheet1
-
 drive.mount('/content/drive/')
+
+df = pd.DataFrame(worksheet.get_all_values()[1:],columns=worksheet.get_all_values()[0])
+
 ```
