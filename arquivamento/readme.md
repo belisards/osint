@@ -35,6 +35,7 @@ Explore os parâmetros. Exemplo:
 
 ### youtube-dl
 [https://github.com/ytdl-org/youtube-dl](https://github.com/ytdl-org/youtube-dl)
+
 Não se engane com o nome, funciona também outras redes
 
 ## snscrape
@@ -55,3 +56,27 @@ Não se engane com o nome, funciona também outras redes
 [https://perma.cc](https://perma.cc)
 
 ## Google Sheets + Python
+
+```
+!pip install snscrape
+!pip install you-get
+
+from google.colab import auth
+from google.auth import default
+from google.colab import drive
+
+import gspread
+import pandas as pd
+import snscrape.modules.twitter as sntwitter
+import os
+
+# https://colab.research.google.com/notebooks/io.ipynb#scrollTo=6d0xJz3VzLOo
+
+auth.authenticate_user()
+creds, _ = default()
+gc = gspread.authorize(creds)
+
+worksheet = gc.open('NOME_DA_SUA_PLANILHA').sheet1
+
+drive.mount('/content/drive/')
+```
