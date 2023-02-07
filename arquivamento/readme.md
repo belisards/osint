@@ -70,8 +70,6 @@ import pandas as pd
 import snscrape.modules.twitter as sntwitter
 import os
 
-# https://colab.research.google.com/notebooks/io.ipynb#scrollTo=6d0xJz3VzLOo
-
 auth.authenticate_user()
 creds, _ = default()
 gc = gspread.authorize(creds)
