@@ -38,10 +38,10 @@ Explore os parâmetros. Exemplo:
 
 Não se engane com o nome, funciona também outras redes
 
-## snscrape
+### snscrape
 [https://github.com/JustAnotherArchivist/snscrape](https://github.com/JustAnotherArchivist/snscrape)
 
-## you-get
+### you-get
 [https://you-get.org/](https://you-get.org/)
 
 
@@ -55,7 +55,10 @@ Não se engane com o nome, funciona também outras redes
 ### Perma.cc
 [https://perma.cc](https://perma.cc)
 
-## Google Sheets + Python
+### Sugarcube
+[https://sugarcubetools.net/](https://sugarcubetools.net/)
+
+### Google Sheets + Python
 
 ```
 !pip install snscrape
