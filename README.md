@@ -100,7 +100,11 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [Open Source Intelligence Techniques](https://inteltechniques.com/book1.html): livro de Michael Bazzel, com um compilado de referências sobre o tema. Atualmente (out/21), está em sua oitava edição.
 
-[OSINT Tools and Resources Handbook 2000](https://i-intelligence.eu/uploads/public-documents/OSINT_Handbook_2020.pdf): Manual prático sobre OSINT, dividido por temas  e fontes de informação.
+[OSINT Tools and Resources Handbook 2020](https://i-intelligence.eu/uploads/public-documents/OSINT_Handbook_2020.pdf): Manual prático sobre OSINT, dividido por temas  e fontes de informação.
+
+[Outlining a Human-Rights Based Approach to Digital Open Source Investigations](https://repository.essex.ac.uk/32642/1/Outlining%20a%20Human-Rights%20Based%20Approach%20to%20Digital%20Open%20Source%20Investigations.pdf)
+
+[What Would a Feminist Open Source Investigation Look Like?](https://research-architecture.org/What-Would-a-Feminist-Open-Source-Investigation-Look-Like)
 
 ## Vídeos
 
@@ -133,11 +137,3 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 * [Documental.xyz](https://documental.xyz/): iniciativa brasileiras que aplica técnicas de OSINT, ciência de dados e arquitetura forense para investigar violações de direitos humanos na América Latina.
 
 * [Investigações visuais do NY Times](https://www.nytimes.com/spotlight/visual-investigations): time de investigações visuais do NY Times. Usa diversas técnicas de investigação digital, análise visual e OSINT em seus trabalhos.
-
----
-
-# Créditos
-
-Slides das aulas no IDP e compilado inicial de referências: Adriano Belisario
-
-Contribuições: Eduardo Goulart
