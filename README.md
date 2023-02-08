@@ -38,6 +38,8 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [Hasless1der Start.me](https://start.me/p/DPYPMz/the-ultimate-osint-collection): outra lista de ferramentas, blogs, tutoriais, canais e etc.
 
+[MetaOSINT](https://metaosint.github.io/)
+
 # Para se manter informado
 
 [Tech Journalism](https://techjournalism.medium.com/): blog no Medium sobre OSINT, dados, imagens de satélite e mais.
