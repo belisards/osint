@@ -44,6 +44,8 @@ Não se engane com o nome, funciona também outras redes
 ### you-get
 [https://you-get.org/](https://you-get.org/)
 
+### twint
+[https://github.com/kevctae/twint](https://github.com/kevctae/twint)
 
 ## Plataformas
 ### Auto Archiver
