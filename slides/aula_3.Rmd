@@ -168,5 +168,9 @@ Depois, compartilhe sua pontuação!
 - [Qgis2threejs](https://github.com/minorua/Qgis2threejs) (exemplo de uso com [Brumadinho](https://smaprs.github.io/BrumadinhoDam/))
 ---
 
+# Referências extras
+
+- [Satellite images for journalism](https://news.climate.columbia.edu/2021/03/31/find-satellite-images-journalism/)
+
 class: center, middle
 # Obrigado!
