@@ -114,6 +114,118 @@ Algumas ferramentas mais avançadas para quem quiser ir além.
 
 
 ---
+class: center, inverse, middle
+
+# Noções de segurança digital
+
+---
+class:center
+
+![](pics/aula4/seg_holistica.png)
+
+Fonte: [Tactical Tech](https://holistic-security.tacticaltech.org/)
+
+---
+
+# Conheça a ti mesmo
+
+Verifique se você já foi vítima de vazamentos: [https://monitor.firefox.com/](https://monitor.firefox.com/)
+
+Faça uma auto-busca (ego search) para identificar informações pessoais suas que estão expostas, buscar removê-las se possível ou ainda se prevenir de possíveis utilizações maliciosas. 
+
+Você pode buscar coisas como: nome completo, CPF, telefone, endereço, email, usuário, etc.
+
+## Exponha-se menos
+
+Configurações de privacidade: ajuste em detalhes quais informações e posts ficam disponíves para diferentes círculos de amizade.
+
+Facebook: [https://www.facebook.com/help/325807937506242?ref=tos](https://www.facebook.com/help/325807937506242?ref=tos)
+
+Instagram: [https://help.instagram.com/196883487377501](https://help.instagram.com/196883487377501)
+
+---
+
+# Evite fornecer dados pessoais
+
+Você sabia que pode usar emails e telefones descartáveis para cadastros efêmeros?
+
+Existem vários. Busque por “temp mail” ou “temp phone”.
+
+- [https://temp-mail.org/pt/](https://temp-mail.org/pt/)
+
+- [https://sms24.me/en/](https://sms24.me/en/)
+
+
+---
+class: center, inverse, middle
+
+# Senhas, autenticação e navegação
+
+---
+
+![](pics/aula4/xkcd_senhas.png)
+
+---
+# Use um gerenciador de senhas
+
+É sério! Use um gerenciador de senhas. Por quê?
+
+Existem chances razoáveis de que você use uma senha fraca (vide [HaveIBeenPwned](https://haveibeenpwned.com/Passwords) ou [Bitwarden](https://bitwarden.com/password-strength/)). Além disso..
+
+- Você não precisa decorar várias senhas, apenas uma;
+
+- Você irá usar apenas senhas fortes;
+
+- Você nunca mais irá repetir um senha;
+
+- É mais prático do que ter que digitar/saber as senhas para cada site;
+
+- Funciona em vários dispositivos;
+
+
+Alguns gerenciadores de senha que você pode experimentar: [KeePass](https://keepass.info/) e [Bitwarden](https://bitwarden.com/) possuem código-aberto. O [1password](https://1password.com/pt/) é pago, mas oferece vantagens para jornalistas.
+
+---
+# 2FA - Autenticação dois fatores
+
+Autenticação com dois elementos diferentes. Pode exigir algo que você saiba (por exemplo, uma senha) e algo que você tenha (um celular, um código de uso único/OTP, etc). Fundamental que você ative em serviços como WhatsApp, Telegram, email e redes sociais.
+
+```{r, echo=FALSE, out.width = "80%"}
+knitr::include_graphics("pics/aula4/2fa-geral.png")
+```
+
+---
+
+![](pics/aula4/2fa-whatsapp.png)
+---
+![](pics/aula4/2fa-telegram.png)
+
+---
+
+# Navegação anônima
+
+- Serviços de VPN (Virtual Private Network) ou TOR
+
+- [Am I Unique](https://amiunique.org/)
+
+- [Brave Browser](https://brave.com/)
+
+- [PrivacyBadger](https://privacybadger.org/)
+
+---
+# Referências adicionais sobre segurança digital
+
+- [Security in a box](https://securityinabox.org/en/);
+
+- [Autodefesa contra vigilância](https://ssd.eff.org/pt-br): guia da EEF;
+
+- [Guia de autodefesa](https://guia.autodefesa.org/);
+
+- [Veracrypt](https://www.veracrypt.fr/en/Home.html): para criptografia de disco;
+
+
+
+---
 class: center, middle
 
 # Obrigado!
