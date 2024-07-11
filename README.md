@@ -10,15 +10,11 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 - [Imagens de satélite e geolocalização](https://belisards.github.io/osint/slides/aula_3.html)
 
-- [Investigando sites e noções de segurança digital](https://belisards.github.io/osint/slides/aula_4.html)
-
-Os slides de 2021 estão arquivados na pasta 'slides_2021'.
-
 # Guias e caixas de ferramentas
 
 ⭐ [Bellingcat toolkit](https://bit.ly/bcattools): planilha com a caixa de ferramentas do [Bellingcat](https://www.bellingcat.com/), organizadas por temas, comentadas e regularmente atualizadas. Inclui serviços de satélite e mapeamento, ferramentas para verificar fotos e vídeos, sites para arquivar páginas da web e mais. 
 
-⭐ [SOWEL: SOcmint Weaknesses Enumeration List](https://sowel.soxoj.com/about): ótimo compilado de técnicas para buscas em redes sociais.
+⭐[OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca): repositório no Github com recursos voltados à prática de OSINT no Brasil.
 
 [How to verify](https://www.howtoverify.info/): grafos de conhecimento sobre checagem de infos.
 
@@ -26,13 +22,9 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 
 [Awesome OSINT](https://github.com/jivoi/awesome-osint): repositório no Github com uma escolha curatorial de ferramentas.
 
-[OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca): repositório no Github com recursos voltados à prática de OSINT no Brasil.
-
 [OSINT Essentials](https://www.osintessentials.com/): lista mais focada em ferramentas e serviços para verificação.
 
 [Aware online](https://www.aware-online.com/en/osint-tools/): seleção de ferramentas, organizada por tipo de serviço e informação.
-
-[sinwindie/OSINT](https://github.com/sinwindie/OSINT): mapeamento das "superfícies de ataque" ou busca em diferentes plataforma.
 
 [OSINT Tools](https://start.me/p/7kxyy2/osint-tools-curated-by-lorand-bodo): página inicial com diversas ferramentas, bases de dados e tutoriais, organizada por categorias.
 
@@ -40,7 +32,7 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 
 [Hasless1der Start.me](https://start.me/p/DPYPMz/the-ultimate-osint-collection): outra lista de ferramentas, blogs, tutoriais, canais e etc.
 
-[MetaOSINT](https://metaosint.github.io/)
+[MetaOSINT](https://metaosint.github.io/): coletânea de ferramentas com visualização em tabela ou por meio de interface gráfica.
 
 # Para se manter informado
 
@@ -61,7 +53,6 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 ## Chats e grupos
 
 ⭐ [Bellingcat](https://discord.gg/nTaNPmz): canal do grupo investigativo Bellingcat. 
-
 [OSINT.team](https://osint.team): salas de bate papo com canais sobre diversos temas. Em inglês.
 
 [r/OSINT](https://www.reddit.com/r/OSINT/): canal no Reddit sobre OSINT.
@@ -91,7 +82,6 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 [Investigadora](https://investigadora.substack.com/): newsletter da Associação Brasileira de Jornalismo Investigativo sobre o CruzaGrafos.
 
 # Bibliografia
-
 
 ⭐ [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf): protocolo desenvolvido pela Universidade Berkeley e as Nações Unidas sobre investigações digitais com fontes abertas.
 

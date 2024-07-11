@@ -97,7 +97,6 @@ Porém, você deve encontrar imagens em uma resolução pior do que está acostu
 - [Zoom.earth](https://zoom.earth/): utiliza o satélite MODIS;
 
 
-
 ---
 
 ## Soluções do Google

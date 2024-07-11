@@ -73,13 +73,6 @@ Atenção para os espaços extras. Eles podem arruinar sua busca.
 
 - Parênteses para isolar expressões;
 
---
-
-Qual a diferença entre as duas buscas abaixo?
-
-- `botafogo flamengo` 
-
-- `botafogo OR flamengo` 
 
 ---
 
@@ -174,7 +167,7 @@ O [Onemilliontweetmap](https://onemilliontweetmap.com/) permite a visualização
 ---
 # Twitter
 
-[Busca avançada](https://twitter.com/search-advanced?lang=pt): o mecanismo nativo da plataforma é decente;
+[Busca avançada](https://twitter.com/search-advanced?lang=pt): o mecanismo nativo da plataforma é decente. Vale consultar também a [documentação dos operadores de busca](https://developer.x.com/en/docs/twitter-api/v1/rules-and-filtering/search-operators).
 
 Muitos dos operadores de busca vistos no Google funcionam aqui também, além de outros mais: 
 
@@ -182,7 +175,7 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 
 - `-` para exclusão;
 
-- `from:` e `to:`
+- `since:` e `until:`
 
 - Filtros por engajamento: `min_retweets:`; `min_replies:` e `min_faves:`
 
@@ -205,6 +198,8 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 
 - Seção de ["Transparência das páginas"](https://www.facebook.com/help/323314944866264)
 
+- [Biblioteca de anúncios](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=BR&media_type=all)
+
 - [LookUp ID](https://lookup-id.com/#)
 
 - [Who Posted What](https://www.whopostedwhat.com/)
@@ -220,9 +215,9 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 
 Existem vários serviços para consultar informações sobre quem registrou um domínio. Este tipo de consulta é conhecida como "who is".
 
-- [Who.is](https://who.is): uma das soluções internacionais;
+- [Who.is](https://who.is): uma das soluções para consultas internacionais;
 
-- [Whois - Registro.Br](https://registro.br/tecnologia/ferramentas/whois/): ótimo para domínios `.br`;
+- [Whois - Registro.Br](https://registro.br/tecnologia/ferramentas/whois/): para domínios com o final `.br`;
 
 - [Reverse whois - ViewDNS.info](https://viewdns.info/reversewhois/): busca reversa com nome ou email;
 
