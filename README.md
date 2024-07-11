@@ -76,7 +76,7 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 
 ## Podcasts
 
-⭐ [[The Privacy, Security, and OSINT Show](https://inteltechniques.com/podcast.html): segurança, privacidade e técnicas de OSINT.
+⭐ [The Privacy, Security, and OSINT Show](https://inteltechniques.com/podcast.html): segurança, privacidade e técnicas de OSINT.
 
 [Hacking humans](https://thecyberwire.com/podcasts/hacking-humans): engenharia social.
 
