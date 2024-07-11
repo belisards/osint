@@ -44,9 +44,9 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 
 # Para se manter informado
 
-⭐  [[Week in OSINT](https://sector035.nl/articles/category:week-in-osint): artigos e um compilado semanal das novidades na área.
+⭐ [Week in OSINT](https://sector035.nl/articles/category:week-in-osint): artigos e um compilado semanal das novidades na área.
 
-⭐  [SANS Cyber Security Blog](https://www.sans.org/blog/?focus-area=open-source-intelligence): postagens sobre OSINT, cibersegurança e compilados com novidades do Open-Source Intelligence (OSINT) Summit anualmente.
+⭐ [SANS Cyber Security Blog](https://www.sans.org/blog/?focus-area=open-source-intelligence): postagens sobre OSINT, cibersegurança e compilados com novidades do Open-Source Intelligence (OSINT) Summit anualmente.
 
 [Tech Journalism](https://techjournalism.medium.com/): blog no Medium sobre OSINT, dados, imagens de satélite e mais.
 
@@ -60,7 +60,7 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 
 ## Chats e grupos
 
-⭐ *[Bellingcat](https://discord.gg/nTaNPmz): canal do grupo investigativo Bellingcat. 
+⭐ [Bellingcat](https://discord.gg/nTaNPmz): canal do grupo investigativo Bellingcat. 
 
 [OSINT.team](https://osint.team): salas de bate papo com canais sobre diversos temas. Em inglês.
 
@@ -86,14 +86,14 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 
 ## Em português
 
-⭐ *Boletim de Dados](escoladedados.org/membresia): newsletter da Escola de Dados, sobre jornalismo de dados e OSINT, em português.
+⭐ [Boletim de Dados](escoladedados.org/membresia): newsletter da Escola de Dados, sobre jornalismo de dados e OSINT, em português.
 
 [Investigadora](https://investigadora.substack.com/): newsletter da Associação Brasileira de Jornalismo Investigativo sobre o CruzaGrafos.
 
 # Bibliografia
 
 
-⭐ [[Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf): protocolo desenvolvido pela Universidade Berkeley e as Nações Unidas sobre investigações digitais com fontes abertas.
+⭐ [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf): protocolo desenvolvido pela Universidade Berkeley e as Nações Unidas sobre investigações digitais com fontes abertas.
 
 ⭐ [Open Source Intelligence Techniques](https://inteltechniques.com/book1.html): livro bastante completo de Michael Bazzel sobre técnicas e ferramentas de OSINT. 
 
@@ -111,9 +111,9 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 
 ## Vídeos
 
-⭐ [[Don't F**k With Cats](https://www.netflix.com/br/title/81031373): série na Netflix mostrando como pessoas comuns usaram técnicas de OSINT para encontrar o responsável por uma série de maus tratos a animais.
+⭐ [Don't F**k With Cats](https://www.netflix.com/br/title/81031373): série na Netflix mostrando como pessoas comuns usaram técnicas de OSINT para encontrar o responsável por uma série de maus tratos a animais.
 
-⭐ [[Anatomy of a killing](https://www.youtube.com/watch?v=4G9S-eoLgX4): vídeo da BBC mostrando os bastidores de uma investigação usando técnicas de OSINT para investigar assassinatos no Camarões.
+⭐ [Anatomy of a killing](https://www.youtube.com/watch?v=4G9S-eoLgX4): vídeo da BBC mostrando os bastidores de uma investigação usando técnicas de OSINT para investigar assassinatos no Camarões.
 
 [Mapping the Las Vegas Massacre](https://www.youtube.com/watch?v=krr4u6uGdzc): vídeo do The New York Times sobre uma investigação baseada em OSINT sobre o massacre de ocorrido em Las Vegas, nos Estados Unidos.
 
@@ -125,7 +125,7 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 
 [Exercícios de OSINT](https://gralhix.com/list-of-osint-exercises/): compilado de exercícios para praticar técnicas como geolocalização de imagens.
 
-⭐ *[Técnicas de investigações digitais com fontes abertas (OSINT) com Bellingcat](https://www.youtube.com/watch?v=JoXvnc-gDD0): workshop sobre OSINT com Giancarlos Fiorella, membro do Bellingcat, no Coda.Br 2020, em português e espanhol.
+⭐ [Técnicas de investigações digitais com fontes abertas (OSINT) com Bellingcat](https://www.youtube.com/watch?v=JoXvnc-gDD0): workshop sobre OSINT com Giancarlos Fiorella, membro do Bellingcat, no Coda.Br 2020, em português e espanhol.
 
 [Investigação online com fontes abertas, com Eliot Higgns (Bellingcat)](https://www.youtube.com/watch?v=dtXRUXzfLcU&t=0s): keynote com o fundador do Bellingcat no Coda.Br 2020 sobre a história do grupo e casos importantes.
 
@@ -133,13 +133,13 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 
 ## Projetos e investigações
 
-⭐ * [Bellingcat](https://www.bellingcat.com/): grupo investigado com base na Holanda, especializado em checagem de fatos e inteligência de código aberto.
+⭐ [Bellingcat](https://www.bellingcat.com/): grupo investigado com base na Holanda, especializado em checagem de fatos e inteligência de código aberto.
 
-⭐ * [Forensic Architecure](https://forensic-architecture.org/): coletivo inglês especializado no uso de técnicas de modelagem 3d, análises forenses, OSINT, etc.
+⭐ [Forensic Architecure](https://forensic-architecture.org/): coletivo inglês especializado no uso de técnicas de modelagem 3d, análises forenses, OSINT, etc.
 
-⭐ * [Documental.xyz](https://documental.xyz/): iniciativa brasileiras que aplica técnicas de OSINT, ciência de dados e arquitetura forense para investigar violações de direitos humanos na América Latina.
+⭐ [Documental.xyz](https://documental.xyz/): iniciativa brasileiras que aplica técnicas de OSINT, ciência de dados e arquitetura forense para investigar violações de direitos humanos na América Latina.
 
-⭐ * [Finding Clandestine Graves: Using Geospatial Analysis to Search for Missing Persons in Baja California, Mexico](https://citizenevidence.org/2022/06/30/finding-clandestine-graves-using-geospatial-analysis-to-search-for-missing-persons-in-baja-california-mexico/): projeto que combina técnicas de criminologia, análise espectral e acesso a dados públicos para identificar potenciais cemitérios clandestinos no México.
+⭐ [Finding Clandestine Graves: Using Geospatial Analysis to Search for Missing Persons in Baja California, Mexico](https://citizenevidence.org/2022/06/30/finding-clandestine-graves-using-geospatial-analysis-to-search-for-missing-persons-in-baja-california-mexico/): projeto que combina técnicas de criminologia, análise espectral e acesso a dados públicos para identificar potenciais cemitérios clandestinos no México.
 
 * [Investigações visuais do NY Times](https://www.nytimes.com/spotlight/visual-investigations): time de investigações visuais do NY Times. Usa diversas técnicas de investigação digital, análise visual e OSINT em seus trabalhos.
 
