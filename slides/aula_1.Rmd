@@ -16,18 +16,16 @@ output:
         </div>
       highlightStyle: github
       highlightLines: true
-      # countIncrementalSlides: false
-      #countdown: 60000
 ---
 
-# Sobre mim
+# Adriano Belisario
 Jornalista e pesquisador, especializado em investigações baseadas em dados e técnicas de OSINT. Tem mestrado em Social Data Science pela Universidade de Oxford e em Comunicação pela UFRJ. 
 
-Atualmente, colabora como [Bellingcat](bellingcat.com) no programa de Technical Writing Fellowship, desenvolvendo um tutorial sobre o uso de modelos de IA aplicados em investigações visuais. Também atua como consultor para o [Joint Data Center on Forced Displacement](https://www.jointdatacenter.org/), uma iniciativa do Banco Mundial com a Agência da ONU para Refugiados, e desenvolve análises de dados sobre misoginia online para o [Netlab/UFRJ](https://netlab.eco.ufrj.br/).
+Atualmente, colabora como [Bellingcat](bellingcat.com) no programa 'Technical Writing Fellowship', desenvolvendo um guia sobre o uso de IA aplicada a investigações visuais. Também atua como consultor para o [Joint Data Center on Forced Displacement](https://www.jointdatacenter.org/), uma iniciativa do Banco Mundial com a Agência da ONU para Refugiados, e desenvolve análises de dados sobre misoginia online para o [Netlab/UFRJ](https://netlab.eco.ufrj.br/).
 
 Coordenou a Escola de Dados entre 2018 e 2022 e já publicou investigações na Agência Pública, The Intercept Brasil e na agência [Documental.xyz](https://documental.xyz).
 
-Mais informações: [belisario.website](belisario.website)
+Mais informações: [belisario.website/osint](https://belisario.website/osint)
 
 ---
 
@@ -48,8 +46,8 @@ Todos os slides e mais uma lista de outras referências úteis estão disponíve
   - Busca em redes sociais
   - Investigando sites
 - Investigações visuais
+  - Terra à vista: imagens de satélites
   - Geolocalização de imagens
-  - Imagens de satélite
 
 ---
 
@@ -83,9 +81,14 @@ Abaixo alguns dos serviços online e programas que serão utilizados.
 
 Nenhum é obrigatório, porém seu uso é recomendado para acompanhar ou replicar alguns atividades.
 
+## Contas
+- [Conta no Google](https://gmail.com/) (principalmente para o Google Colab - ou use algum outro serviço de notebook online)
 - [Conta no Facebook](https://facebook.com/)
 - [Conta no Instagram](https://instagram.com/)
+
+## Softwares
 - [Google Earth Pro](https://www.google.com/intl/pt-BR/earth/about/versions/#earth-pro)
+- [Plugin do Chrome: Search by Image](https://chromewebstore.google.com/detail/search-by-image/cnojnbdhbhnkbcieeekonklommdnndci/)
 
 ---
 class: inverse, center, middle
@@ -139,21 +142,6 @@ Algumas fontes<sup>2</sup>, porém, falam de OSINT ativa ou ofensiva. Em geral, 
 
 ---
 
-# Princípios
-
-- **Objetividade e acurácia**: fique atento a vieses que podem afetar sua investigação. Não só aqueles subjetivos, conscientes ou não, como também aqueles próprios da arquitetura da Internet. Por exemplo, a mesma consulta em um mecanismo de busca pode retornar resultados diferentes, a depender de fatores diversos, como a localidade, dispositivo, histórico do usuário, etc.
-
---
-
-- **Ética e legalidade**: esteja ciente das diretrizes legais de proteção de dados e privacidade. Mesmo que a informação esteja disponíveis ao públicos, isso não quer dizer que não existem considerações legais quanto ao seu armazenamento. Especialmente ao usar processos automatizados, evite coletar mais dados do que o necessário e, se assim o fizer, remova as informações que não são necessárias para sua investigação.
-
---
-
-- **Transparência e prestação de contas (accountability) **: documente todas etapas do seu trabalho, mantendo um registro de suas atividades. Sua metodologia pode ser questionada ou você pode ter que prestar contas em um julgamento oficial. Além disso, ainda que o uso de identidades anônimas seja importante, é preciso evitar a deturpação ou apresentações falsas (*misrepresentation*);
-
-
----
-
 # Novas lentes para sua investigação
 
 OSINT é sobretudo um estado de espírito.
@@ -181,6 +169,8 @@ As ferramentas são úteis, mas as habilidades mais importantes em OSINT são:
 
 - **Olho para detalhes** que individualmente podem ser insignificantes, mas em conjunto podem ganhar sentido.
 
+- **Letramento técnico** ajuda muito. Por exemplo, saber o básico de Python e ferramentas de linha de comando amplia suas possiblidades.
+
 ---
 
 # Técnicas utilizadas
@@ -199,6 +189,8 @@ A seguir, uma lista não exaustiva de algumas que podem ser consideradas básica
 - Geolocalização de imagens;
 ]
 
+--
+
 .pull-right[
 - Uso de imagens de satélites para inspeção visual;
 
@@ -212,7 +204,7 @@ A seguir, uma lista não exaustiva de algumas que podem ser consideradas básica
 
 ---
 
-# Técnicas utilizadas
+# Outras técnicas utilizadas
 
 A lista de técnicas utilizadas em investigações baseadas em fontes abertas pode seguir para incluir metodologias um pouco mais avançadas, como:
 
@@ -226,6 +218,8 @@ A lista de técnicas utilizadas em investigações baseadas em fontes abertas po
 - Modelos de aprendizagem de máquina (machine learning), como clusterização
 ]
 
+--
+
 .pull-right[
 - Modelos de visão computacional
 
@@ -235,6 +229,22 @@ A lista de técnicas utilizadas em investigações baseadas em fontes abertas po
 ]
 
 ---
+
+# Princípios
+
+- **Objetividade e acurácia**: fique atento a vieses que podem afetar sua investigação. Não só aqueles subjetivos, conscientes ou não, como também aqueles próprios da arquitetura da Internet. Por exemplo, a mesma consulta em um mecanismo de busca pode retornar resultados diferentes, a depender de fatores diversos, como a localidade, dispositivo, histórico do usuário, etc.
+
+--
+
+- **Ética e legalidade**: esteja ciente das diretrizes legais de proteção de dados e privacidade. Mesmo que a informação esteja disponíveis ao públicos, isso não quer dizer que não existem considerações legais quanto ao seu armazenamento. Especialmente ao usar processos automatizados, evite coletar mais dados do que o necessário e, se assim o fizer, remova as informações que não são necessárias para sua investigação.
+
+--
+
+- **Transparência e prestação de contas (accountability) **: documente todas etapas do seu trabalho, mantendo um registro de suas atividades. Sua metodologia pode ser questionada ou você pode ter que prestar contas em um julgamento oficial. Além disso, ainda que o uso de identidades anônimas seja importante, é preciso evitar a deturpação ou apresentações falsas (*misrepresentation*);
+
+
+---
+
 
 # Etapas
 
@@ -322,9 +332,7 @@ Não altere os arquivos originais e tente manter uma cadeia de custódia dos mat
 
 ---
 
-# Coleta de informação: arquivamento
-
-Tente preservar elementos de atribuição:
+# Preserve elementos de atribuição
 
 - **URL**: registre o endereço na web onde o recurso está localizado;
 
@@ -334,9 +342,9 @@ Tente preservar elementos de atribuição:
 
 - **Arquivos de mídia**: se houver imagens, áudios ou vídeos relevantes, certifique-se que eles também foram armazenados separadamente;
 
-- **Metadados ou dados contextuais**: registre também outras informações relevantes, como metadados (identificador do usário, data e hora de upload, hasthags, comentários, etc) ou informações contextuais (exemplo, perfil de quem fez determinada postagem);
+- **Metadados ou dados contextuais**: registre outras informações relevantes, como metadados (id do usário, data e hora de upload, hasthags, comentários, etc) ou informações contextuais (por ex: perfil de quem fez determinada postagem);
 
-Dados da coleta em si (IP, hora, etc) e hash (MD5, SHA1, etc) também podem ser utilizados em certos casos.
+Dados da coleta em si (IP, hora, etc) ou hash (MD5, SHA1, etc) também podem ser utilizados em certos casos.
 
 .footnote[
 [1] Outros requerimentos legais da cadeia de custódia no Brasil estão detalhados no [Código Penal](https://www.jusbrasil.com.br/topicos/250911206/artigo-158a-do-decreto-lei-n-3689-de-03-de-outubro-de-1941).
@@ -346,7 +354,9 @@ Dados da coleta em si (IP, hora, etc) e hash (MD5, SHA1, etc) também podem ser 
 
 # Coleta de informação: arquivamento
 
-Conteúdos online podem ser removidos, faça arquivamentos online e/ou locais das informações importantes. Algumas ferramentas úteis:
+Conteúdos online podem ser removidos, faça arquivamentos online e/ou locais das informações importantes. 
+
+Algumas ferramentas úteis:
 
 - [Hunch.ly](https://hunch.ly/): plataforma bastante completa para arquivamento. Captura e anota automaticamente tudo que você navega;
 
@@ -358,17 +368,23 @@ Conteúdos online podem ser removidos, faça arquivamentos online e/ou locais da
 
 # Análise: documentação é uma arte
 
-Tomar notas e registrar suas descobertas é fundamental para transformar as informações brutas em algo relevante.
+Tomar notas e registrar o que você encontra no decorrer de sua investigação é fundamental para transformar as informações brutas em algo relevante.
 
-Ferramentas como o [Obsidian](https://obsidian.md) podem ajudar, mas tudo depende de disciplina.
+Além de planilhas para tabular dados, algumas outras formas de documentar a informações que podem ajudar:
 
-Atenção também aos "dados invisíveis" como metadados em imagens ou informações escondidas no código-fonte das páginas web.
+- Informações textuais: documentos ou blocos de notas estruturados como [Obsidian](https://obsidian.md) ou Notion.
+
+- Mapas: [QGIS](https://qgis.org/) ou Google Maps
+
+- Linhas do tempo: blocos de notas, planilhas ou ferramentas específicas como o [TimelineJS](https://timeline.knightlab.com/) do Knightlab.
+
+- Análise de redes e grafos: [Gephi](https://gephi.org) para análises baseadas em grandes volumes de dados ou Obsidian para processos mais manuais.
 
 ---
 
 # Análise: vieses cognitivos
 
-Use seus insights e experiências pessoais, mas tente fazer uma análise objetiva, especialmente para não incorrer em vieses comuns em processos investigativos como:
+Use sua intuição e tire proveito de sua experiência pessoal, mas tente fazer uma análise objetiva, especialmente para não incorrer em vieses comuns em processos investigativos como:
 
 - **Viés de ancoragem**: a primeira impressão ou informação é a que fica;
 
@@ -386,42 +402,6 @@ Use seus insights e experiências pessoais, mas tente fazer uma análise objetiv
 class: inverse, center, middle
 
 .extra-large[Caixas de ferramentas]
-
----
-
-# Repositórios de consulta
-
-- [Bellingcat toolkit](https://bit.ly/bcattools)
-
-- [OSINT Framework](https://osintframework.com/)
-
-- [OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca)
-
-- [Awesome OSINT](https://github.com/jivoi/awesome-osint)
-
-- [OSINT.sh](https://osint.sh)
-
-- [Mapas mentais de elementos de pesquisa](https://github.com/sinwindie/OSINT)
-
----
-
-# Programas e plataformas especializadas
-
-Existem também programas e plataformas dedicados a potencializar investigações de OSINT. 
-
-Abaixo, lista de alguns dos mais conhecidos:
-
-- [Maltego](https://www.maltego.com/): a mais famosa ferramenta para investigações digitais, com diversos plugins. Baseado em grafos.
-
-- [Social Links](https://sociallinks.io/): especialmente forte para análise de redes sociais.
-
-- [Spiderfoot](https://github.com/smicallef/spiderfoot): foco em ciber-segurança e análise de ataques virtuais.
-
-- [theHarvester](https://github.com/laramies/theHarvester): útil para investigar emails e sites, principalmente.
-
-- [EffectGroup](https://effectgroup.io/): ótimo para buscar informações pessoais a partir de nomes e email, inclusive com dados de brasileiros. 
-
-Mas há muito, muito mais. Hoje, em julho de 2024, existem mais de 2.300 projetos de código-aberto com a [tag "OSINT" no Github](https://github.com/topics/osint) - fora as plataformas privadas.
 
 ---
 
@@ -579,7 +559,7 @@ Qual a diferença entre ~~o charme e o funk~~ VPN e o TOR?
 
 - [PrivacyBadger](https://privacybadger.org/): plugin da Electronic Frontier Foundation para impedir que sua navegação seja monitorada por anunciantes e outros rastreadores;
 
-- [Duckduckgo](https://duckduckgo.com/): buscador web focado em privacidade;
+- [uBlock Origin](https://ublockorigin.com/): bloqueador de anúncios e scripts;
 
 - [Security in a box](https://securityinabox.org/en/);
 
@@ -587,6 +567,41 @@ Qual a diferença entre ~~o charme e o funk~~ VPN e o TOR?
 
 - [Guia de autodefesa](https://guia.autodefesa.org/);
 
+
+---
+
+
+# Repositórios de consulta
+
+- [Bellingcat toolkit](https://bit.ly/bcattools)
+
+- [OSINT Framework](https://osintframework.com/)
+
+- [OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca)
+
+- [Awesome OSINT](https://github.com/jivoi/awesome-osint)
+
+- [OSINT.sh](https://osint.sh)
+
+---
+
+# Programas e plataformas especializadas
+
+Existem também programas e plataformas dedicados a potencializar investigações de OSINT. 
+
+Abaixo, lista de alguns dos mais conhecidos:
+
+- [Maltego](https://www.maltego.com/): a mais famosa ferramenta para investigações digitais, com diversos plugins. Baseado em grafos.
+
+- [Social Links](https://sociallinks.io/): especialmente forte para análise de redes sociais.
+
+- [Spiderfoot](https://github.com/smicallef/spiderfoot): foco em ciber-segurança e análise de ataques virtuais.
+
+- [theHarvester](https://github.com/laramies/theHarvester): útil para investigar emails e sites, principalmente.
+
+- [EffectGroup](https://effectgroup.io/): ótimo para buscar informações pessoais a partir de nomes e email, inclusive com dados de brasileiros. 
+
+Mas há muito, muito mais. Hoje, em julho de 2024, existem mais de 2.300 projetos de código-aberto com a [tag "OSINT" no Github](https://github.com/topics/osint) - fora as plataformas privadas.
 
 ---
 

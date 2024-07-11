@@ -86,7 +86,7 @@ Os slides de 2021 estão arquivados na pasta 'slides_2021'.
 
 ## Em português
 
-⭐ *[Boletim de Dados](escoladedados.org/membresia): newsletter da Escola de Dados, sobre jornalismo de dados e OSINT, em português.
+⭐ *Boletim de Dados](escoladedados.org/membresia): newsletter da Escola de Dados, sobre jornalismo de dados e OSINT, em português.
 
 [Investigadora](https://investigadora.substack.com/): newsletter da Associação Brasileira de Jornalismo Investigativo sobre o CruzaGrafos.
 

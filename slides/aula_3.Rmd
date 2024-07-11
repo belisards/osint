@@ -1,39 +1,33 @@
 ---
-title: "🔎 Dados invisíveis -  Open source intelligence"
-subtitle: "Imagens de satélite e geolocalização"
+title: "🔎 OSINT e fact-checking"
+subtitle: "Investigações visuais"
 author: "Adriano Belisario - @belisards"
 institute: "MBA em Jornalismo de Dados/IDP"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
+    css: ["osint.css", default, metropolis, metropolis-fonts]
     nature:
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
       highlightStyle: github
       highlightLines: true
-      # countIncrementalSlides: false
-      #countdown: 60000
 ---
-class: center, middle
 
-# Apresentações e materiais do curso:
-
-### [belisards.github.io/osint](https://belisards.github.io/osint/)
-
-Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
-
----
 # O que temos para hoje?
 
-- Imagens de satélites: alternativas pagas e gratuitas;
-
-- Acessando mapas online e outras ferramentas geo;
-
-- Recursos e práticas para geolocalizar fotos e vídeos;
+- Investigações visuais
+  - Terra à vista: imagens de satélites
+  - Geolocalização de imagens
  
 ---
 class: inverse, center, middle
 
-# Imagens de satélite e mapas
+# Imagens de satélite
 
 ---
 class: center
@@ -70,6 +64,7 @@ class: inverse, center, middle
 
 
 ---
+
 # Nós não vamos pagar nada
 
 As principais soluções são:
@@ -86,6 +81,7 @@ Porém, você deve encontrar imagens em uma resolução pior do que está acostu
 
 .footnote[Fonte: [How to find the latest satellite imagery in 2021](https://www.azavea.com/reports/how-to-find-the-latest-satellite-imagery-in-2021/).
 ]
+
 ---
 
 # Alternativas úteis e gratuitas
@@ -103,6 +99,7 @@ Porém, você deve encontrar imagens em uma resolução pior do que está acostu
 
 
 ---
+
 ## Soluções do Google
 
 Veja [todas as soluções para dados geográficos](https://www.google.com/intl/pt-BR_br/earth/outreach/tools/) ou confira aqui alguns destaques:
@@ -112,6 +109,17 @@ Veja [todas as soluções para dados geográficos](https://www.google.com/intl/p
 - [Google Earth Studio](https://www.google.com/intl/pt-BR/earth/studio/): permite fazer gravações e [vídeos como este](https://drive.google.com/file/d/1s8OV7_q89L1iCsrV7vdH2u6kWNTVHSPU/view?usp=sharing);
 
 - [Google Maps/StreetView](https://maps.google.com): soluções web que você provavelmente já conhece;
+
+---
+
+# Timelapse
+
+Vamos explorar duas opções para criar timelapses.
+
+- [Google Earth Pro](https://www.google.com.br/earth/download/gep/agree.html)
+
+- [SentinelHub EO Browser](https://apps.sentinel-hub.com/eo-browser/): 
+
 
 ---
 
@@ -127,31 +135,6 @@ Veja [todas as soluções para dados geográficos](https://www.google.com/intl/p
 
 - [DescaterLab](https://search.descarteslabs.com): "busca reversa" em imagens de satélites;
 
----
-class: inverse, center, middle
-
-# Vamos praticar!
-
----
-
-
-# Foto de 17/08/2014. Descubra o horário.
-
-![](pics/aula3/brasilia.png)
-
----
-
-# Descobriu?
-
-.footnote[Cheque o resultado no [link para a foto original](https://www.flickr.com/photos/fcmont/14783157308).
-]
-
----
-# Competição 
-
-Vamos fazer um round no [Geoguessr](https://www.geoguessr.com/).
-
-Depois, compartilhe sua pontuação!
 
 ---
 
@@ -166,6 +149,7 @@ Depois, compartilhe sua pontuação!
 - [Coletâneas de webserviços para o QGIS](https://github.com/belisards/qgis_resources)
 
 - [Qgis2threejs](https://github.com/minorua/Qgis2threejs) (exemplo de uso com [Brumadinho](https://smaprs.github.io/BrumadinhoDam/))
+
 ---
 
 # Referências extras
