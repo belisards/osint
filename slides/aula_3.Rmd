@@ -23,7 +23,34 @@ output:
 - Investigações visuais
   - Terra à vista: imagens de satélites
   - Geolocalização de imagens
- 
+---
+
+# Assinaturas visuais
+
+- Anúncios, cartazes;
+
+- Construções, reformas, demolições;
+
+- Câmeras de segurança, placas, pôsteres, anúncios;
+
+- Produtos, relógios, roupas;
+
+- Vegetação, árvores, flores;
+
+- Condições do tempo.
+
+---
+
+# Busca reversa
+
+
+
+- [Google Lens](https://lens.google/intl/pt-BR/)
+
+- [Yandex](https://yandex.com/)
+
+- [PimEyes](https://pimeyes.com/en)
+
 ---
 class: inverse, center, middle
 
@@ -31,7 +58,7 @@ class: inverse, center, middle
 
 ---
 class: center
-```{r, echo=FALSE, out.width = "60%"}
+```{r, echo=FALSE, out.width = "50%"}
 knitr::include_graphics("pics/aula3/satellite.jpeg")
 ```
 
@@ -69,15 +96,9 @@ class: inverse, center, middle
 
 As principais soluções são:
 
-- Sentinel-2: da agência espacial europeia, cobertura a cada 5 dias, aproximadamente;
+- Sentinel-2: da agência espacial europeia, cobertura a cada 5 dias, aproximadamente. Resolução: 10 a 60 metros.
 
-- Landsat 8: do serviço geológico norte-americano, tira uma "foto" da Terra a cada ~16 dias;
-
-- MODIS: satélites da NASA, cobertura entre 1 e 2 dias;
-
-Todas estão disponíveis para download em serviços da Amazon ([Earth on AWS](https://aws.amazon.com/pt/earth/)) ou do Google ([Earth Engine Catalog](https://developers.google.com/earth-engine/datasets/catalog/)).
-
-Porém, você deve encontrar imagens em uma resolução pior do que está acostumado - e são arquivos enormes.
+- Landsat 8: do serviço geológico norte-americano, tira uma "foto" da Terra a cada ~16 dias. Resolução: 15 a 30 metros.
 
 .footnote[Fonte: [How to find the latest satellite imagery in 2021](https://www.azavea.com/reports/how-to-find-the-latest-satellite-imagery-in-2021/).
 ]
@@ -88,13 +109,15 @@ Porém, você deve encontrar imagens em uma resolução pior do que está acostu
 
 - [SentinelHub EO Browser](https://apps.sentinel-hub.com/eo-browser/): útil para fazer buscas e comparações;
 
-- [Open Aerial Map](https://map.openaerialmap.org): catálogo colaborativo para fotos áreas (drones);
-
 - [Bing maps](https://www.bing.com/maps/?cc=br): alternativa ao Google;
 
 - [Satellites.pro](https://satellites.pro): combina diferentes serviços;
 
-- [Zoom.earth](https://zoom.earth/): utiliza o satélite MODIS;
+- [Zoom.earth](https://zoom.earth/): utiliza o satélite MODIS, mais usado para análises climáticas;
+
+- [World Imagery Wayback](https://livingatlas.arcgis.com/wayback/): serviço do ArcGIS, acesso fácil a imagens de satélites antigas;
+
+- [Open Aerial Map](https://map.openaerialmap.org): catálogo colaborativo para fotos áreas (drones);
 
 
 ---
@@ -111,18 +134,76 @@ Veja [todas as soluções para dados geográficos](https://www.google.com/intl/p
 
 ---
 
+# Vá além do Google!
+
+Resultados do Bing vs Google (-2.48759, -54.66169) em maio de 2022.
+
+![](pics/aula3/bing_vs_google.png)
+
+---
+
 # Timelapse
 
-Vamos explorar duas opções para criar timelapses.
+Duas ótimas opções para criar timelapses de imagens de satélite:
 
 - [Google Earth Pro](https://www.google.com.br/earth/download/gep/agree.html)
 
 - [SentinelHub EO Browser](https://apps.sentinel-hub.com/eo-browser/): 
 
+---
+
+# Geolocalização
+
+A geolocalização é primordial para a cronolocalização;
+
+Em geral, lidamos com intervalos de tempo, não momentos exatos (momento anterior e posterior);
+
+A análise do sol/sombras é uma das técnicas mais comuns.
 
 ---
 
-# Recursos para geo/cronolocalização e outras ferramentas úteis
+# Recomendações iniciais
+
+Aumentar o contraste da imagem pode ajudar a visualizar as sombras;
+
+A sombra deve ser projetada em uma superfície plana (exceto para modelagens 3d);
+
+A foto não deve ser capturada com lentes distorcidas, tipo olho de peixe.
+
+Cuidado com a influência de fontes artificiais de iluminação ou de reflexo (por ex, prédios espelhados) ao analisar sombras;
+
+---
+
+# A sombra de um objeto reflete a altura do sol
+
+A proporção entre um objeto e sua sombra (o ângulo formado por eles) indica a altura/elevação do sol. Logo, objetos e pessoas podem ser como um relógio de sol nas imagens.
+
+![](pics/aula3/shadow.png)
+---
+
+# Azimute
+
+O azimute é mede a direção horizontal, em graus, em relação ao norte. O grau de elevação/altitude se repete duas vezes em 24 horas. O azimute, não.
+
+![](pics/aula3/azimute.png)
+
+---
+# Do azimute para o horário
+
+O azimute de uma sombra indica o horário, se sabemos o dia e o local.
+
+
+---
+
+# IA para geolocalização
+
+- [GeoSpy](https://geospy.ai/): serviço baseada em IA para identificar a localização de imagens;
+
+- [StreetCLIP](https://huggingface.co/geolocal/StreetCLIP): modelo de código aberto de classificação zero-shot;
+
+---
+
+# Referências extras
 
 - [SunCalc.org](https://www.suncalc.org): para calcular a posição do sol e ajudar a localizar imagens no tempo;
 
@@ -132,28 +213,22 @@ Vamos explorar duas opções para criar timelapses.
 
 - [Mapchecking](https://www.mapchecking.com/): calcula o total de pessoas em uma certa área;
 
-- [DescaterLab](https://search.descarteslabs.com): "busca reversa" em imagens de satélites;
-
-
 ---
 
 # Referências extras
+
+- [Checagem de imagens: cronolocalização de fotos](https://escoladedados.org/tutoriais/checagem-de-imagens-cronolocalizacao-de-fotos/)
 
 - [Geolocating a video, a basic tutorial](https://www.osinteditor.com/resources/guides/geolocating-a-video-a-basic-tutorial/)
 
-- [Cleared for Takeoff: Exploring Microsoft Flight Simulator 2020's Research Potential](https://www.bellingcat.com/resources/case-studies/2020/08/24/cleared-for-takeoff-exploring-microsoft-flight-simulator-2020s-research-potential/)
-
-- [Shadows and Suncalc](https://medium.com/quiztime/lining-up-shadows-2351ae106cec)
-
-- [Coletâneas de webserviços para o QGIS](https://github.com/belisards/qgis_resources)
+- [Análise de sombras](https://medium.com/quiztime/lining-up-shadows-2351ae106cec)
 
 - [Qgis2threejs](https://github.com/minorua/Qgis2threejs) (exemplo de uso com [Brumadinho](https://smaprs.github.io/BrumadinhoDam/))
 
----
-
-# Referências extras
-
 - [Satellite images for journalism](https://news.climate.columbia.edu/2021/03/31/find-satellite-images-journalism/)
+
+
+---
 
 class: center, middle
 # Obrigado!

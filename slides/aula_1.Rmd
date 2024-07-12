@@ -51,6 +51,19 @@ Todos os slides e mais uma lista de outras referências úteis estão disponíve
 
 ---
 
+# Avaliação
+
+## Desafios (10% cada)
+Realização de duas listas de exercícios para colocar em prática as abordagens discutidas.
+
+## Trabalho final (80%)
+Redação de um texto sobre uma técnica de OSINT. Espera-se um estudo aprofundado da técnica, cuja complexidade será levada em conta na avaliação. Entrevistar especialistas ou coletar opiniões em fóruns e chats especializados é recomendado. Incentivo também a comparação sistemática do resultado de diferentes ferramentas, explorando o potencial e limitações de cada uma.
+
+## Prazo
+21 de julho de 2024
+
+---
+
 # Sobre vocês
 
 Para saber mais em que pé estamos:
@@ -82,9 +95,8 @@ Abaixo alguns dos serviços online e programas que serão utilizados.
 Nenhum é obrigatório, porém seu uso é recomendado para acompanhar ou replicar alguns atividades.
 
 ## Contas
-- [Conta no Google](https://gmail.com/) (principalmente para o Google Colab - ou use algum outro serviço de notebook online)
+- [Conta no Google](https://gmail.com/)
 - [Conta no Facebook](https://facebook.com/)
-- [Conta no Instagram](https://instagram.com/)
 
 ## Softwares
 - [Google Earth Pro](https://www.google.com/intl/pt-BR/earth/about/versions/#earth-pro)
@@ -160,6 +172,8 @@ Não se trata de usar ferramentas, mas de adotar uma outra forma de encarar suas
 # O que você realmente precisa?
 
 As ferramentas são úteis, mas as habilidades mais importantes em OSINT são:
+
+- **Aprender a aprender** onde estão as informações que você precisa;
 
 - **Paciência** para achar a agulha no palheiro. 99% das suas tentativas não vão dar em nada, mas aquele 1%...
 
@@ -370,7 +384,7 @@ Algumas ferramentas úteis:
 
 Tomar notas e registrar o que você encontra no decorrer de sua investigação é fundamental para transformar as informações brutas em algo relevante.
 
-Além de planilhas para tabular dados, algumas outras formas de documentar a informações que podem ajudar:
+- Planilhas para armazenar tabelas ou estruturar dados novos;
 
 - Informações textuais: documentos ou blocos de notas estruturados como [Obsidian](https://obsidian.md) ou Notion.
 
@@ -397,11 +411,6 @@ Use sua intuição e tire proveito de sua experiência pessoal, mas tente fazer 
 .footnote[
 [1] [Codex dos vieses cognitivos](https://pt.wikipedia.org/wiki/Vi%C3%A9s_cognitivo#/media/Ficheiro:Codex_Vi%C3%A9s_Cognitivos.jpg)
 ]
-
----
-class: inverse, center, middle
-
-.extra-large[Caixas de ferramentas]
 
 ---
 
@@ -525,6 +534,33 @@ knitr::include_graphics("pics/aula1/2fa-geral.png")
 
 ---
 
+# Anatomia de uma URL
+
+Importante para se proteger de golpes (**[phishing](https://phishingquiz.withgoogle.com/)**) e para OSINT e raspagem de dados. Considere a URL: https://search.googlee.com/search?q=osint&newwindow=1
+
+.pull-left[
+
+- Protocolo (`https://`): o "idioma" da comunicação. Certifique-se de ter o "S" em "https", especialmente para sites onde você irá colocar informações pessoais.
+
+- Subdomínio (`search`): em geral, é "www", mas pode ser qualquer valor arbitrário. Não diz absolutamente nada sobre o quão seguro ou confiável o site é.
+
+
+]
+
+.pull-right[
+
+- Domínio (`googlee.com`): convertido para o endereço de um servidor (IP) por uma tabela (DNS). Um caracter diferente e você vai para outro lugar. Precisa ser registrado e contém o domínio de alto nível (`.com`) .
+
+- Caminho (`search`): O conteúdo ou recurso do servidor que será acessado.
+
+- Parâmetros de consulta (`?q=osint&newwindows=1`): em geral, um "?" marca o início dos parâmetros de consulta e formato é "chave=valor", separado por &. 
+
+]
+
+
+
+---
+
 # Navegação anônima
 
 Qual a diferença entre ~~o charme e o funk~~ VPN e o TOR?
@@ -561,11 +597,9 @@ Qual a diferença entre ~~o charme e o funk~~ VPN e o TOR?
 
 - [uBlock Origin](https://ublockorigin.com/): bloqueador de anúncios e scripts;
 
-- [Security in a box](https://securityinabox.org/en/);
+- [Security in a box](https://securityinabox.org/);
 
-- [Autodefesa contra vigilância](https://ssd.eff.org/pt-br): guia da Electronic Frontier Foundation;
-
-- [Guia de autodefesa](https://guia.autodefesa.org/);
+- [Autodefesa contra vigilância](https://ssd.eff.org): guia da Electronic Frontier Foundation;
 
 
 ---
@@ -581,7 +615,6 @@ Qual a diferença entre ~~o charme e o funk~~ VPN e o TOR?
 
 - [Awesome OSINT](https://github.com/jivoi/awesome-osint)
 
-- [OSINT.sh](https://osint.sh)
 
 ---
 
@@ -589,7 +622,7 @@ Qual a diferença entre ~~o charme e o funk~~ VPN e o TOR?
 
 Existem também programas e plataformas dedicados a potencializar investigações de OSINT. 
 
-Abaixo, lista de alguns dos mais conhecidos:
+Abaixo, alguns destaques:
 
 - [Maltego](https://www.maltego.com/): a mais famosa ferramenta para investigações digitais, com diversos plugins. Baseado em grafos.
 
@@ -599,9 +632,9 @@ Abaixo, lista de alguns dos mais conhecidos:
 
 - [theHarvester](https://github.com/laramies/theHarvester): útil para investigar emails e sites, principalmente.
 
-- [EffectGroup](https://effectgroup.io/): ótimo para buscar informações pessoais a partir de nomes e email, inclusive com dados de brasileiros. 
+- [EffectGroup](https://effectgroup.io/): ótimo para buscar informações pessoais a partir de nomes e email. 
 
-Mas há muito, muito mais. Hoje, em julho de 2024, existem mais de 2.300 projetos de código-aberto com a [tag "OSINT" no Github](https://github.com/topics/osint) - fora as plataformas privadas.
+Mas há muito mais: em julho de 2024, existem mais de 2.300 projetos de código-aberto apenas no Github com a [tag "OSINT"](https://github.com/topics/osint).
 
 ---
 

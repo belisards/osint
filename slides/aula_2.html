@@ -1,90 +1,102 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>🔎 Dados invisíveis - Open source intelligence</title>
+    <title>🔎 OSINT e fact-checking</title>
     <meta charset="utf-8" />
     <meta name="author" content="Adriano Belisario - @belisards" />
-    <meta name="date" content="2021-10-23" />
-    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <meta name="date" content="2024-07-12" />
+    <script src="libs/header-attrs-2.27/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="osint.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# 🔎 Dados invisíveis - Open source intelligence
+.title[
+# 🔎 OSINT e fact-checking
+]
+.subtitle[
 ## Busca avançada na web
+]
+.author[
 ### Adriano Belisario - <span class="citation">@belisards</span>
+]
+.institute[
 ### MBA em Jornalismo de Dados/IDP
-### 2021-10-23
+]
+.date[
+### 2024-07-12
+]
 
 ---
 
-class: center, middle
 
-# Apresentações e materiais do curso:
-
-### [belisards.github.io/osint](https://belisards.github.io/osint/)
-
-Slides criados com o pacote R [**xaringan**](https://github.com/yihui/xaringan).
-
----
 # O que temos para hoje?
 
-- Buscadores na web
-- Busca reversa de imagem
-- Busca em redes sociais
-- Investigando sites
+- Busca avançada na web
+  - Operadores de busca avançada
+  - Busca em redes sociais
+  - Investigando sites
+
+---
+class: inverse, center, middle
+
+# Google Dorks
 
 ---
 # Busca avançada no Google
 
-Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados](https://escoladedados.org/tutoriais/busca-avancada-na-internet/) ou esta [listagem de comandos](http://www.googleguide.com/advanced_operators_reference.html).
+Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados](https://escoladedados.org/tutoriais/operadores-de-busca-avancada/) ou esta [listagem de comandos](http://www.googleguide.com/advanced_operators_reference.html).
 
 Considere a busca abaixo:
 
-`botafogo campeão`
+`orçamento confidencial`
 
 ### O que ela retorna?
 
 --
 
-Páginas com o termo `botafogo` e o termo `campeão`.
+Páginas com o termo `orçamento` e o termo `confidencial` em qualquer lugar da página.
 
-É o mesmo que `botafogo AND campeão`.
+É o mesmo que `orçamento AND confidencial`.
 
 ---
-# Operadores de busca
+
+# Operadores básicos de busca
 
 Atenção para os espaços extras. Eles podem arruinar sua busca.
 
-- Aspas para expressões exatas ou para forçar a busca por uma palavra tal que ela aparece;
-
-- Sinal de menos para excluir;
-
-- Asterisco representa uma ou mais palavras;
-
-- `Ferramentas &gt; Em qualquer data`: para delimitar um intervalo de tempo;
-
----
-## Operadores booleanos
-
-- `AND`: para afunilar os termos de pesquisa. No Google, um espaço em branco equivale a um `AND`;
-
-- `OR` ou barra em pé (`|`) para colocar alternativas de termo;
-
-- Parênteses para isolar o termo;
+- Aspas para expressões exata contendo várias palavras ou para forçar a busca por uma palavra tal como digitado;
 
 --
 
-### Pergunta
+- Sinal de menos para excluir;
 
-Qual a diferença entre as duas buscas abaixo:
+--
 
-- `botafogo flamengo` 
+- Asterisco representa uma ou mais palavras;
 
-- `botafogo | flamengo` 
+--
+
+- Filtros por data: `before:YYYY-MM-DD` ou `after:YYYY-MM-DD` - ou pela opção `Ferramentas &gt; Em qualquer data`;
+
+---
+
+# Operadores booleanos
+
+- `AND`: afunila os resultados. No Google, um espaço em branco equivale a um `AND`;
+
+--
+
+- `OR`: expande os resultados possíveis, adicionando alternativas de termo;
+
+--
+
+- Parênteses para isolar expressões;
+
 
 ---
 
@@ -92,15 +104,25 @@ Qual a diferença entre as duas buscas abaixo:
 
 - `site:` restringir a busca a um determinado site ou domínio;
 
+--
+
 - `filetype:` restringir a busca a um formato de arquivo;
 
-- `cache:` para pesquisar a versão arquivada de um site;
+--
 
 - `before:` pesquisa antes de uma determinada data (YYYY-MM-DD);
 
+--
+
 - `link:` páginas que possuem link para um endereço;
 
+--
+
 - `related:` sites relacionados a um endereço;
+
+--
+
+- `..`: intervalos de valores numéricos (ex: 1992..1996)
 
 ---
 
@@ -108,37 +130,59 @@ Qual a diferença entre as duas buscas abaixo:
 
 - `inanchor`: textos como âncora de links
 
+--
+
 - `intext`: no texto (corpo) do dodcumento;
+
+--
 
 - `inurl:` na URL do documento;
 
-- `intitle:` e `allintitle:` buscam apenas no título da página. Colocar `intitle:` na frente de cada termo é o mesmo de usar `allintitle:` seguido de todos os termos ;
+--
 
-Dica: tal como no exemplo anterior, todos esta classe de operadores aceita o `all` antes.
+- `intitle:` busca apenas no título da página. 
+
+--
+
+Todos operadores desta classe de operadores aceitam o `all` antes, por exemplo: `allintitle:`
 
 ---
 
-## Exemplos
+# Exemplos
 
-`site:*.pmerj.rj.gov.br -www`
+`site:*.pmerj.rj.gov.br -site:www.pmerj.rj.gov.br`
+
+--
 
 `intitle:osint site:twitter.com/i/lists`
 
+--
+
 `dilma 1980..2000`
+
+--
 
 `inflação before:2010-01-01 site:folha.uol.com.br`
 
+--
+
 `"secretaria * de saúde" site:gov.br filetype:xls`
+
+--
 
 `link:escoladedados.org -site:escoladedados.org`
 
+--
+
 `related:escoladedados.org`
+
+--
 
 `(ussr OR russia) AND (eua OR usa)`
 
-`prevenção -alcoolismo`
 
 ---
+
 class: inverse, center, middle
 
 # Busca na web ≠ Google 
@@ -157,22 +201,35 @@ class: inverse, center, middle
  
 - [Carrot2](https://search.carrot2.org/): buscador que organiza os resultados em tópicos e "clusters";
 
-- [Internet Archive](https://archive.org/web/): o túnel do tempo da web;
-
 - [Wolfram Alpha](wolframalpha.com): um buscador inteligente;
 
+---
+
+# Nomes de usuário
+
 - [Whats my name](https://whatsmyname.app/): pesquisa nomes de usuário em diversas plataformas;
+
+- [Maigret](https://github.com/soxoj/maigret): pacote Python e via linha de comando;
+
+
+---
+
+# Saiu do ar?
+
+- [Web Archive](https://web.archive.org): sua primeira escolha, armazena diversas versões dos sites;
+
+--
+
+- Operador de busca no Google `cache:` para pesquisar a versão arquivada de um site;
+
+- [Archive.today](https://archive.today): último recurso;
 
 
 ---
 
 # Twitter
 
-- [Busca avançada](https://twitter.com/search-advanced?lang=pt): o mecanismo nativo da plataforma é decente;
-
-- [Tweetdeck](https://tweetdeck.twitter.com/): útil para monitoramento e para buscas geolocalizadas. O [Onemilliontweetmap](https://onemilliontweetmap.com/) permite a visualização em forma de mapa:
-
-## Operadores
+[Busca avançada](https://twitter.com/search-advanced?lang=pt): o mecanismo nativo da plataforma é decente. Vale consultar também a [documentação dos operadores de busca](https://developer.x.com/en/docs/twitter-api/v1/rules-and-filtering/search-operators).
 
 Muitos dos operadores de busca vistos no Google funcionam aqui também, além de outros mais: 
 
@@ -180,22 +237,22 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 
 - `-` para exclusão;
 
-- `from:` e `to:`
+- `since:` e `until:`
 
 - Filtros por engajamento: `min_retweets:`; `min_replies:` e `min_faves:`
 
 - Recortes temporais: `until:` e  `since:` 
 
 ---
-# Exemplos
 
-- `(lula OR dilma) (from:jairbolsonaro)`
+## Exemplos
 
-- `brasília -deputado (#BolsonaroPresidente)`
+- `(lula OR dilma) (from:ArthurLira_)`
 
-- `(corrupção OR rachadinha) (@jairbolsonaro)`
+- `"pablo marçal" -from:pablomarcal until:2012-01-01`
 
-- `bolsonaro facada until:2018-09-05`
+- `fraude eleição min_retweets:100 since:2024-01-01`
+
 
 ---
 
@@ -203,7 +260,9 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 
 - Seção de ["Transparência das páginas"](https://www.facebook.com/help/323314944866264)
 
-- [LookUp ID](https://lookup-id.com/#)
+- [Biblioteca de anúncios](https://www.facebook.com/ads/library/?active_status=all&amp;ad_type=all&amp;country=BR&amp;media_type=all)
+
+- [LookUp ID](https://lookup-id.com/)
 
 - [Who Posted What](https://www.whopostedwhat.com/)
 
@@ -213,54 +272,107 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 
 ---
 
-# Investigação de sites
+# Busca geolocalizada
 
-## Domínios
+Caso você esteja interessado em conteúdos de uma localidade específica, tente serviços de busca geolocalizado:
 
-- Serviços de "Who Is": [Who.is](https://who.is) ou [Whoxy](https://www.whoxy.com/) para buscas históricas;
+- [Onemilliontweetmap](https://onemilliontweetmap.com/): permite a visualização de tweets forma de mapa:
 
-- [Whois - Registro.Br](https://registro.br/tecnologia/ferramentas/whois/)
+- [MW Geofind](https://mattw.io/youtube-geofind/location): para buscar no YouTube;
 
-- [Buscador de subdomínios](https://spyse.com/tools/subdomain-finder)
-
-## Monitoramento de mudanças
-
-- [VisualPing](https://visualping.io/)
-
-- [FollowThaPage!](https://www.followthatpage.com/)
+- [Instagram Location Search](https://github.com/bellingcat/instagram-location-search): pesquisa lugares no IG perto de uma coordenada latlong.
 
 ---
 
-# Busca reversa de imagens
+# Cronolocalização de posts
 
-![](pics/aula2/img_busca_reversa.png)
-[A comparison of reverse image searching platforms](https://www.domaintools.com/resources/blog/a-brief-comparison-of-reverse-image-searching-platforms)
+- Youtube: [MW Metadata](https://mattw.io/youtube-metadata/)
+
+- Instagram: abrir o código-fonte e pesquisar por "timestamp", então [converter do formato Unix Epoch](https://www.epochconverter.com/) para o fuso desejado
+
+Atenção para o fuso horário. Em geral, está no formato ISO 8601 (UTC), mas convém conferir.
 
 ---
-# Geolocalização
 
-- [Google Earth](https://earth.google.com/)
+# Investigação de sites: who is?
 
-- [Google Maps/StreetView](https://maps.google.com)
+Existem vários serviços para consultar informações sobre quem registrou um domínio. Este tipo de consulta é conhecida como "who is".
 
-- SunCalc: [.org](www.suncalc.org) e [.net](suncalc.net/) (parece desatualizado)
+- [Who.is](https://who.is): uma das soluções para consultas internacionais;
+
+- [Whois - Registro.Br](https://registro.br/tecnologia/ferramentas/whois/): para domínios com o final `.br`;
+
+- [Reverse whois - ViewDNS.info](https://viewdns.info/reversewhois/): busca reversa com nome ou email;
 
 --
 
-### Para praticar
+## Buscas históricas
 
-1. Em qual horário esta [foto de Brasília](https://www.flickr.com/photos/fcmont/14783157308) foi tirada?
+- [Domain Research Suite](https://tools.whoisxmlapi.com)
 
-1. Competição no [Geoguessr](https://www.geoguessr.com/): [envie sua pontuação](https://docs.google.com/forms/d/e/1FAIpQLScvr8rEajtFkLjV3EGfMbB_arJ9o3lWLjts4o2FEm6WaDWb0g/viewform)!
+- [Whoxy](https://www.whoxy.com/): freemium;
+
+- [Whoxology](https://whoisology.com/): serviço pago;
+
+
+---
+# Robots.txt
+
+Arquivo utilizado para indicar para mecanismos de buscas, robôs e raspadores automatizados aquilo que eles **não devem** olhar. 
+
+Exemplo do site da [Câmara federal](https://www.camara.leg.br/robots.txt):
+
+```
+User-Agent: *
+Disallow: /sileg/prop_lista*
+Disallow: /internet/sileg/prop_lista*
+Disallow: /sileg/Prop_lista*
+Disallow: /internet/sileg/Prop_lista*
+Disallow: /*arvore-de-apensados
+Disallow: /proposicoesWeb/prop_arvore_tramitacoes
+Disallow: /sileg/prop_arvore_tramitacoes
+Disallow: /internet/deputado/Dep_Lista*
+Disallow: /transparencia/recursos-humanos/remuneracao/*
+Disallow: /transparencia/recursos-humanos/contratos-terceirizacao*
+Disallow: /transparencia/recursos-humanos/funcionarios*
+Disallow: /*.tiff
+Disallow: /*.bmp
+Disallow: /*.gif
+Disallow: /.lixeira*
+Disallow: /*crawl=no
+```
+
+---
+
+# Outras ferramentas úteis
+
+- [Spyse/Subdomain finder](https://spyse.com/tools/subdomain-finder): busca subdomínios;
+
+- [Spy On Web](https://spyonweb.com): para pesquisar sites com o mesmo código Adsense, Analytics, etc. Veja um exemplo com o [Jornal A Cidade Online](https://spyonweb.com/www.jornaldacidadeonline.com.br);
+
+- [VisualPing](https://visualping.io/): para monitorar mudanças em sites e emitir alertas;
+
+- [FollowThatPage!](https://www.followthatpage.com/): similar ao anterior, envia emails para alertar de mudanças em webistes.
+
+
+---
+
+# Dados invisíveis
+
+Metadados: use ferramentas EXIF, mas faça validação cruzada com outras fontes pois eles podem ser alterados.
+
+Código-fonte: termos interessantes para buscar "timestamp", "id:", "user", "UA-", "datetime", etc.
 
 ---
 
 class: center, middle
+
 # Obrigado!
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n",
 "highlightStyle": "github",
 "highlightLines": true
 });
@@ -303,6 +415,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

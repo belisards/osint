@@ -26,7 +26,11 @@ output:
   - Investigando sites
 
 ---
+class: inverse, center, middle
 
+# Google Dorks
+
+---
 # Busca avançada no Google
 
 Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados](https://escoladedados.org/tutoriais/operadores-de-busca-avancada/) ou esta [listagem de comandos](http://www.googleguide.com/advanced_operators_reference.html).
@@ -49,7 +53,7 @@ Páginas com o termo `orçamento` e o termo `confidencial` em qualquer lugar da 
 
 Atenção para os espaços extras. Eles podem arruinar sua busca.
 
-- Aspas para expressões exatas ou para forçar a busca por uma palavra tal que ela aparece;
+- Aspas para expressões exata contendo várias palavras ou para forçar a busca por uma palavra tal como digitado;
 
 --
 
@@ -61,7 +65,7 @@ Atenção para os espaços extras. Eles podem arruinar sua busca.
 
 --
 
-- Filtros por data: `before:YYYY-MM-DD` ou `after:YYYY-MM-DD` - ou pela opção `Ferramentas > Em qualquer data`: 
+- Filtros por data: `before:YYYY-MM-DD` ou `after:YYYY-MM-DD` - ou pela opção `Ferramentas > Em qualquer data`;
 
 ---
 
@@ -69,7 +73,11 @@ Atenção para os espaços extras. Eles podem arruinar sua busca.
 
 - `AND`: afunila os resultados. No Google, um espaço em branco equivale a um `AND`;
 
+--
+
 - `OR`: expande os resultados possíveis, adicionando alternativas de termo;
+
+--
 
 - Parênteses para isolar expressões;
 
@@ -80,13 +88,25 @@ Atenção para os espaços extras. Eles podem arruinar sua busca.
 
 - `site:` restringir a busca a um determinado site ou domínio;
 
+--
+
 - `filetype:` restringir a busca a um formato de arquivo;
+
+--
 
 - `before:` pesquisa antes de uma determinada data (YYYY-MM-DD);
 
+--
+
 - `link:` páginas que possuem link para um endereço;
 
+--
+
 - `related:` sites relacionados a um endereço;
+
+--
+
+- `..`: intervalos de valores numéricos (ex: 1992..1996)
 
 ---
 
@@ -94,37 +114,59 @@ Atenção para os espaços extras. Eles podem arruinar sua busca.
 
 - `inanchor`: textos como âncora de links
 
+--
+
 - `intext`: no texto (corpo) do dodcumento;
+
+--
 
 - `inurl:` na URL do documento;
 
-- `intitle:` e `allintitle:` buscam apenas no título da página. Colocar `intitle:` na frente de cada termo é o mesmo de usar `allintitle:` seguido de todos os termos ;
+--
 
-Dica: tal como no exemplo anterior, todos esta classe de operadores aceita o `all` antes.
+- `intitle:` busca apenas no título da página. 
+
+--
+
+Todos operadores desta classe de operadores aceitam o `all` antes, por exemplo: `allintitle:`
 
 ---
 
-## Exemplos
+# Exemplos
 
-`site:*.pmerj.rj.gov.br -www`
+`site:*.pmerj.rj.gov.br -site:www.pmerj.rj.gov.br`
+
+--
 
 `intitle:osint site:twitter.com/i/lists`
 
+--
+
 `dilma 1980..2000`
+
+--
 
 `inflação before:2010-01-01 site:folha.uol.com.br`
 
+--
+
 `"secretaria * de saúde" site:gov.br filetype:xls`
+
+--
 
 `link:escoladedados.org -site:escoladedados.org`
 
+--
+
 `related:escoladedados.org`
+
+--
 
 `(ussr OR russia) AND (eua OR usa)`
 
-`prevenção -alcoolismo`
 
 ---
+
 class: inverse, center, middle
 
 # Busca na web ≠ Google 
@@ -145,7 +187,13 @@ class: inverse, center, middle
 
 - [Wolfram Alpha](wolframalpha.com): um buscador inteligente;
 
+---
+
+# Nomes de usuário
+
 - [Whats my name](https://whatsmyname.app/): pesquisa nomes de usuário em diversas plataformas;
+
+- [Maigret](https://github.com/soxoj/maigret): pacote Python e via linha de comando;
 
 
 ---
@@ -154,17 +202,15 @@ class: inverse, center, middle
 
 - [Web Archive](https://web.archive.org): sua primeira escolha, armazena diversas versões dos sites;
 
+--
+
 - Operador de busca no Google `cache:` para pesquisar a versão arquivada de um site;
 
 - [Archive.today](https://archive.today): último recurso;
 
----
-
-# Busca geolocalizada
-
-O [Onemilliontweetmap](https://onemilliontweetmap.com/) permite a visualização em forma de mapa:
 
 ---
+
 # Twitter
 
 [Busca avançada](https://twitter.com/search-advanced?lang=pt): o mecanismo nativo da plataforma é decente. Vale consultar também a [documentação dos operadores de busca](https://developer.x.com/en/docs/twitter-api/v1/rules-and-filtering/search-operators).
@@ -182,15 +228,15 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 - Recortes temporais: `until:` e  `since:` 
 
 ---
-# Exemplos
 
-- `(lula OR dilma) (from:jairbolsonaro)`
+## Exemplos
 
-- `brasília -deputado (#BolsonaroPresidente)`
+- `(lula OR dilma) (from:ArthurLira_)`
 
-- `(corrupção OR rachadinha) (@jairbolsonaro)`
+- `"pablo marçal" -from:pablomarcal until:2012-01-01`
 
-- `bolsonaro facada until:2018-09-05`
+- `fraude eleição min_retweets:100 since:2024-01-01`
+
 
 ---
 
@@ -200,7 +246,7 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 
 - [Biblioteca de anúncios](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=BR&media_type=all)
 
-- [LookUp ID](https://lookup-id.com/#)
+- [LookUp ID](https://lookup-id.com/)
 
 - [Who Posted What](https://www.whopostedwhat.com/)
 
@@ -208,6 +254,27 @@ Muitos dos operadores de busca vistos no Google funcionam aqui também, além de
 
 - [Facebook Matrix](https://plessas.net/facebookmatrix)
 
+---
+
+# Busca geolocalizada
+
+Caso você esteja interessado em conteúdos de uma localidade específica, tente serviços de busca geolocalizado:
+
+- [Onemilliontweetmap](https://onemilliontweetmap.com/): permite a visualização de tweets forma de mapa:
+
+- [MW Geofind](https://mattw.io/youtube-geofind/location): para buscar no YouTube;
+
+- [Instagram Location Search](https://github.com/bellingcat/instagram-location-search): pesquisa lugares no IG perto de uma coordenada latlong.
+
+---
+
+# Cronolocalização de posts
+
+- Youtube: [MW Metadata](https://mattw.io/youtube-metadata/)
+
+- Instagram: abrir o código-fonte e pesquisar por "timestamp", então [converter do formato Unix Epoch](https://www.epochconverter.com/) para o fuso desejado
+
+Atenção para o fuso horário. Em geral, está no formato ISO 8601 (UTC), mas convém conferir.
 
 ---
 
@@ -237,7 +304,7 @@ Existem vários serviços para consultar informações sobre quem registrou um d
 
 Arquivo utilizado para indicar para mecanismos de buscas, robôs e raspadores automatizados aquilo que eles **não devem** olhar. 
 
-Exemplo do site da [Câmara federal]():
+Exemplo do site da [Câmara federal](https://www.camara.leg.br/robots.txt):
 
 ```
 User-Agent: *
@@ -252,40 +319,36 @@ Disallow: /internet/deputado/Dep_Lista*
 Disallow: /transparencia/recursos-humanos/remuneracao/*
 Disallow: /transparencia/recursos-humanos/contratos-terceirizacao*
 Disallow: /transparencia/recursos-humanos/funcionarios*
+Disallow: /*.tiff
+Disallow: /*.bmp
+Disallow: /*.gif
+Disallow: /.lixeira*
+Disallow: /*crawl=no
 ```
----
-# Robots.txt
-
-Você pode usar operadores de busca para pesquisar coisas interessantes em sites oficias, por exemplo: 
-
-`inurl:robots.txt site:jus.br`
-
-`inurl:robots.txt site:leg.br`
-
-`inurl:robots.txt site:gov.br`
-
----
-# Dados invisíveis
-
-Metadados
-
-Código-fonte
 
 ---
 
-## Outras ferramentas úteis
+# Outras ferramentas úteis
 
 - [Spyse/Subdomain finder](https://spyse.com/tools/subdomain-finder): busca subdomínios;
 
-- [Visual site mapper](http://visualsitemapper.com/): visualização das páginas de um site em grafo;
-
 - [Spy On Web](https://spyonweb.com): para pesquisar sites com o mesmo código Adsense, Analytics, etc. Veja um exemplo com o [Jornal A Cidade Online](https://spyonweb.com/www.jornaldacidadeonline.com.br);
 
-### Monitores de alterações
+- [VisualPing](https://visualping.io/): para monitorar mudanças em sites e emitir alertas;
 
-- [VisualPing](https://visualping.io/)
+- [FollowThatPage!](https://www.followthatpage.com/): similar ao anterior, envia emails para alertar de mudanças em webistes.
 
-- [FollowThatPage!](https://www.followthatpage.com/)
+
+---
+
+# Dados invisíveis
+
+Metadados: use ferramentas EXIF, mas faça validação cruzada com outras fontes pois eles podem ser alterados.
+
+Código-fonte: termos interessantes para buscar "timestamp", "id:", "user", "UA-", "datetime", etc.
+
+---
 
 class: center, middle
+
 # Obrigado!
