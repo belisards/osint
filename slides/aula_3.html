@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="author" content="Adriano Belisario - @belisards" />
     <meta name="date" content="2024-07-12" />
-    <script src="libs/header-attrs-2.27/header-attrs.js"></script>
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="osint.css" type="text/css" />
   </head>
   <body>
@@ -37,23 +37,14 @@ class: center, middle, inverse, title-slide
 # O que temos para hoje?
 
 - Investigações visuais
+  - Busca reversa de imagens
   - Terra à vista: imagens de satélites
-  - Geolocalização de imagens
+  - Geolocalização e cronolocalização de imagens
+
 ---
+class: inverse, center, middle
 
-# Assinaturas visuais
-
-- Anúncios, cartazes;
-
-- Construções, reformas, demolições;
-
-- Câmeras de segurança, placas, pôsteres, anúncios;
-
-- Produtos, relógios, roupas;
-
-- Vegetação, árvores, flores;
-
-- Condições do tempo.
+.extra-large[Busca reversa]
 
 ---
 # Busca reversa
@@ -72,7 +63,7 @@ class: center, middle, inverse, title-slide
 
 ![](pics/aula3/img_reversa.png)
 
-- TinEye: RIP?
+TinEye: RIP?
 
 .footnote[
 Atenção: a comparação pode estar desatualizada!
@@ -80,10 +71,11 @@ Atenção: a comparação pode estar desatualizada!
 ---
 class: inverse, center, middle
 
-# Imagens de satélite
+.extra-large[Imagens de satélite]
 
 ---
 class: center
+# Imagens de satélite
 &lt;img src="pics/aula3/satellite.jpeg" width="50%" /&gt;
 
 .footnote[Fonte: [Azavea](http://www.azavea.com/wp-content/uploads/2021/03/azavea_satellite_imagery_decision_tree_2021.pdf)
@@ -124,6 +116,8 @@ As principais soluções são:
 
 - Landsat 8: do serviço geológico norte-americano, tira uma "foto" da Terra a cada ~16 dias. Resolução: 15 a 30 metros.
 
+- A [NASA](firms.modaps.eosdis.nasa.gov) ofere serviços específicos para monitoramento de queimadas.
+
 .footnote[Fonte: [How to find the latest satellite imagery in 2021](https://www.azavea.com/reports/how-to-find-the-latest-satellite-imagery-in-2021/).
 ]
 
@@ -146,7 +140,7 @@ As principais soluções são:
 
 ---
 
-## Soluções do Google
+# Soluções do Google
 
 Veja [todas as soluções para dados geográficos](https://www.google.com/intl/pt-BR_br/earth/outreach/tools/) ou confira aqui alguns destaques:
 
@@ -160,6 +154,8 @@ Veja [todas as soluções para dados geográficos](https://www.google.com/intl/p
 
 # Vá além do Google!
 
+[Satellites.Pro](https://satellites.pro) permite alternar facilmente entre alguns provedores de imagem, mas pode valer a pena abrir os sites individualmente para explorar as marcações. Esse site aqui pode ajudar: [https://cybdetective.com/quickgeolocationsearch.html](https://cybdetective.com/quickgeolocationsearch.html)
+
 Resultados do Bing vs Google (-2.48759, -54.66169) em maio de 2022.
 
 ![](pics/aula3/bing_vs_google.png)
@@ -168,30 +164,107 @@ Resultados do Bing vs Google (-2.48759, -54.66169) em maio de 2022.
 
 # Timelapse
 
-Duas ótimas opções para criar timelapses de imagens de satélite:
+Duas opções para criar timelapses de imagens de satélite:
 
 - [Google Earth Pro](https://www.google.com.br/earth/download/gep/agree.html)
 
 - [SentinelHub EO Browser](https://apps.sentinel-hub.com/eo-browser/): 
 
 ---
+class: inverse, center, middle
+
+.extra-large[Geolocalização]
+
+---
 
 # Geolocalização: caso real
 
-Reportagem sobre a influência da Cambridge Analytics: o encontro de Eduardo Bolsonaro e o Steve Bannon.
+[Reportagem sobre a influência da Cambridge Analytica](https://projetocolabora.com.br/ods8/o-que-se-sabe-sobre-a-atuacao-da-cambridge-analytica-no-brasil/): o encontro de Eduardo Bolsonaro e o Steve Bannon.
 
-[pics/post_bolsobannon.png](https://twitter.com/bolsonarosp/status/1025718449425788929)
+&lt;img src="pics/aula3/post_bolsobannon.png" width="30%" /&gt;
+
+[https://twitter.com/bolsonarosp/status/1025718449425788929](https://twitter.com/bolsonarosp/status/1025718449425788929)
 
 
 ---
 
-# Geolocalização
+# Geolocalização: caso real
+
+![](pics/aula3/post_bolsobannon_detalhe.png)
+---
+
+# Geolocalização: caso real
+
+![](pics/aula3/post_bolsobannon_busca.png)
+
+---
+
+# Geolocalização: caso real
+
+&lt;img src="pics/aula3/post_bolsobannon_compara.png" width="50%" /&gt;
+
+
+---
+
+# Geolocalização: caso real
+
+![](pics/aula3/post_bolsobannon_perspectiva.png)
+---
+
+# Geolocalização: caso real
+
+![](pics/aula3/post_bolsobannon_final.png)
+---
+
+# Dicas iniciais
+
+- Separe a imagem em quadrantes ou o vídeo em frames. Analise minuciosamente.
+
+- Busque assinaturais visuais: anúncios, cartazes, construções, reformas, demolições, câmeras de segurança, placas, pôsteres, anúncios, produtos, relógios, roupas, vegetação, árvores, flores, condições do tempo.
+
+- Tente a busca reversa com a imagem toda e diferentes enquadramentos.
+
+- [Desenhar um mapa de visão aérea à mão ajuda](https://kit.exposingtheinvisible.org/en/geolocation.html)
+
+
+---
+
+# Recursos
+
+- Imagens de rua: fotos do Google Maps, Street View, [Kartaview](kartaview.org)
+
+- Análise 3D e relevo: Google Earth Pro, [F4 Maps](https://demo.f4map.com), [Peakfinder](https://www.peakfinder.com)
+
+- Busca pela API do Open Street Maps (Overpass Turbo): [OSM Search](https://osm-search.bellingcat.com/) ou [What is Where](https://www.whatiswhere.com/)
+
+- [Caixa de ferramentas para geolocalização](https://github.com/The-Osint-Toolbox/Geolocation-OSINT)
+
+--
+
+## Inteligência artificial
+
+- [Picarta](https://picarta.ai/)
+
+- [GeoSpy](https://geospy.ai/): serviço baseada em IA para identificar a localização de imagens;
+
+- [StreetCLIP](https://huggingface.co/geolocal/StreetCLIP): modelo de código aberto de classificação zero-shot;
+
+---
+class: inverse, center, middle
+
+.extra-large[Cronolocalização]
+
+---
+
+# Cronolocalização
+
+Responde o "quando?";
 
 A geolocalização é primordial para a cronolocalização;
 
 Em geral, lidamos com intervalos de tempo, não momentos exatos (momento anterior e posterior);
 
-A análise do sol/sombras é uma das técnicas mais comuns.
+A análise do sol/sombras é uma das técnicas mais comuns;
 
 ---
 
@@ -207,51 +280,77 @@ Cuidado com a influência de fontes artificiais de iluminação ou de reflexo (p
 
 ---
 
+&lt;img src="pics/aula3/sombras_retas.png" width="50%" /&gt;
+
+
+---
+
 # A sombra de um objeto reflete a altura do sol
 
 A proporção entre um objeto e sua sombra (o ângulo formado por eles) indica a altura/elevação do sol. Logo, objetos e pessoas podem ser como um relógio de sol nas imagens.
 
-![](pics/aula3/shadow.png)
+
+&lt;img src="pics/aula3/shadow.png" width="40%" /&gt;
+
+---
+
+# Calculando o ângulo da sombra
+
+Meça o objeto e sua sombra. Não importa a unidade  de medida.
+
+
+&lt;img src="pics/aula3/cronolocation-bellingcat.jpg" width="40%" /&gt;
+
+Quem disse que trigonometria não serve pra nada? Mas você [não precisa decorar fórmulas](https://tools.render.com.br/gratuito/triangulo_retangulo)!
+
+.footnote[
+
+Fonte: [Bellingcat: Unsure When a Video or Photo was Taken? How to Tell by Measuring the Length of Shadows](https://www.bellingcat.com/resources/2021/05/18/unsure-when-a-video-or-photo-was-taken-how-to-tell-by-measuring-the-length-of-shadows/)
+
+]
+
 ---
 
 # Azimute
 
 O azimute é mede a direção horizontal, em graus, em relação ao norte. O grau de elevação/altitude se repete duas vezes em 24 horas. O azimute, não.
 
-![](pics/aula3/azimute.png)
+O azimute de uma sombra indica o horário, se sabemos o dia e o local. É possível [medir o azimute no Google Earth Pro](https://sector035.nl/articles/chronolocation-of-media)!
+
+&lt;img src="pics/aula3/azimute.png" width="50%" /&gt;
 
 ---
 
-# Do azimute para o horário
+# Operacionalizando a cronolocalização
 
-O azimute de uma sombra indica o horário, se sabemos o dia e o local.
+1. Faça a análise visual para extrair informações úteis como as condições climáticas, altura do sol e azimute.
 
+1. Faça a geolocalização da imagem
+
+1. Identifique o dia no qual a foto foi tirada. É possível deduzir o dia da imagem investigando as ocorrências de azimute e elevação em uma dada localidade consultando [bases de dados da trajetória anual do sol](https://sector035.nl/articles/chronolocation-of-media#62-date-and-time-calculations). Veja a seção ‘Date e time calculations’ do tutorial [‘Chronolocation of Media’](https://sector035.nl/articles/chronolocation-of-media#62-date-and-time-calculations).
+
+1. Use ferramentas online para ver o horário correspondente: [SunCalc.org](https://www.suncalc.org), [Sun Path 3d](https://andrewmarsh.com/apps/staging/sunpath3d.html), [Shadowmap](https://app.shadowmap.org/), etc;
+
+1. Para verificar os resultados ou ajudar a afunilar datas possíveis, vale [checar o histórico da previsão do tempo](https://www.timeanddate.com) na localidade.
 
 ---
 
-# IA para geolocalização
+# Tutoriais
 
-- [GeoSpy](https://geospy.ai/): serviço baseada em IA para identificar a localização de imagens;
+1. [Checagem de imagens: cronolocalização de fotos](https://escoladedados.org/tutoriais/checagem-de-imagens-cronolocalizacao-de-fotos/) - Adriano Belisario
 
-- [StreetCLIP](https://huggingface.co/geolocal/StreetCLIP): modelo de código aberto de classificação zero-shot;
+1. Calculate time using shadows - Bendobrown
+
+
+&lt;center&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/9z26rSP2eqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/center&gt;
 
 ---
 
 # Referências extras
 
-- [SunCalc.org](https://www.suncalc.org): para calcular a posição do sol e ajudar a localizar imagens no tempo;
-
-- [TimeAndDate](https://www.timeanddate.com): histórico de previsão do tempo;
-
-- [Hugin](http://hugin.sourceforge.net/): para criar panoramas a partir de imagens;
-
-- [Mapchecking](https://www.mapchecking.com/): calcula o total de pessoas em uma certa área;
-
----
-
-# Referências extras
-
-- [Checagem de imagens: cronolocalização de fotos](https://escoladedados.org/tutoriais/checagem-de-imagens-cronolocalizacao-de-fotos/)
+- [Geolocation: step by step](https://kit.exposingtheinvisible.org/en/geolocation.html)
 
 - [Geolocating a video, a basic tutorial](https://www.osinteditor.com/resources/guides/geolocating-a-video-a-basic-tutorial/)
 
@@ -261,11 +360,16 @@ O azimute de uma sombra indica o horário, se sabemos o dia e o local.
 
 - [Satellite images for journalism](https://news.climate.columbia.edu/2021/03/31/find-satellite-images-journalism/)
 
+- [Hugin](http://hugin.sourceforge.net/): para criar panoramas a partir de imagens;
+
+- [Mapchecking](https://www.mapchecking.com/): calcula o total de pessoas em uma certa área;
 
 ---
-
 class: center, middle
+
 # Obrigado!
+
+[belisario.webiste/osint](belisario.webiste/osint)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

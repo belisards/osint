@@ -25,13 +25,13 @@ Atualmente, colabora como [Bellingcat](bellingcat.com) no programa 'Technical Wr
 
 Coordenou a Escola de Dados entre 2018 e 2022 e já publicou investigações na Agência Pública, The Intercept Brasil e na agência [Documental.xyz](https://documental.xyz).
 
-Mais informações: [belisario.website/osint](https://belisario.website/osint)
+Mais informações: [belisario.website](https://belisario.website/osint).
 
 ---
 
 # Sobre o curso
 
-Todos os slides e mais uma lista de outras referências úteis estão disponíveis em um repositório do Github (belisards/osint) e no link [belisario.website](https://belisario.website/osint).
+Todos os slides e mais uma lista de outras referências úteis estão disponíveis em um repositório do Github (belisards/osint) e no link [belisario.website/osint](https://belisario.website/osint) 
 
 --
 
@@ -46,8 +46,9 @@ Todos os slides e mais uma lista de outras referências úteis estão disponíve
   - Busca em redes sociais
   - Investigando sites
 - Investigações visuais
+  - Busca reversa de imagens
   - Terra à vista: imagens de satélites
-  - Geolocalização de imagens
+  - Geolocalização e cronolocalização de imagens
 
 ---
 
