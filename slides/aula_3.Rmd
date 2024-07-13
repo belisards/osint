@@ -32,26 +32,19 @@ class: inverse, center, middle
 
 ---
 # Busca reversa
-.pull-left[
-- [Google Lens](https://lens.google/intl/pt-BR/)
 
-- [Bing](https://bing.com/)
-]
-
-.pull-right[
-- [Yandex](https://yandex.com/)
-
-- [PimEyes](https://pimeyes.com/en)
-
-]
+Buscadores "tradicionais": [Google Lens](https://lens.google/intl/pt-BR/); [Bing](https://bing.com/); [Yandex](yandex.com)
 
 ![](pics/aula3/img_reversa.png)
+Buscadores de pessoas: [PimEyes](https://pimeyes.com/en) e [Facecheck](https://facecheck.id/)
 
-TinEye: RIP?
+[Remover elementos da imagem](https://cleanup.pictures/) que sobrepõe a entidade principal de seu interesse pode ajudar.
 
 .footnote[
 Atenção: a comparação pode estar desatualizada!
 ]
+
+
 ---
 class: inverse, center, middle
 
@@ -72,7 +65,13 @@ knitr::include_graphics("pics/aula3/satellite.jpeg")
 
 Atualmente, a maior resolução de imagens de satélites disponíveis comercialmente varia entre 30 e 50 centímetros GSD (ground sampling distance , ou seja, a distância real entre o centro de dois pixels).
 
-As principais fornecedoras comerciais são:
+```{r, echo=FALSE, out.width = "40%"}
+knitr::include_graphics("pics/aula3/groundsampledistance.png")
+```
+
+---
+
+# Fornecedores comerciais
 
 - [Maxar](https://www.maxar.com): a maior e mais antiga fornecedora de imagens de satélites dos EUA. Espere preços na ordem de milhares de dólares e imagens com resoluções de até 30cm;
 
@@ -115,11 +114,9 @@ As principais soluções são:
 
 - [Bing maps](https://www.bing.com/maps/?cc=br): alternativa ao Google;
 
-- [Satellites.pro](https://satellites.pro): combina diferentes serviços;
+- [Zoom.earth](https://zoom.earth/): satélite MODIS, mais usado para análises climáticas;
 
-- [Zoom.earth](https://zoom.earth/): utiliza o satélite MODIS, mais usado para análises climáticas;
-
-- [World Imagery Wayback](https://livingatlas.arcgis.com/wayback/): serviço do ArcGIS, acesso fácil a imagens de satélites antigas;
+- [World Imagery Wayback](https://livingatlas.arcgis.com/wayback/): serviço via ArcGIS, acesso fácil a imagens de satélites antigas;
 
 - [Open Aerial Map](https://map.openaerialmap.org): catálogo colaborativo para fotos áreas (drones);
 
@@ -335,9 +332,9 @@ knitr::include_graphics("pics/aula3/azimute.png")
 
 # Tutoriais
 
-1. [Checagem de imagens: cronolocalização de fotos](https://escoladedados.org/tutoriais/checagem-de-imagens-cronolocalizacao-de-fotos/) - Adriano Belisario
+1. [Checagem de imagens: cronolocalização de fotos](https://escoladedados.org/tutoriais/checagem-de-imagens-cronolocalizacao-de-fotos/)
 
-1. Calculate time using shadows - Bendobrown
+1. Calculate time using shadows
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
@@ -365,7 +362,7 @@ options(htmltools.dir.version = FALSE)
 - [Mapchecking](https://www.mapchecking.com/): calcula o total de pessoas em uma certa área;
 
 ---
-class: center, middle
+class: center, middle, inverse
 
 # Obrigado!
 
