@@ -33,7 +33,7 @@ class: inverse, center, middle
 ---
 # Busca reversa
 
-Buscadores "tradicionais": [Google Lens](https://lens.google/intl/pt-BR/); [Bing](https://bing.com/); [Yandex](yandex.com)
+Buscadores "tradicionais": [Google](https://google/); [Bing](https://bing.com/); [Yandex](https://yandex.com)
 
 ![](pics/aula3/img_reversa.png)
 Buscadores de pessoas: [PimEyes](https://pimeyes.com/en) e [Facecheck](https://facecheck.id/)
@@ -218,7 +218,7 @@ knitr::include_graphics("pics/aula3/post_bolsobannon_compara.png")
 
 # Recursos
 
-- Imagens de rua: fotos do Google Maps, Street View, [Kartaview](kartaview.org)
+- Imagens de rua: fotos do Google Maps, Street View, [Kartaview](https://kartaview.org)
 
 - Análise 3D e relevo: Google Earth Pro, [F4 Maps](https://demo.f4map.com), [Peakfinder](https://www.peakfinder.com)
 
@@ -230,7 +230,7 @@ knitr::include_graphics("pics/aula3/post_bolsobannon_compara.png")
 
 ## Inteligência artificial
 
-- [Picarta](https://picarta.ai/)
+- [Picarta](https://picarta.ai/): conta com uma API com cota gratuita.
 
 - [GeoSpy](https://geospy.ai/): serviço baseada em IA para identificar a localização de imagens;
 
@@ -366,4 +366,4 @@ class: center, middle, inverse
 
 # Obrigado!
 
-[belisario.webiste/osint](belisario.webiste/osint)
+[belisario.webiste/osint](https://belisario.webiste/osint)

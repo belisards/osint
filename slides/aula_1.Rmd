@@ -486,11 +486,32 @@ WhatsApp: [https://faq.whatsapp.com/3307102709559968/?cms_platform=web&locale=pt
 
 Você sabia que pode usar emails e telefones descartáveis para cadastros efêmeros?
 
-Existem vários. Busque por “temp mail” ou “temp phone”.
+.pull-left[
+## Email
 
-- [https://temp-mail.org/pt/](https://temp-mail.org/pt/)
+- [Temp-Mail](https://temp-mail.org/pt/)
 
-- [https://sms24.me/en/](https://sms24.me/en/)
+- [ManyMe](https://manyme.com/index.html)
+
+- [Tempail](https://tempail.com/pt/)
+
+- [Mail.tm](https://mail.tm/pt/)
+]
+
+.pull-right[
+## SMS
+
+- [SMS24](https://sms24.me/en)
+
+- [TextrApp](https://textrapp.com/free-tools/textr-free-receive-sms-online-tool)
+
+- [Temp Number](https://temp-number.org/)
+
+- [AnonymSMS](https://anonymsms.com/gmail/)
+
+- [ReceiveSMS](https://www.receivesms.co/receive-sms-from-google/)
+]
+
 
 ---
 

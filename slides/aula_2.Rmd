@@ -188,9 +188,27 @@ class: inverse, center, middle
 
 # Nomes de usuário
 
-- [Whats my name](https://whatsmyname.app/): pesquisa nomes de usuário em diversas plataformas;
+- [Whats my name](https://whatsmyname.app/): pesquisa até 10 nomes de usuário em diversas plataformas;
 
 - [Maigret](https://github.com/soxoj/maigret): pacote Python e via linha de comando;
+
+
+---
+
+# Aeronaves
+
+- [FlightRadar24](https://www.flightradar24.com/): rastreador de voos em tempo real com visualização de mapa interativo e informações detalhadas sobre aeronaves;
+
+- [ADS-B Exchange](https://www.adsbexchange.com/): plataforma que fornece dados de rastreamento de voos baseados em ADS-B;
+
+- [FlightAware](https://www.flightaware.com/): serviço de rastreamento de voos que oferece informações detalhadas sobre status de voos e históricos de aeronaves;
+
+- [OpenSky Network](https://opensky-network.org/): rede de rastreamento de voos colaborativa que fornece dados abertos e análises sobre o tráfego aéreo global;
+
+- [Plane Finder](https://planefinder.net/): rastreador de voos que exibe aeronaves em tempo real com opções para visualizar detalhes sobre rotas e aeronaves;
+
+- [AeroAPI](https://aeroapi.flightaware.com/): API que fornece dados sobre voos, aeroportos e aeronaves.
+
 
 
 ---
