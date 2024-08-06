@@ -47,7 +47,11 @@ Não se engane com o nome, funciona também outras redes
 ### twint
 [https://github.com/kevctae/twint](https://github.com/kevctae/twint)
 
-## Plataformas
+## Ferramentas
+
+### Archive Box
+[https://github.com/ArchiveBox/ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
+
 ### Auto Archiver
 [https://github.com/bellingcat/auto-archiver](https://github.com/bellingcat/auto-archiver)
 
