@@ -99,6 +99,8 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [What Would a Feminist Open Source Investigation Look Like?](https://research-architecture.org/What-Would-a-Feminist-Open-Source-Investigation-Look-Like)
 
+[The ethics of open source investigations: Navigating privacy challenges in a gray zone information landscape](https://journals.sagepub.com/doi/10.1177/14648849241274104#bibr44-14648849241274104)
+
 ## Vídeos
 
 ⭐ [Don't F**k With Cats](https://www.netflix.com/br/title/81031373): série na Netflix mostrando como pessoas comuns usaram técnicas de OSINT para encontrar o responsável por uma série de maus tratos a animais.
