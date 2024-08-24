@@ -347,6 +347,8 @@ options(htmltools.dir.version = FALSE)
 
 # Referências extras
 
+- [Chasing Shadows: Geolocate Images with Bellingcat's Shadow Finder Tool](https://www.bellingcat.com/resources/2024/08/22/shadow-geolocate-geolocation-locate-image-tool-open-source-bellingcat-measure/)
+
 - [Geolocation: step by step](https://kit.exposingtheinvisible.org/en/geolocation.html)
 
 - [Geolocating a video, a basic tutorial](https://www.osinteditor.com/resources/guides/geolocating-a-video-a-basic-tutorial/)
