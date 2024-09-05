@@ -313,6 +313,11 @@ Existem vários serviços para consultar informações sobre quem registrou um d
 
 - [Whoxology](https://whoisology.com/): serviço pago;
 
+---
+
+# Outros recursos
+
+[https://informationlaundromat.com](https://informationlaundromat.com)
 
 ---
 # Robots.txt
