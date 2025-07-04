@@ -34,6 +34,8 @@ Repositórios de links, referências e materiais didáticos sobre OSINT - especi
 
 [MetaOSINT](https://metaosint.github.io/): coletânea de ferramentas com visualização em tabela ou por meio de interface gráfica.
 
+[Developing & Maintaining an Open Source Investigation Capacity from Scratch](https://iiim.un.org/wp-content/uploads/2025/07/Open-Source-Workshop-Report.pdf): orientações sobre como começar uma equipe de OSINT do zero.
+
 # Para se manter informado
 
 ⭐ [Week in OSINT](https://sector035.nl/articles/category:week-in-osint): artigos e um compilado semanal das novidades na área.
