@@ -222,7 +222,7 @@ knitr::include_graphics("pics/aula3/post_bolsobannon_compara.png")
 
 - Análise 3D e relevo: Google Earth Pro, [F4 Maps](https://demo.f4map.com), [Peakfinder](https://www.peakfinder.com)
 
-- Busca pela API do Open Street Maps (Overpass Turbo): [OSM Search](https://osm-search.bellingcat.com/) ou [What is Where](https://www.whatiswhere.com/)
+- Busca pela API do Open Street Maps (Overpass Turbo): [OSM Search](https://osm-search.bellingcat.com/), [What is Where](https://www.whatiswhere.com/) ou [Spot](https://github.com/dw-innovation/kid2-spot)
 
 - [Caixa de ferramentas para geolocalização](https://github.com/The-Osint-Toolbox/Geolocation-OSINT)
 
