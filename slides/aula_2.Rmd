@@ -33,7 +33,7 @@ class: inverse, center, middle
 ---
 # Busca avançada no Google
 
-Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados](https://escoladedados.org/tutoriais/operadores-de-busca-avancada/) ou esta [listagem de comandos](http://www.googleguide.com/advanced_operators_reference.html).
+Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados](https://escoladedados.org/tutoriais/operadores-de-busca-avancada/), esta [listagem de comandos](http://www.googleguide.com/advanced_operators_reference.html) ou este [guia em inglês](https://www.linkedin.com/posts/supersecretsquirrel_farallon-2025-not-really-ultimate-osint-resource-ugcPost-7390858030122196992-qzd2).
 
 Considere a busca abaixo:
 
