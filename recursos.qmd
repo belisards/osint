@@ -10,19 +10,17 @@ title: "Recursos"
 
 [Tech Journalism](https://techjournalism.medium.com/): blog no Medium sobre OSINT, dados, imagens de satélite e mais.
 
-[OS2INT Toolbox](https://os2int.com/toolbox/): posts e tutoriais sobre técnicas de OSINT.
+[Nixintel](https://nixintel.info/): blog com tutoriais detalhados sobre técnicas e ferramentas de OSINT.
 
-[OSINT Curious](https://osintcurio.us/): site com diversas postagens, vídeos e podcasts.
+[GIJN OSINT](https://gijn.org/tag/osint/): recursos e ferramentas de OSINT da Global Investigative Journalism Network.
 
 [Exposing the invisible](https://kit.exposingtheinvisible.org/en/): série de materiais do [Tactical Tech](https://tacticaltech.org/) com tutoriais e dicas sobre investigação com fontes abertas.
 
-[OSINT - Lista no Twitter](https://twitter.com/i/lists/1116866807019732992): lista reunindo diversos pesquisadores e profissionais da área.
+[OSINT - Lista no Twitter](https://x.com/i/lists/1116866807019732992): lista reunindo diversos pesquisadores e profissionais da área.
 
 ## Chats e grupos
 
 ⭐ [Bellingcat](https://discord.gg/nTaNPmz): canal do grupo investigativo Bellingcat.
-[OSINT.team](https://osint.team): salas de bate papo com canais sobre diversos temas. Em inglês.
-
 [r/OSINT](https://www.reddit.com/r/OSINT/): canal no Reddit sobre OSINT.
 
 [SANS Cyber Defense/OSINT](https://discord.com/invite/mKvZzgp2FE): canal do SANS (System Administration, Networking and Security) sobre ciberdefesa e OSINT. SANS é uma empresa norte-americana de segurança da informação que oferece treinamentos em cibersegurança.
@@ -31,7 +29,7 @@ title: "Recursos"
 
 [Tracelabs](https://www.tracelabs.org/get-involved): canal do Discord do Tracelabs.
 
-[Project Owl](https://discord.com/invite/projectowl): hub da comunidade de OSINT ([@projectowlosint](https://twitter.com/projectowlosint)).
+[Project Owl](https://discord.com/invite/projectowl): hub da comunidade de OSINT ([@projectowlosint](https://x.com/projectowlosint)).
 
 ## Podcasts
 
@@ -39,12 +37,10 @@ title: "Recursos"
 
 [Hacking humans](https://thecyberwire.com/podcasts/hacking-humans): engenharia social.
 
-[Layer 8](https://layer8conference.com/the-layer-8-podcast/): engenharia social e OSINT.
-
 [The World of Intelligence](https://podcasts.apple.com/us/podcast/the-world-of-intelligence/id1477524651): defesa, inteligência e OSINT.
 
 ## Em português
 
-⭐ [Boletim de Dados](escoladedados.org/membresia): newsletter da Escola de Dados, sobre jornalismo de dados e OSINT, em português.
+⭐ [Boletim de Dados](https://escoladedados.org/membresia): newsletter da Escola de Dados, sobre jornalismo de dados e OSINT, em português.
 
 [Investigadora](https://investigadora.substack.com/): newsletter da Associação Brasileira de Jornalismo Investigativo sobre o CruzaGrafos.
