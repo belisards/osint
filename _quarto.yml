@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "slides/*.qmd"
+    - "desafios/*.qmd"
+    - "!slides_2021/"
 
 website:
   title: "OSINT para Jornalistas"
