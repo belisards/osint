@@ -3,8 +3,6 @@ project:
   output-dir: _site
   render:
     - "*.qmd"
-    - "slides/*.qmd"
-    - "desafios/*.qmd"
     - "!slides_2021/"
 
 website:
@@ -13,18 +11,14 @@ website:
     left:
       - text: Início
         href: index.qmd
-      - text: Aulas
-        menu:
-          - text: "1. Fundamentos de OSINT"
-            href: slides/aula_1.qmd
-          - text: "2. Busca avançada na web"
-            href: slides/aula_2.qmd
-          - text: "3. Investigações visuais"
-            href: slides/aula_3.qmd
-      - text: Arquivamento
-        href: arquivamento.qmd
-      - text: Desafios
-        href: desafios/index.qmd
+      - text: Ferramentas
+        href: ferramentas.qmd
+      - text: Recursos
+        href: recursos.qmd
+      - text: Bibliografia
+        href: bibliografia.qmd
+      - text: Projetos
+        href: projetos.qmd
 
 format:
   html:

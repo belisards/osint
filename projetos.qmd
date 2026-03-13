@@ -1,0 +1,15 @@
+---
+title: "Projetos e investigações"
+---
+
+⭐ [Bellingcat](https://www.bellingcat.com/): grupo investigado com base na Holanda, especializado em checagem de fatos e inteligência de código aberto.
+
+⭐ [Forensic Architecure](https://forensic-architecture.org/): coletivo inglês especializado no uso de técnicas de modelagem 3d, análises forenses, OSINT, etc.
+
+⭐ [Documental.xyz](https://documental.xyz/): iniciativa brasileiras que aplica técnicas de OSINT, ciência de dados e arquitetura forense para investigar violações de direitos humanos na América Latina.
+
+⭐ [Finding Clandestine Graves: Using Geospatial Analysis to Search for Missing Persons in Baja California, Mexico](https://citizenevidence.org/2022/06/30/finding-clandestine-graves-using-geospatial-analysis-to-search-for-missing-persons-in-baja-california-mexico/): projeto que combina técnicas de criminologia, análise espectral e acesso a dados públicos para identificar potenciais cemitérios clandestinos no México.
+
+[Investigações visuais do NY Times](https://www.nytimes.com/spotlight/visual-investigations): time de investigações visuais do NY Times. Usa diversas técnicas de investigação digital, análise visual e OSINT em seus trabalhos.
+
+[Lighthouse Reports](https://www.lighthousereports.com/): agência de notícias de jornalismo colaborativo, que combina técnicas de jornalismo de dados e OSINT.

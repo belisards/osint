@@ -1,0 +1,45 @@
+---
+title: "Bibliografia"
+---
+
+⭐ [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf): protocolo desenvolvido pela Universidade Berkeley e as Nações Unidas sobre investigações digitais com fontes abertas.
+
+⭐ [Open Source Intelligence Techniques](https://inteltechniques.com/book1.html): livro bastante completo de Michael Bazzel sobre técnicas e ferramentas de OSINT.
+
+[Mapping the Use of Open Source Research in UN Human Rights Investigations](https://academic.oup.com/jhrp/article/14/2/554/6573245?login=false): artigo sobre o uso de OSINT em investigações de direitos humanos da ONU.
+
+[A Brief History of Open Source Intelligence](https://www.bellingcat.com/resources/articles/2016/07/14/a-brief-history-of-open-source-intelligence): post no site do Bellingcat com um breve histórico sobre o conceito de OSINT.
+
+[Opensourceintelligence.biz - Bibliografias](http://bib.opensourceintelligence.biz/): compilado de bibliografias sobre o tema.
+
+[OSINT Tools and Resources Handbook 2020](https://i-intelligence.eu/uploads/public-documents/OSINT_Handbook_2020.pdf): Manual prático sobre OSINT, dividido por temas  e fontes de informação.
+
+[Outlining a Human-Rights Based Approach to Digital Open Source Investigations](https://repository.essex.ac.uk/32642/1/Outlining%20a%20Human-Rights%20Based%20Approach%20to%20Digital%20Open%20Source%20Investigations.pdf)
+
+[What Would a Feminist Open Source Investigation Look Like?](https://research-architecture.org/What-Would-a-Feminist-Open-Source-Investigation-Look-Like)
+
+[The ethics of open source investigations: Navigating privacy challenges in a gray zone information landscape](https://journals.sagepub.com/doi/10.1177/14648849241274104#bibr44-14648849241274104)
+
+[OSINT no jornalismo: indo mais fundo com fontes abertas](https://repositorio.idp.edu.br/handle/123456789/5713): capítulo de Adriano Belisário em *Jornalismo de dados: das ciências sociais à inteligência artificial*, organizado por Taís Seibt (IDP, 2025).
+
+## Vídeos
+
+⭐ [Don't F**k With Cats](https://www.netflix.com/br/title/81031373): série na Netflix mostrando como pessoas comuns usaram técnicas de OSINT para encontrar o responsável por uma série de maus tratos a animais.
+
+⭐ [Anatomy of a killing](https://www.youtube.com/watch?v=4G9S-eoLgX4): vídeo da BBC mostrando os bastidores de uma investigação usando técnicas de OSINT para investigar assassinatos no Camarões.
+
+[Mapping the Las Vegas Massacre](https://www.youtube.com/watch?v=krr4u6uGdzc): vídeo do The New York Times sobre uma investigação baseada em OSINT sobre o massacre de ocorrido em Las Vegas, nos Estados Unidos.
+
+[Bellingcat - Truth in a Post-Truth World](): longa-metragem sobre a histórias e as investigações do grupo homônimo.
+
+[Undercover underage](https://www.imdb.com/title/tt15588682/): mostra o trabalho da equipe do SOSA (Safe from Online Sex Abuse), que busca e denuncia predadores sexuais na Internet usando técnicas de OSINT.
+
+## Workshops, aulas e exercícios
+
+[Exercícios de OSINT](https://gralhix.com/list-of-osint-exercises/): compilado de exercícios para praticar técnicas como geolocalização de imagens.
+
+⭐ [Técnicas de investigações digitais com fontes abertas (OSINT) com Bellingcat](https://www.youtube.com/watch?v=JoXvnc-gDD0): workshop sobre OSINT com Giancarlos Fiorella, membro do Bellingcat, no Coda.Br 2020, em português e espanhol.
+
+[Investigação online com fontes abertas, com Eliot Higgns (Bellingcat)](https://www.youtube.com/watch?v=dtXRUXzfLcU&t=0s): keynote com o fundador do Bellingcat no Coda.Br 2020 sobre a história do grupo e casos importantes.
+
+[MOOC - Digital investigations for journalists: How to follow the digital trail of people and entities](https://journalismcourses.org/pt-br/course/digitalinvestigations/): curso online do Knight Center sobre verificação e técnicas de investigação digital.

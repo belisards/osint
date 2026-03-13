@@ -1,0 +1,27 @@
+---
+title: "Guias e caixas de ferramentas"
+---
+
+⭐ [Bellingcat toolkit](https://bit.ly/bcattools): planilha com a caixa de ferramentas do [Bellingcat](https://www.bellingcat.com/), organizadas por temas, comentadas e regularmente atualizadas. Inclui serviços de satélite e mapeamento, ferramentas para verificar fotos e vídeos, sites para arquivar páginas da web e mais.
+
+⭐[OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca): repositório no Github com recursos voltados à prática de OSINT no Brasil.
+
+[How to verify](https://www.howtoverify.info/): grafos de conhecimento sobre checagem de infos.
+
+[OSINT Framework](https://osintframework.com/): site e repositório colaborativo de ferramentas para trabalhar com OSINT. Organizado por tipo de informação.
+
+[Awesome OSINT](https://github.com/jivoi/awesome-osint): repositório no Github com uma escolha curatorial de ferramentas.
+
+[OSINT Essentials](https://www.osintessentials.com/): lista mais focada em ferramentas e serviços para verificação.
+
+[Aware online](https://www.aware-online.com/en/osint-tools/): seleção de ferramentas, organizada por tipo de serviço e informação.
+
+[OSINT Tools](https://start.me/p/7kxyy2/osint-tools-curated-by-lorand-bodo): página inicial com diversas ferramentas, bases de dados e tutoriais, organizada por categorias.
+
+[OH SHINT](https://ohshint.gitbook.io/oh-shint-its-a-blog/): diversos recursos compilados como uma publicação digital, organizada por tipo de inteligência (*INT).
+
+[Hasless1der Start.me](https://start.me/p/DPYPMz/the-ultimate-osint-collection): outra lista de ferramentas, blogs, tutoriais, canais e etc.
+
+[MetaOSINT](https://metaosint.github.io/): coletânea de ferramentas com visualização em tabela ou por meio de interface gráfica.
+
+[Developing & Maintaining an Open Source Investigation Capacity from Scratch](https://iiim.un.org/wp-content/uploads/2025/07/Open-Source-Workshop-Report.pdf): orientações sobre como começar uma equipe de OSINT do zero.
