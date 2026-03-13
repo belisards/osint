@@ -1,0 +1,667 @@
+---
+title: "🔎 OSINT e fact-checking"
+subtitle: "Fundamentos de OSINT"
+author: "Adriano Belisario - @belisards"
+institute: "MBA em Jornalismo de Dados/IDP"
+format:
+  revealjs:
+    theme: [default, osint.scss]
+    highlight-style: github
+    progress: true
+    slide-number: true
+    incremental: false
+---
+
+# Adriano Belisario
+Jornalista e pesquisador, especializado em investigações baseadas em dados e técnicas de OSINT. Tem mestrado em Social Data Science pela Universidade de Oxford e em Comunicação pela UFRJ.
+
+Atualmente, colabora como [Bellingcat](bellingcat.com) no programa 'Technical Writing Fellowship', desenvolvendo um guia sobre o uso de IA aplicada a investigações visuais. Também atua como consultor para o [Joint Data Center on Forced Displacement](https://www.jointdatacenter.org/), uma iniciativa do Banco Mundial com a Agência da ONU para Refugiados, e desenvolve análises de dados sobre misoginia online para o [Netlab/UFRJ](https://netlab.eco.ufrj.br/).
+
+Coordenou a Escola de Dados entre 2018 e 2022 e já publicou investigações na Agência Pública, The Intercept Brasil e na agência [Documental.xyz](https://documental.xyz).
+
+Mais informações: [belisario.website](https://belisario.website/osint).
+
+---
+
+# Sobre o curso
+
+Todos os slides e mais uma lista de outras referências úteis estão disponíveis em um repositório do Github (belisards/osint) e no link [belisario.website/osint](https://belisario.website/osint)
+
+. . .
+
+**Ementa**
+
+- Fundamentos de OSINT
+  - Conceitos fundamentais
+  - Segurança digital
+  - Caixas de ferramentas
+- Busca avançada na web
+  - Operadores de busca avançada
+  - Busca em redes sociais
+  - Investigando sites
+- Investigações visuais
+  - Busca reversa de imagens
+  - Terra à vista: imagens de satélites
+  - Geolocalização e cronolocalização de imagens
+
+---
+
+# Avaliação
+
+## Desafios (10% cada)
+Realização de duas listas de exercícios para colocar em prática as abordagens discutidas.
+
+## Trabalho final (80%)
+Redação de um texto sobre uma técnica de OSINT. Espera-se um estudo aprofundado da técnica, cuja complexidade será levada em conta na avaliação. Entrevistar especialistas ou coletar opiniões em fóruns e chats especializados é recomendado. Incentivo também a comparação sistemática do resultado de diferentes ferramentas, explorando o potencial e limitações de cada uma.
+
+## Prazo
+21 de julho de 2024
+
+---
+
+# Sobre vocês
+
+Para saber mais em que pé estamos:
+
+- Já ouviram falar de OSINT?
+
+. . .
+
+- Sabem o que é OSINT?
+
+. . .
+
+- Já usaram técnicas de OSINT em investigações?
+
+. . .
+
+- Acompanha fontes de notícias ou informações sobre o tema?
+
+. . .
+
+- Quais as expectativas de aprendizado?
+
+---
+
+# Recursos
+
+Abaixo alguns dos serviços online e programas que serão utilizados.
+
+Nenhum é obrigatório, porém seu uso é recomendado para acompanhar ou replicar alguns atividades.
+
+## Contas
+- [Conta no Google](https://gmail.com/)
+- [Conta no Facebook](https://facebook.com/)
+
+## Softwares
+- [Google Earth Pro](https://www.google.com/intl/pt-BR/earth/about/versions/#earth-pro)
+- [Plugin do Chrome: Search by Image](https://chromewebstore.google.com/detail/search-by-image/cnojnbdhbhnkbcieeekonklommdnndci/)
+
+---
+
+## {.center background-color="#23373B"}
+
+[Conceitos fundamentais]{.extra-large}
+
+---
+
+# O que é OSINT?
+OSINT ou Open Source Intelligence (**inteligência com fontes abertas**) designa a coleta e análise de informações de fontes abertas para fins investigativos ou de tomadas de decisões estratégicas.
+
+. . .
+
+Diversas áreas fazem uso das técnicas de OSINT, por exemplo:
+- Forças militares ou estatais
+- Empresas (inteligência empresarial)
+- Empresas e especialistas em segurança da informação e cibersegurança
+- Organizações de direitos humanos
+- Jornalistas
+
+. . .
+
+Para se distanciar destes outros usos, há quem prefira traduzir OSINT como "investigações com fontes abertas".
+
+---
+
+# Fontes abertas?
+
+["Informações de fontes abertas não envolvem interação ou solicitação de informações de usuários individuais da Internet"]{.large}^[1]
+
+Algumas fontes^[2], porém, falam de OSINT ativa ou ofensiva. Em geral, este não é o caso para nós, jornalistas.
+
+::: {.footnote}
+[1] [Berkeley Protocol - United Nations Human Rights Office of the Comissioner and Human Rights Center of UC Berkeley School of Law](https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf)
+
+[2] Por exemplo: [OSINT WTF - OHSHINT](https://ohshint.gitbook.io/oh-shint-its-a-blog/osint/osint-wtf#the-two-osint-approaches)
+:::
+
+---
+
+# Modos de obtenção
+
+- **Observação**: informações acessíveis por qualquer pessoa, mesmo que tenha mecanismos de registro ou login. Dados que são passíveis de serem acessados apenas mediante brechas de segurança ou privacidade, em geral, não são considerados, tampouco aqueles que não permitem atribuição e verificação e, portanto, não podem ser utilizadas como evidências.
+
+. . .
+
+- **Compra**: é possível que as informações estejam à venda por serviços de terceiros. Desde que não incorra em nenhuma ilegalidade e que a compra seja disponibilizada a qualquer pessoa, em geral, estas informações são consideradas como "fontes abertas".
+
+. . .
+
+- **Solicitações**: requerimentos legais, via Lei de Acesso à Informação, por exemplo, também são considerados. Solicitações feitas a pessoas físicas, por meio de fóruns, chat ou email, podem ou não serem consideradas como fontes abertas, a depender do contexto.
+
+---
+
+# Novas lentes para sua investigação
+
+OSINT é sobretudo um estado de espírito.
+
+Não se trata de usar ferramentas, mas de adotar uma outra forma de encarar suas investigações.
+
+["OSINT como uma mentalidade requer pensamento crítico sobre como coletar dados brutos, refiná-los, além de ser transparente nos métodos usados, escolhas feitas e lacunas da análise".]{.large}^[1]
+
+::: {.footnote}
+[1] [OSINT Is A State Of Mind, por Dutch Osint Guy](https://medium.com/secjuice/osint-as-a-mindset-7d42ad72113d).
+:::
+
+---
+
+# O que você realmente precisa?
+
+As ferramentas são úteis, mas as habilidades mais importantes em OSINT são:
+
+- **Aprender a aprender** onde estão as informações que você precisa;
+
+- **Paciência** para achar a agulha no palheiro. 99% das suas tentativas não vão dar em nada, mas aquele 1%...
+
+- **Método** para coletar novas informações e sistematizar os resultados de uma forma relevante.
+
+- **Inteligência crítica** para avaliar a credibilidade das informações.
+
+- **Olho para detalhes** que individualmente podem ser insignificantes, mas em conjunto podem ganhar sentido.
+
+- **Letramento técnico** ajuda muito. Por exemplo, saber o básico de Python e ferramentas de linha de comando amplia suas possiblidades.
+
+---
+
+# Técnicas utilizadas
+
+Saber técnicas e métodos é muito mais importante do que manejar ferramentas. Ferramentas mudam, as técnicas não. Mas faça suas escolhas: é impossível dominar tudo.
+
+A seguir, uma lista não exaustiva de algumas que podem ser consideradas básicas:
+
+:::: {.columns}
+::: {.column width="50%"}
+- Busca avançada: *Google dorkings* e recursos avançados de buscadores ou redes sociais;
+
+- Pesquisa em acervos públicos (bibliotecas, jornais antigos, cartórios, etc);
+
+- Buscas reversas de imagens;
+
+- Geolocalização de imagens;
+:::
+
+::: {.column width="50%"}
+
+. . .
+
+- Uso de imagens de satélites para inspeção visual;
+
+- Raspagem de dados;
+
+- Análise de redes;
+
+- Produção de mapas e cartografias;
+:::
+::::
+
+---
+
+# Outras técnicas utilizadas
+
+A lista de técnicas utilizadas em investigações baseadas em fontes abertas pode seguir para incluir metodologias um pouco mais avançadas, como:
+
+:::: {.columns}
+::: {.column width="50%"}
+- Análise sonora
+
+- Análise espectral com dados de sensoriamento remoto
+
+- Modelagem 3D
+
+- Modelos de aprendizagem de máquina (machine learning), como clusterização
+:::
+
+::: {.column width="50%"}
+
+. . .
+
+- Modelos de visão computacional
+
+- Fotogrametria
+
+- Técnicas de análise forense
+:::
+::::
+
+---
+
+# Princípios
+
+- **Objetividade e acurácia**: fique atento a vieses que podem afetar sua investigação. Não só aqueles subjetivos, conscientes ou não, como também aqueles próprios da arquitetura da Internet. Por exemplo, a mesma consulta em um mecanismo de busca pode retornar resultados diferentes, a depender de fatores diversos, como a localidade, dispositivo, histórico do usuário, etc.
+
+. . .
+
+- **Ética e legalidade**: esteja ciente das diretrizes legais de proteção de dados e privacidade. Mesmo que a informação esteja disponíveis ao públicos, isso não quer dizer que não existem considerações legais quanto ao seu armazenamento. Especialmente ao usar processos automatizados, evite coletar mais dados do que o necessário e, se assim o fizer, remova as informações que não são necessárias para sua investigação.
+
+. . .
+
+- **Transparência e prestação de contas (accountability)**: documente todas etapas do seu trabalho, mantendo um registro de suas atividades. Sua metodologia pode ser questionada ou você pode ter que prestar contas em um julgamento oficial. Além disso, ainda que o uso de identidades anônimas seja importante, é preciso evitar a deturpação ou apresentações falsas (*misrepresentation*);
+
+---
+
+# Etapas
+
+Em geral, o uso de técnicas de inteligência com fontes abertas envolve um ciclo contínuo de etapas que **se retroalimentam**^[1]. De forma resumida, são elas:
+
+:::: {.columns}
+::: {.column width="50%"}
+- Planejamento e requisitos
+
+- Coleta de informações
+
+- Análise e processamento das informações
+
+- Disseminação de resultados
+:::
+
+::: {.column width="50%"}
+![](pics/aula1/osint_cycle.png)
+:::
+::::
+
+::: {.footnote}
+[1] [Berkeley Protocol](https://www.ohchr.org/Documents/Publications/OHCHR_BerkeleyProtocol.pdf)
+:::
+
+---
+
+# Planejamento de pesquisas em OSINT
+
+Sugestões para começar:
+
+- Defina os objetivos e alvos;
+
+. . .
+
+- Liste informações "sementes", ou seja, palavras-chave ou informações relevantes para o caso;
+
+. . .
+
+- Pense variações destas informações e adicione na lista;
+
+. . .
+
+- Organize potenciais fontes de informação e configure os acessos, se necessário;
+
+. . .
+
+- Planeje um método de sistematização dos resultados;
+
+. . .
+
+- Faça uma avaliação do risco envolvido;
+
+---
+
+# Coleta de informação
+
+:::: {.columns}
+::: {.column width="50%"}
+## Buscas
+- Vá além do Google: use diversos buscadores, redes sociais e bases de dados;
+
+- Não leia apenas a primeira página;
+
+- Use operadores de busca avançada para filtrar os resultados;
+
+- Armazene listas e informações adicionais dos alvos principais (por exemplo, lista de amigos)
+:::
+
+::: {.column width="50%"}
+
+. . .
+
+## Monitoramento
+- Buscadores: configuração de alertas para termos específicos (ex: Google Alerta);
+
+- Redes sociais ou sites: alertas de postagens, TweetDeck, feeds RSS, etc;
+
+- Sites: scripts para raspagem de dados, monitores de mudanças em websites, etc;
+:::
+::::
+
+---
+
+# Cadeia de custódia
+
+Não altere os arquivos originais e tente manter uma cadeia de custódia dos materiais com informações que podem virar evidências críticas;
+
+"Art. 158-A. Considera-se cadeia de custódia o conjunto de todos os procedimentos utilizados para manter e documentar a história cronológica do vestígio coletado em locais ou em vítimas de crimes, para rastrear sua posse e manuseio a partir de seu reconhecimento até o descarte."^[1]
+
+::: {.footnote}
+[1] Outros requerimentos legais da cadeia de custódia no Brasil estão detalhados no [Código Penal](https://www.jusbrasil.com.br/topicos/250911206/artigo-158a-do-decreto-lei-n-3689-de-03-de-outubro-de-1941).
+:::
+
+---
+
+# Preserve elementos de atribuição
+
+- **URL**: registre o endereço na web onde o recurso está localizado;
+
+- **Código-fonte da página**: guarde o código-fonte da página (Arquivo > Salvar).
+
+- **Captura de tela completa**: faça uma captura de tela que indique o dia e hora de algum modo.
+
+- **Arquivos de mídia**: se houver imagens, áudios ou vídeos relevantes, certifique-se que eles também foram armazenados separadamente;
+
+- **Metadados ou dados contextuais**: registre outras informações relevantes, como metadados (id do usário, data e hora de upload, hasthags, comentários, etc) ou informações contextuais (por ex: perfil de quem fez determinada postagem);
+
+Dados da coleta em si (IP, hora, etc) ou hash (MD5, SHA1, etc) também podem ser utilizados em certos casos.
+
+---
+
+# Coleta de informação: arquivamento
+
+Conteúdos online podem ser removidos, faça arquivamentos online e/ou locais das informações importantes.
+
+Algumas ferramentas úteis:
+
+- [Hunch.ly](https://hunch.ly/): plataforma bastante completa para arquivamento. Captura e anota automaticamente tudo que você navega;
+
+- [Archives.is](https://archive.is/): website para arquivamento de conteúdo online;
+
+- Para capturas de telas: [GoFullPage](https://gofullpage.com/) ou [Screencastfy](https://www.screencastify.com/)
+
+---
+
+# Análise: documentação é uma arte
+
+Tomar notas e registrar o que você encontra no decorrer de sua investigação é fundamental para transformar as informações brutas em algo relevante.
+
+- Planilhas para armazenar tabelas ou estruturar dados novos;
+
+- Informações textuais: documentos ou blocos de notas estruturados como [Obsidian](https://obsidian.md) ou Notion.
+
+- Mapas: [QGIS](https://qgis.org/) ou Google Maps
+
+- Linhas do tempo: blocos de notas, planilhas ou ferramentas específicas como o [TimelineJS](https://timeline.knightlab.com/) do Knightlab.
+
+- Análise de redes e grafos: [Gephi](https://gephi.org) para análises baseadas em grandes volumes de dados ou Obsidian para processos mais manuais.
+
+---
+
+# Análise: vieses cognitivos
+
+Use sua intuição e tire proveito de sua experiência pessoal, mas tente fazer uma análise objetiva, especialmente para não incorrer em vieses comuns em processos investigativos como:
+
+- **Viés de ancoragem**: a primeira impressão ou informação é a que fica;
+
+- **Viés de confirmação**: tendemos a observar apenas informações que confirmam conceitos prévios;
+
+- **Viés de disponibilidade**: supervalorizamos informações fáceis de achar;
+
+- **Ilusões de agrupamento**: ver padrões onde eles não existem - correlação não é causalidade!;
+
+::: {.footnote}
+[1] [Codex dos vieses cognitivos](https://pt.wikipedia.org/wiki/Vi%C3%A9s_cognitivo#/media/Ficheiro:Codex_Vi%C3%A9s_Cognitivos.jpg)
+:::
+
+---
+
+# Intervalo
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4G9S-eoLgX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+---
+
+## {.center background-color="#23373B"}
+
+### Noções de segurança digital
+
+---
+
+## {.center}
+
+![](pics/aula1/seg_holistica.png)
+
+Fonte: [Tactical Tech](https://holistic-security.tacticaltech.org/)
+
+---
+
+# Precauções para uma investigação
+
+A segurança é parte fundamental da preparação de uma investigação. Ainda que as preocupações possam variar de acordo o tipo e o alvo da investigação em questão, existem recomendações gerais:
+
+- **Tente se manter anônimo**: não deixe rastros facilmente vinculados a sua pessoa (use VPN ou TOR); se possível, use sistemas operacionais menos sucetíveis a softwares maliciosos (GNU/Linux)
+
+- **Considere que você pode não ser anônimo**: mesmo com estes cuidados, considere sempre a possibilidade de estar sendo monitorado ou de seus arquivos pararem na mão de terceiros (roubos, apreensões policiais, etc).
+
+---
+
+# Compartimentalizar é chave
+
+- **Redes sociais e contas online**: contas pessoais e profissionais não devem se misturar (*sockpuppets* ou bonecos de meia). Além de questões de segurança, em raspagens de dados, por exemplo, você corre o risco de ter sua conta pessoal bloqueada;
+
+- **Navegadores**: especialmente se você vai instalar plugins e add-ons que exigem acesso ao conteúdo das páginas, use um navegadores para sua atividade investigativa diferente daquele usado para fins pessoais. Além de mais segurança, você ganha a vantagem de não misturar os históricos de navegação.
+
+- **Dispositivos**: se possível, use hardwares diferentes para fins profissionais e pessoais. Especialmente se você faz monitoramento de grupos de WhatsApp e Telegram, não use o seu celular ou número pessoal.
+
+---
+
+# Conheça-te a ti mesmo
+
+Verifique se você já foi vítima de vazamentos: [HaveIBeenPwned](https://haveibeenpwned.com/Passwords).
+
+Faça uma auto-busca (ego search) para identificar informações pessoais suas que estão expostas, buscar removê-las se possível ou ainda se prevenir de possíveis utilizações maliciosas.
+
+Você pode buscar coisas como: nome completo, CPF, telefone, endereço, email, usuário, etc.
+
+---
+
+# Exponha-se menos
+
+Configurações de privacidade: ajuste em detalhes quais informações e posts ficam disponíves para diferentes círculos de amizade.
+
+Facebook: [https://www.facebook.com/help/325807937506242?ref=tos](https://www.facebook.com/help/325807937506242?ref=tos)
+
+Instagram: [https://help.instagram.com/196883487377501](https://help.instagram.com/196883487377501)
+
+WhatsApp: [https://faq.whatsapp.com/3307102709559968/?cms_platform=web&locale=pt_BR](https://faq.whatsapp.com/3307102709559968/?cms_platform=web&locale=pt_BR)
+
+---
+
+# Acessos descartáveis
+
+Você sabia que pode usar emails e telefones descartáveis para cadastros efêmeros?
+
+:::: {.columns}
+::: {.column width="50%"}
+## Email
+
+- [Temp-Mail](https://temp-mail.org/pt/)
+
+- [ManyMe](https://manyme.com/index.html)
+
+- [Tempail](https://tempail.com/pt/)
+
+- [Mail.tm](https://mail.tm/pt/)
+:::
+
+::: {.column width="50%"}
+## SMS
+
+- [SMS24](https://sms24.me/en)
+
+- [TextrApp](https://textrapp.com/free-tools/textr-free-receive-sms-online-tool)
+
+- [Temp Number](https://temp-number.org/)
+
+- [AnonymSMS](https://anonymsms.com/gmail/)
+
+- [ReceiveSMS](https://www.receivesms.co/receive-sms-from-google/)
+:::
+::::
+
+---
+
+# Não repita senhas
+
+[Você provavelmente já teve senhas vazadas](https://haveibeenpwned.com/).
+
+Considere usar um gerenciador de senhas, que traz vantagens como:
+
+- Você não precisa decorar várias senhas, apenas uma;
+
+- Você irá usar apenas [senhas fortes](https://bitwarden.com/password-strength/);
+
+- Você nunca mais irá repetir um senha;
+
+- Facilita o gerenciamento de contas extras (sockpuppets)
+
+- Funciona em vários dispositivos;
+
+Alguns gerenciadores de senha que você pode experimentar: [KeePass](https://keepass.info/) e [Bitwarden](https://bitwarden.com/) possuem código-aberto. O [1password](https://1password.com/pt/) é pago, mas oferece gratuidade para jornalistas.
+
+---
+
+# 2FA - Autenticação dois fatores
+
+Autenticação com dois elementos diferentes. Exige algo que você saiba (senha) e tenha (um celular, um código de uso único/OTP, etc).
+
+Fundamental que você ative na sua conta de email principal e serviços como WhatsApp, Telegram, e redes sociais.
+
+![](pics/aula1/2fa-geral.png){width="60%"}
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+![](pics/aula1/2fa-whatsapp.png)
+:::
+
+::: {.column width="50%"}
+![](pics/aula1/2fa-telegram.png)
+:::
+::::
+
+---
+
+# Anatomia de uma URL
+
+Importante para se proteger de golpes (**[phishing](https://phishingquiz.withgoogle.com/)**) e para OSINT e raspagem de dados. Considere a URL: https://search.googlee.com/search?q=osint&newwindow=1
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- Protocolo (`https://`): o "idioma" da comunicação. Certifique-se de ter o "S" em "https", especialmente para sites onde você irá colocar informações pessoais.
+
+- Subdomínio (`search`): em geral, é "www", mas pode ser qualquer valor arbitrário. Não diz absolutamente nada sobre o quão seguro ou confiável o site é.
+
+:::
+
+::: {.column width="50%"}
+
+- Domínio (`googlee.com`): convertido para o endereço de um servidor (IP) por uma tabela (DNS). Um caracter diferente e você vai para outro lugar. Precisa ser registrado e contém o domínio de alto nível (`.com`) .
+
+- Caminho (`search`): O conteúdo ou recurso do servidor que será acessado.
+
+- Parâmetros de consulta (`?q=osint&newwindows=1`): em geral, um "?" marca o início dos parâmetros de consulta e formato é "chave=valor", separado por &.
+
+:::
+::::
+
+---
+
+# Navegação anônima
+
+Qual a diferença entre ~~o charme e o funk~~ VPN e o TOR?
+
+. . .
+
+:::: {.columns}
+::: {.column width="50%"}
+
+## VPN
+- Serviço centralizado em único provedor
+- Exige confiança em uma única empresa
+- Pago. Desconfie e evite serviços gratuitos
+- Latência baixa e possiblidade de escolher a localidade do seu ponto de saída para a Internet
+:::
+
+::: {.column width="50%"}
+## TOR
+
+- Projeto gratuito, descentralizado e de código-aberto
+- Estado da arte em termos de navegação anônima na web
+- Exige confiança apenas na arquitetura e software
+- O tráfego passa por pontos aleatórios na rede
+- Protege apenas o tráfego do navegador com TOR
+- Mais lento e bloqueado em alguns sites
+:::
+::::
+
+---
+
+# Recursos e referências extras
+
+- [Brave Browser](https://brave.com/): navegador de código-aberto com TOR embutido;
+
+- [PrivacyBadger](https://privacybadger.org/): plugin da Electronic Frontier Foundation para impedir que sua navegação seja monitorada por anunciantes e outros rastreadores;
+
+- [uBlock Origin](https://ublockorigin.com/): bloqueador de anúncios e scripts;
+
+- [Security in a box](https://securityinabox.org/);
+
+- [Autodefesa contra vigilância](https://ssd.eff.org): guia da Electronic Frontier Foundation;
+
+---
+
+# Caixas de ferramentas
+
+- [Bellingcat toolkit](https://bit.ly/bcattools)
+
+- [OSINT Framework](https://osintframework.com/)
+
+- [OSINT Brazuca](https://github.com/osintbrazuca/OSINT-Brazuca)
+
+- [Awesome OSINT](https://github.com/jivoi/awesome-osint)
+
+---
+
+# Programas e plataformas especializadas
+
+Existem também programas e plataformas dedicados a potencializar investigações de OSINT.
+
+Abaixo, alguns destaques:
+
+- [Maltego](https://www.maltego.com/): a mais famosa ferramenta para investigações digitais, com diversos plugins. Baseado em grafos.
+
+- [Social Links](https://sociallinks.io/): especialmente forte para análise de redes sociais.
+
+- [Spiderfoot](https://github.com/smicallef/spiderfoot): foco em ciber-segurança e análise de ataques virtuais.
+
+- [theHarvester](https://github.com/laramies/theHarvester): útil para investigar emails e sites, principalmente.
+
+- [EffectGroup](https://effectgroup.io/): ótimo para buscar informações pessoais a partir de nomes e email.
+
+Mas há muito mais: em julho de 2024, existem mais de 2.300 projetos de código-aberto apenas no Github com a [tag "OSINT"](https://github.com/topics/osint).
+
+---
+
+## {.center background-color="#23373B"}
+
+### Até amanhã!
+
+[belisario.website/osint](https://belisario.website/osint/)

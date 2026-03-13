@@ -1,0 +1,361 @@
+---
+title: "🔎 OSINT e fact-checking"
+subtitle: "Busca avançada na web"
+author: "Adriano Belisario - @belisards"
+institute: "MBA em Jornalismo de Dados/IDP"
+format:
+  revealjs:
+    theme: [default, osint.scss]
+    highlight-style: github
+    progress: true
+    slide-number: true
+    incremental: false
+---
+
+# O que temos para hoje?
+
+- Busca avançada na web
+  - Operadores de busca avançada
+  - Busca em redes sociais
+  - Investigando sites
+
+---
+
+## {.center background-color="#23373B"}
+
+### Google Dorks
+
+---
+
+# Busca avançada no Google
+
+Para uma lista completa dos operadores de busca avançado, confira este [tutorial da Escola de Dados](https://escoladedados.org/tutoriais/operadores-de-busca-avancada/), esta [listagem de comandos](http://www.googleguide.com/advanced_operators_reference.html) ou este [guia em inglês](https://www.linkedin.com/posts/supersecretsquirrel_farallon-2025-not-really-ultimate-osint-resource-ugcPost-7390858030122196992-qzd2).
+
+Considere a busca abaixo:
+
+`orçamento confidencial`
+
+### O que ela retorna?
+
+. . .
+
+Páginas com o termo `orçamento` e o termo `confidencial` em qualquer lugar da página.
+
+É o mesmo que `orçamento AND confidencial`.
+
+---
+
+# Operadores básicos de busca
+
+Atenção para os espaços extras. Eles podem arruinar sua busca.
+
+- Aspas para expressões exata contendo várias palavras ou para forçar a busca por uma palavra tal como digitado;
+
+. . .
+
+- Sinal de menos para excluir;
+
+. . .
+
+- Asterisco representa uma ou mais palavras;
+
+. . .
+
+- Filtros por data: `before:YYYY-MM-DD` ou `after:YYYY-MM-DD` - ou pela opção `Ferramentas > Em qualquer data`;
+
+---
+
+# Operadores booleanos
+
+- `AND`: afunila os resultados. No Google, um espaço em branco equivale a um `AND`;
+
+. . .
+
+- `OR`: expande os resultados possíveis, adicionando alternativas de termo;
+
+. . .
+
+- Parênteses para isolar expressões;
+
+---
+
+# Outros operadores
+
+- `site:` restringir a busca a um determinado site ou domínio;
+
+. . .
+
+- `filetype:` restringir a busca a um formato de arquivo;
+
+. . .
+
+- `before:` pesquisa antes de uma determinada data (YYYY-MM-DD);
+
+. . .
+
+- `link:` páginas que possuem link para um endereço;
+
+. . .
+
+- `related:` sites relacionados a um endereço;
+
+. . .
+
+- `..`: intervalos de valores numéricos (ex: 1992..1996)
+
+---
+
+# Os operadores "in"
+
+- `inanchor`: textos como âncora de links
+
+. . .
+
+- `intext`: no texto (corpo) do dodcumento;
+
+. . .
+
+- `inurl:` na URL do documento;
+
+. . .
+
+- `intitle:` busca apenas no título da página.
+
+. . .
+
+Todos operadores desta classe de operadores aceitam o `all` antes, por exemplo: `allintitle:`
+
+---
+
+# Exemplos
+
+`site:*.pmerj.rj.gov.br -site:www.pmerj.rj.gov.br`
+
+. . .
+
+`intitle:osint site:twitter.com/i/lists`
+
+. . .
+
+`dilma 1980..2000`
+
+. . .
+
+`inflação before:2010-01-01 site:folha.uol.com.br`
+
+. . .
+
+`"secretaria * de saúde" site:gov.br filetype:xls`
+
+. . .
+
+`link:escoladedados.org -site:escoladedados.org`
+
+. . .
+
+`related:escoladedados.org`
+
+. . .
+
+`(ussr OR russia) AND (eua OR usa)`
+
+---
+
+## {.center background-color="#23373B"}
+
+### Busca na web ≠ Google
+
+---
+
+# Outros buscadores
+
+- [Duckduckgo](https://duckduckgo.com/): buscador com foco em privacidade;
+
+- [Bing](https://bing.com/): buscador da Microsoft. Ao contrário do Google, leva em consideração relevância em redes sociais e não prioriza sites adaptados para dispositivos móveis;
+
+- [Yandex](https://yandex.com/): o principal buscador da Rússia;
+
+- [Baidu](https://www.baidu.com/): o principal buscador da China;
+
+- [Carrot2](https://search.carrot2.org/): buscador que organiza os resultados em tópicos e "clusters";
+
+- [Wolfram Alpha](wolframalpha.com): um buscador inteligente;
+
+---
+
+# Nomes de usuário
+
+- [Whats my name](https://whatsmyname.app/): pesquisa até 10 nomes de usuário em diversas plataformas;
+
+- [Maigret](https://github.com/soxoj/maigret): pacote Python e via linha de comando;
+
+---
+
+# Aeronaves
+
+- [FlightRadar24](https://www.flightradar24.com/): rastreador de voos em tempo real com visualização de mapa interativo e informações detalhadas sobre aeronaves;
+
+- [ADS-B Exchange](https://www.adsbexchange.com/): plataforma que fornece dados de rastreamento de voos baseados em ADS-B;
+
+- [FlightAware](https://www.flightaware.com/): serviço de rastreamento de voos que oferece informações detalhadas sobre status de voos e históricos de aeronaves;
+
+- [OpenSky Network](https://opensky-network.org/): rede de rastreamento de voos colaborativa que fornece dados abertos e análises sobre o tráfego aéreo global;
+
+- [Plane Finder](https://planefinder.net/): rastreador de voos que exibe aeronaves em tempo real com opções para visualizar detalhes sobre rotas e aeronaves;
+
+- [AeroAPI](https://aeroapi.flightaware.com/): API que fornece dados sobre voos, aeroportos e aeronaves.
+
+---
+
+# Saiu do ar?
+
+- [Web Archive](https://web.archive.org): sua primeira escolha, armazena diversas versões dos sites;
+
+. . .
+
+- Operador de busca no Google `cache:` para pesquisar a versão arquivada de um site;
+
+- [Archive.today](https://archive.today): último recurso;
+
+---
+
+# Twitter
+
+[Busca avançada](https://twitter.com/search-advanced?lang=pt): o mecanismo nativo da plataforma é decente. Vale consultar também a [documentação dos operadores de busca](https://developer.x.com/en/docs/twitter-api/v1/rules-and-filtering/search-operators).
+
+Muitos dos operadores de busca vistos no Google funcionam aqui também, além de outros mais:
+
+- `OR` para buscar um termo ou outro;
+
+- `-` para exclusão;
+
+- `since:` e `until:`
+
+- Filtros por engajamento: `min_retweets:`; `min_replies:` e `min_faves:`
+
+- Recortes temporais: `until:` e  `since:`
+
+---
+
+## Exemplos
+
+- `(lula OR dilma) (from:ArthurLira_)`
+
+- `"pablo marçal" -from:pablomarcal until:2012-01-01`
+
+- `fraude eleição min_retweets:100 since:2024-01-01`
+
+---
+
+# Facebook
+
+- Seção de ["Transparência das páginas"](https://www.facebook.com/help/323314944866264)
+
+- [Biblioteca de anúncios](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=BR&media_type=all)
+
+- [LookUp ID](https://lookup-id.com/)
+
+- [Who Posted What](https://www.whopostedwhat.com/)
+
+- [Graph.tips](https://graph.tips/beta/)
+
+- [Facebook Matrix](https://plessas.net/facebookmatrix)
+
+---
+
+# Busca geolocalizada
+
+Caso você esteja interessado em conteúdos de uma localidade específica, tente serviços de busca geolocalizado:
+
+- [Onemilliontweetmap](https://onemilliontweetmap.com/): permite a visualização de tweets forma de mapa:
+
+- [MW Geofind](https://mattw.io/youtube-geofind/location): para buscar no YouTube;
+
+- [Instagram Location Search](https://github.com/bellingcat/instagram-location-search): pesquisa lugares no IG perto de uma coordenada latlong.
+
+---
+
+# Cronolocalização de posts
+
+- Youtube: [MW Metadata](https://mattw.io/youtube-metadata/)
+
+- Instagram: abrir o código-fonte e pesquisar por "timestamp", então [converter do formato Unix Epoch](https://www.epochconverter.com/) para o fuso desejado
+
+Atenção para o fuso horário. Em geral, está no formato ISO 8601 (UTC), mas convém conferir.
+
+---
+
+# Investigação de sites: who is?
+
+Existem vários serviços para consultar informações sobre quem registrou um domínio. Este tipo de consulta é conhecida como "who is".
+
+- [Who.is](https://who.is): uma das soluções para consultas internacionais;
+
+- [Whois - Registro.Br](https://registro.br/tecnologia/ferramentas/whois/): para domínios com o final `.br`;
+
+- [Reverse whois - ViewDNS.info](https://viewdns.info/reversewhois/): busca reversa com nome ou email;
+
+. . .
+
+## Buscas históricas
+
+- [Domain Research Suite](https://tools.whoisxmlapi.com)
+
+- [Whoxy](https://www.whoxy.com/): freemium;
+
+- [Whoxology](https://whoisology.com/): serviço pago;
+
+---
+
+# Outros recursos
+
+[https://informationlaundromat.com](https://informationlaundromat.com)
+
+---
+
+# Robots.txt
+
+Arquivo utilizado para indicar para mecanismos de buscas, robôs e raspadores automatizados aquilo que eles **não devem** olhar.
+
+Exemplo do site da [Câmara federal](https://www.camara.leg.br/robots.txt):
+
+```
+User-Agent: *
+Disallow: /sileg/prop_lista*
+Disallow: /internet/sileg/prop_lista*
+Disallow: /sileg/Prop_lista*
+Disallow: /internet/sileg/Prop_lista*
+Disallow: /*arvore-de-apensados
+Disallow: /proposicoesWeb/prop_arvore_tramitacoes
+Disallow: /sileg/prop_arvore_tramitacoes
+Disallow: /internet/deputado/Dep_Lista*
+Disallow: /transparencia/recursos-humanos/remuneracao/*
+Disallow: /transparencia/recursos-humanos/contratos-terceirizacao*
+Disallow: /transparencia/recursos-humanos/funcionarios*
+```
+
+---
+
+# Outras ferramentas úteis
+
+- [Spyse/Subdomain finder](https://spyse.com/tools/subdomain-finder): busca subdomínios;
+
+- [Spy On Web](https://spyonweb.com): para pesquisar sites com o mesmo código Adsense, Analytics, etc. Veja um exemplo com o [Jornal A Cidade Online](https://spyonweb.com/www.jornaldacidadeonline.com.br);
+
+- [VisualPing](https://visualping.io/): para monitorar mudanças em sites e emitir alertas;
+
+- [FollowThatPage!](https://www.followthatpage.com/): similar ao anterior, envia emails para alertar de mudanças em webistes.
+
+---
+
+# Dados invisíveis
+
+Metadados: use ferramentas EXIF, mas faça validação cruzada com outras fontes pois eles podem ser alterados.
+
+Código-fonte: termos interessantes para buscar "timestamp", "id:", "user", "UA-", "datetime", etc.
+
+---
+
+## {.center background-color="#23373B"}
+
+### Obrigado!

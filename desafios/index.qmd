@@ -1,0 +1,15 @@
+---
+title: "Desafios"
+---
+
+Exercícios práticos para colocar em prática as técnicas de OSINT discutidas em aula.
+
+## Imagens para geolocalização
+
+![](charitas-210821.jpg)
+
+![](exif.jpg)
+
+![](foto.jpg)
+
+![](geolocaliza.jpg)
